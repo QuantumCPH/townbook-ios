@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatOptionsView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_bar_background.png" id="SZq-l8-P2G">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" id="kO7-4h-8AR">
+                    <rect key="frame" x="0.0" y="39" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" id="hCh-hT-rZ2">
+                    <rect key="frame" x="54" y="39" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" id="Hep-Cf-0Mu">
+                    <rect key="frame" x="107" y="39" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" id="94f-NO-gvi">
+                    <rect key="frame" x="160" y="39" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" id="IoI-iR-r6m">
+                    <rect key="frame" x="213" y="39" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" id="Cgy-n3-80Z">
+                    <rect key="frame" x="266" y="39" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AfS-uP-2uJ" userLabel="Button-Camera">
+                    <rect key="frame" x="1" y="0.0" width="50" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                    <state key="normal" image="chat_bar_camera_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="chat_bar_camera_button_p.png"/>
+                    <state key="highlighted" image="chat_bar_camera_button_p.png"/>
+                    <connections>
+                        <action selector="cameraBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="yUG-sq-CNG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sHG-ba-YNQ" userLabel="Button-Picture">
+                    <rect key="frame" x="54" y="0.0" width="50" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                    <state key="normal" image="chat_bar_gallery_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="chat_bar_gallery_button_p.png"/>
+                    <state key="highlighted" image="chat_bar_gallery_button_p.png"/>
+                    <connections>
+                        <action selector="pictureBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="WVr-4h-o08"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ydv-bc-rSF" userLabel="Button-Contact">
+                    <rect key="frame" x="107" y="0.0" width="50" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                    <state key="normal" image="chat_bar_contacts_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="chat_bar_contacts_button_p.png"/>
+                    <state key="highlighted" image="chat_bar_contacts_button_p.png"/>
+                    <connections>
+                        <action selector="contactBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="7Ru-cg-d61"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="s8w-y8-DbN" userLabel="Button-Shop">
+                    <rect key="frame" x="160" y="0.0" width="50" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                    <state key="normal" image="chat_bar_shop_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="chat_bar_shop_button_p.png"/>
+                    <state key="highlighted" image="chat_bar_shop_button_p.png"/>
+                    <connections>
+                        <action selector="shopBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ptO-6h-MNl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NWB-L1-yzX" userLabel="Button-Offers">
+                    <rect key="frame" x="213" y="0.0" width="50" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                    <state key="normal" image="chat_bar_offers_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="chat_bar_offers_button_p.png"/>
+                    <state key="highlighted" image="chat_bar_offers_button_p.png"/>
+                    <connections>
+                        <action selector="offerBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="J27-tA-Yec"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8ia-Xi-XRa" userLabel="Button-Location">
+                    <rect key="frame" x="266" y="0.0" width="50" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                    <state key="normal" image="chat_bar_location_button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="chat_bar_location_button_p.png"/>
+                    <state key="highlighted" image="chat_bar_location_button_p.png"/>
+                    <connections>
+                        <action selector="locationBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="hpm-0l-C5i"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnCamera" destination="AfS-uP-2uJ" id="JFR-3I-UPa"/>
+                <outlet property="btnContact" destination="ydv-bc-rSF" id="Et5-bd-gqB"/>
+                <outlet property="btnGallery" destination="sHG-ba-YNQ" id="1JO-Xs-AKt"/>
+                <outlet property="btnLocation" destination="8ia-Xi-XRa" id="iXR-Lx-gYc"/>
+                <outlet property="btnOffer" destination="NWB-L1-yzX" id="JK7-yv-Ehx"/>
+                <outlet property="btnShop" destination="s8w-y8-DbN" id="Sel-c1-dgE"/>
+                <outlet property="lblCamera" destination="kO7-4h-8AR" id="Slp-Fx-oWE"/>
+                <outlet property="lblContacts" destination="Hep-Cf-0Mu" id="Z6r-sv-ebL"/>
+                <outlet property="lblGallery" destination="hCh-hT-rZ2" id="Ese-hM-Xcz"/>
+                <outlet property="lblLocations" destination="Cgy-n3-80Z" id="HQw-W9-wgq"/>
+                <outlet property="lblOffers" destination="IoI-iR-r6m" id="ths-O2-cIO"/>
+                <outlet property="lblShop" destination="94f-NO-gvi" id="IsE-k8-vGR"/>
+            </connections>
+            <point key="canvasLocation" x="230" y="200"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_bar_background.png" width="320" height="69"/>
+        <image name="chat_bar_camera_button.png" width="37" height="30"/>
+        <image name="chat_bar_camera_button_p.png" width="37" height="30"/>
+        <image name="chat_bar_contacts_button.png" width="37" height="30"/>
+        <image name="chat_bar_contacts_button_p.png" width="37" height="30"/>
+        <image name="chat_bar_gallery_button.png" width="37" height="30"/>
+        <image name="chat_bar_gallery_button_p.png" width="37" height="30"/>
+        <image name="chat_bar_location_button.png" width="37" height="30"/>
+        <image name="chat_bar_location_button_p.png" width="37" height="30"/>
+        <image name="chat_bar_offers_button.png" width="37" height="30"/>
+        <image name="chat_bar_offers_button_p.png" width="37" height="30"/>
+        <image name="chat_bar_shop_button.png" width="37" height="30"/>
+        <image name="chat_bar_shop_button_p.png" width="37" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

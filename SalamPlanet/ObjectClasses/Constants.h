@@ -1,0 +1,266 @@
+//
+//  Constants.h
+//  SalamPlanet
+//
+//  Created by Saad Khan on 18/09/2014.
+//  Copyright (c) 2014 Globit. All rights reserved.
+//
+#define APIBaseURL @"http://52.28.59.218:5001/api/"
+
+#define kSelectedCountryCode    @"selectedCountryCode"
+#define kSelectedCountryName    @"selectedCountryName"
+#define kSelectedCountryShortName    @"selectedCountryShortName"
+#define kLocationServiceAddress      @"LocationServiceAddress"
+#define kLocationServiceCity         @"LocationServiceCity"
+
+//#define kNotificationCLLocationManagerAuthentication @"CLLocationManagerAuthenticated"
+#define kNotificationCLLocationManagerNotAuthentication @"CLLocationManagerNotAuthenticated"
+#define kLocationManagerLocationUpdateNotification @"LocationManagerLocationUpdated"
+#define kUserSignOutNotification        @"UserSignOutNotification"
+#define kUserSelectedMallsEditedNotification    @"UserSelectedMallsEditedNotification"
+#define kAcitivitesReloadedNotification         @"AcitivitesReloadedNotification"
+
+#define kAppName        @"The Mall App"
+#define kUserPhone      @"userPhone"
+#define kAppLangauge    @"appLanguage"
+
+//Language Codes
+#define kEnglish    @"en"
+#define kDanish     @"da"
+
+
+
+//New Categories for Center App
+#define kMenuItemHome   @"Home"
+#define kMenuItemShop   @"Shops"
+#define kMenuItemRestaurant    @"Restaurants"
+#define kMenuItemServices   @"Services"
+#define kMenuItemOpeningInfo   @"Mall Information"
+#define kMenuItemDirectionsANDParking     @"Directions & Parking"
+#define kMenuItemShopMap   @"Shop map"
+#define kMenuItemGiftFinder   @"Gift finder"
+#define kMenuItemCoupons    @"Coupons"
+#define kMenuItemOfferguide   @"Discount calculator"
+#define kMenuItemFavourites   @"Favourite"
+
+#define kTempObjID  @"objID"
+#define kTempObjImgName @"objImgName"
+#define kTempObjTitle @"objTitle"
+#define kTempObjDetail  @"objDetail"
+#define kTempObjHeadline @"objHeadline"
+#define kTempObjType    @"objType"
+#define kTempObjPlace    @"objPlace"
+#define kTempObjShop    @"objShop"
+#define kTempObjShopLogoImgName @"objShopLogoImgName"
+#define kTempObjIsFav   @"objIsFav"
+#define kTempObjIsBookmarked   @"objIsBookmarked"
+#define kTempObjCategory    @"objCategory"
+
+#define kTempCenterID   @"centerID"
+#define kTempCenterTitle    @"centerTitle"
+#define kTempCenterCity     @"centerCity"
+#define kTempCenterLocation @"centerLocation"
+#define kTempCenterImgName  @"centerImgName"
+#define kTempCenterSelected @"centerSelected"
+
+#define kTempUserName       @"userName"
+#define kTempUserDOB        @"userDOB"
+#define kTempUserPic        @"userPic"
+#define kTempUserLocation   @"userLocation"
+#define kTempUserEducation  @"userEducation"
+#define kTempUserGender     @"userGender"
+
+#define kDeviceToken        @"DeviceToken"
+#define kUserID             @"UserId"
+#define kFirstName          @"FirstName"
+#define kLastName           @"LastName"
+#define kUserEmail          @"Email"
+#define kDateOfBirth        @"DOB"
+#define kImageUrl           @"ImageURL"
+#define kGender             @"Gender"
+#define kServerCountryCode  @"CountryCode"
+#define kLatitude           @"Latitude"
+#define kLongitude          @"Longitude"
+#define kServerPhone        @"Phone"
+#define kCityName           @"CityName"
+
+#define kMallPlaceID        @"MallPlaceId"
+#define kMallPlaceName      @"PlaceName"
+#define kBriefText          @"BriefText"
+#define kAboutText          @"AboutText"
+#define kDetailText         @"DetailText"
+#define kActivityId         @"ActivityId"
+#define kActivityTextTitle  @"ActivityTextTitle"
+#define kActivityName       @"ActivityName"
+#define kEntityId           @"EntityId"
+#define kEntityName         @"EntityName"
+#define kEntityType         @"EntityType"
+#define kMessage            @"Message"
+#define kSuccess            @"Success"
+#define kMallStoreId        @"MallStoreId"    //Mall store id
+#define kCategoryName       @"CategoryName"
+#define kLogoURL            @"LogoURL"
+#define kFloor              @"Floor"
+#define kAddress            @"Address"
+#define kFromDay            @"FromDay"
+#define kToDay              @"ToDay"
+#define kOpeningTiming      @"OpeningTiming"
+#define kClosingTiming      @"ClosingTiming"
+#define kName               @"Name"
+
+#define kWebURL             @"WebURL"
+#define kSiteMapActive      @"SiteMapActive"
+#define kSiteMapURL         @"SiteMapURL"
+#define kBannerImages       @"BannerImages"
+
+#define kCardTitle          @"CardTitle"
+#define kProviderName       @"ProviderName"
+#define kBarcode            @"Barcode"
+#define kBarcodeType        @"BarcodeType"
+#define kCardNotes          @"UserNotes"
+#define kCardNumber         @"CardNumber"
+
+
+//Center Names
+#define kLyngbyStorcenter   @"Lyngby Storcenter"
+#define kRCentrum           @"Rødovre Centrum"
+#define kWaves              @"Waves"
+#define kACentret           @"Amager Centret"
+#define kBCentret           @"Ballerup Centret"
+#define kGalleriK           @"Galleri K"
+#define kWaterfront         @"Waterfront"
+
+#define kIntAccessories  @"Accessories"
+#define kIntArtGallery  @"Art Gallery"
+#define kIntArtsCrafts  @"Arts Crafts"
+#define kIntAthleticApparel @"Athletic Apparel"
+#define kIntBooksStationery @"Books Stationery"
+#define kIntCarts   @"Carts"
+#define kIntChildrensApparel @"Childrens Apparel"
+#define kIntConvenience @"Convenience"
+#define kIntDepartmentStores    @"Department Stores"
+#define kIntFastFood    @"Fast Food"
+#define kIntGifts   @"Gifts"
+#define kIntHealthBeauty    @"Health Beauty"
+#define kIntHobby   @"Hobby"
+#define kIntHome    @"Home"
+#define kIntHomeFurnishings    @"Home Furnishings"
+#define kIntJewelry @"Jewelry"
+#define kIntLuggage @"Luggage"
+#define kIntMensApparel    @"Mens Apparel"
+#define kIntMensWomensApparel   @"Mens Womens Apparel"
+#define kIntMusicElectronics    @"Music Electronics"
+#define kIntOptical @"Optical"
+#define kIntPhotography @"Photography"
+#define kIntRestaurants @"Restaurants"
+#define kIntServices    @"Services"
+#define kIntShoes   @"Shoes"
+#define kIntSpecialtyFood  @"Specialty Food"
+#define kIntToys    @"Toys"
+#define kIntTravel  @"Travel"
+#define kIntWomensApparel  @"Womens Apparel"
+#define kIntWomensSpecialtyApparel  @"Womens Specialty Apparel"
+
+
+#define kAccommodationCategory  @"Accommodations"
+#define kBookCategory    @"Books"
+#define kDinningCategory @"Dinning"
+#define kMovieCategory   @"Movies"
+#define kMusicCategory   @"Music"
+#define kPlacesCategory  @"Places"
+
+#define kBookmarks       @"Bookmarks"
+
+#define kHeading        @"Heading"
+#define kCategory       @"Category"
+#define kSubCategory    @"SubCategory"
+#define kRating         @"Rating"
+#define kComment        @"Coment"
+#define kCommentANDRating        @"CommentANDRating"
+#define kImage              @"Image"
+#define kLocation           @"Location"
+#define kTag            @"Tag"
+#define kUserType       @"UserType"
+#define kAudiance       @"Audiance"
+
+#define kisLoggedIn     @"isLoggedIn"
+
+#define kArrayLCCreatedLocally  @"arrayLCCreatedLocally"
+#define kArrayEndorsementCreatedLocally @"arrayEndorsementCreatedLocally"
+#define kArrayFavouriteCatSubCat    @"arrayEndorsementCatSubCat"
+#define kUserCreatedLocally @"userCreatedLocally"
+#define kArraySelectedInterests @"arrayselectedInterests"
+
+
+#define kTempEndrIDUniversal    @"endrIDUniversal"
+#define kTempEndrName   @"endrName"
+#define kTempEndrID     @"endrID"
+#define kTempEndrRating @"endrRating"
+#define kTempEndrAudience   @"endrAudience"
+#define kTempEndrLocation   @"endrLocation"
+#define kTempEndrComment    @"endrComment"
+#define kTempEndrImageArray @"endrImageArray"
+#define kTempEndrDate       @"endrDate"
+#define kTempEndrTime       @"endrTime"
+#define kTempEndrIsFav      @"endrIsFav"
+#define kTempEndrIsBookmarked   @"endrIsBookmarked"
+#define kTempEndrCategory   @"endrCategory"
+#define kTempEndrSubCategory    @"endrSubCategory"
+#define kTempEndrTagString  @"endrTagString"
+
+#define kTempUserName       @"userName"
+#define kTempUserDOB        @"userDOB"
+#define kTempUserPic        @"userPic"
+
+
+#define kEndrDetailPageButtonOptionCell        @"endrDetailCellButtonOptions"
+#define kEndrDetailPageDetailCell              @"endrDetailPageDetailCell"
+#define kEndrDetailOverallRatingInfoCell       @"endrDetailPageOverallRatingInfo"
+#define kEndrDetailEndorsement                 @"endrDetailEndorsement"
+#define kEndrRatingDetailCell                   @"endrRatingDetailCell"
+#define kEndrShareViewCell                      @"endrShareViewCell"
+
+#define kObjTabBarCell                      @"objTabBarCell"
+#define kObjShopDetailCell                  @"objShopDetailCell"
+#define kObjDetailCell                      @"objDetailCell"
+#define kObjFeaturedProductHeadingCell      @"objFeaturedProductHeadingCell"
+#define kObjShareCell                       @"objShareCell"
+#define kObjFeaturedProductCellOne          @"objFeaturedProductCellOne"
+#define kObjFeaturedProductCellTwo          @"objFeaturedProductCellTwo"
+#define kObjFeaturedProductCellThree          @"objFeaturedProductCellThree"
+
+
+#define kChatBGCell     @"chatBGCell"
+#define kChatParHeading @"chatParHeading"
+#define kChatSmartNoti  @"chatSmartNoti"
+#define kChatConvGallery    @"chatConvGallery"
+#define kChatAddContacts    @"chatAddContacts"
+
+#define kProfileTopCell     @"profileTopCell"
+#define kProfileDefaultCell @"profileDefaultCell"
+#define kProfileTabCell     @"profileTabCell"
+#define kProfileDetailCell  @"profileDetailCell"
+
+#define kProfileCentersCell @"profileCenterCell"
+#define kProfileInterestsCell   @"profileInterestsCell"
+#define kProfilePointsCell  @"profilePointsCell"
+
+
+#define kSCGarments    @"Garment"
+#define kSCEating      @"Eating"
+#define kSCGrocery     @"Grocery"
+
+#define kRCChinese     @"Chinese"
+#define kRCContinental     @"Continental"
+#define kRCSeaFood     @"Sea Food"
+#define kRCFastFood     @"Fast Food"
+#define kRCIndian     @"Indian"
+#define kRCItalian     @"Italian"
+
+//Parking Things
+#define kParkingDetailText  @"parkingDetailText"
+#define kParkingPicture     @"parkingPicture"
+
+//#define kGoogleAPIKey @"AIzaSyC6_Y4Vw0jJtfY3_UfFjbcrssnWxLDAcaw"//iOS bundle identifier key
+//#define kGoogleAPIKey @"AIzaSyDGw9R_5UVsc-luuPGdB7pnRZ9KjQKmi2s"// browser key
+#define kGoogleAPIKey @"AIzaSyB2JNXikjBhSnO4aTVJCKeCzisLBBhybsk"

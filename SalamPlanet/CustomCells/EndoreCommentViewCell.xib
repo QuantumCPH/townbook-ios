@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="158" id="l3f-jS-AKc" customClass="EndoreCommentViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l3f-jS-AKc" id="Ggq-5v-pyZ">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="3dX-z7-UAx">
+                        <rect key="frame" x="10" y="8" width="300" height="54"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gek-ZA-ild">
+                                <rect key="frame" x="10" y="6" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sSf-6s-tv9">
+                                <rect key="frame" x="65" y="13" width="155" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecomments-rating-icon.png" id="D6X-Fr-wPJ" userLabel="moon-Two">
+                                <rect key="frame" x="229" y="13" width="12" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecomments-rating-icon.png" id="wFu-4b-GxH" userLabel="moon-Five">
+                                <rect key="frame" x="280" y="13" width="12" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecomments-rating-icon.png" id="sXC-TC-rr7" userLabel="moon-Three">
+                                <rect key="frame" x="246" y="13" width="12" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecomments-rating-icon.png" id="Cqp-vF-3F3" userLabel="moon-One">
+                                <rect key="frame" x="212" y="13" width="12" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecomments-rating-icon.png" id="9io-aJ-PFU" userLabel="moon-Four">
+                                <rect key="frame" x="263" y="13" width="12" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04-06-2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PZP-x3-1nG">
+                                <rect key="frame" x="78" y="30" width="76" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock-icon.png" id="AMp-Mf-vK7">
+                                <rect key="frame" x="65" y="31" width="9" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 likes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d6W-vk-QBl">
+                                <rect key="frame" x="224" y="37" width="68" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.56078431370000004" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tK0-cz-Wql" userLabel="Button-ImageBtn">
+                                <rect key="frame" x="9" y="5" width="46" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoProfileAction:" destination="l3f-jS-AKc" eventType="touchUpInside" id="oqy-5m-TKg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 comments" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n6f-9G-zIl">
+                                <rect key="frame" x="224" y="27" width="68" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.56078431370000004" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="m94-GU-1ZN">
+                        <rect key="frame" x="10" y="62" width="300" height="61"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="l3f-jS-AKc" id="jmi-hm-XSQ"/>
+                        </connections>
+                    </textView>
+                    <view contentMode="scaleToFill" id="D5r-j2-sWM">
+                        <rect key="frame" x="0.0" y="125" width="320" height="31"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RkF-u7-KSo" userLabel="Chat">
+                                <rect key="frame" x="213" y="0.0" width="107" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ecmessage-barbutton.png"/>
+                                <state key="highlighted" image="ecmessage-barbutton-p.png"/>
+                                <connections>
+                                    <action selector="gotoChatAction:" destination="l3f-jS-AKc" eventType="touchUpInside" id="caG-xg-j8X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UOB-f9-F8D" userLabel="Like">
+                                <rect key="frame" x="0.0" y="0.0" width="107" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="eclike-barbutton.png">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.56078431370000004" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <state key="selected" image="eclike-barbutton-p.png"/>
+                                <state key="highlighted" image="eclike-barbutton-p.png"/>
+                                <connections>
+                                    <action selector="gotoLikeEndrAction:" destination="l3f-jS-AKc" eventType="touchUpInside" id="L98-WB-rlr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AkB-5U-prS" userLabel="Share">
+                                <rect key="frame" x="107" y="0.0" width="107" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ecshare-barbutton.png"/>
+                                <state key="highlighted" image="ecshare-barbutton-p.png"/>
+                                <connections>
+                                    <action selector="shareAction:" destination="l3f-jS-AKc" eventType="touchUpInside" id="MkS-iG-ABL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ecomments-separator.png" id="2hv-aH-PQ5">
+                        <rect key="frame" x="18" y="62" width="284" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateTimeLabel" destination="PZP-x3-1nG" id="TnY-K3-dwz"/>
+                <outlet property="endrImgView" destination="I9G-SZ-4tm" id="pMo-zx-XT2"/>
+                <outlet property="endrUserNameLbl" destination="sSf-6s-tv9" id="4gq-L3-yrp"/>
+                <outlet property="endrUserProfileImgView" destination="gek-ZA-ild" id="PON-X2-HQO"/>
+                <outlet property="likeBtn" destination="UOB-f9-F8D" id="zfU-Dp-db4"/>
+                <outlet property="likeLbl" destination="d6W-vk-QBl" id="KkK-ji-yVv"/>
+                <outlet property="mainCommentTV" destination="m94-GU-1ZN" id="3Fy-mE-XnO"/>
+                <outlet property="moonFive" destination="wFu-4b-GxH" id="bdr-Je-S15"/>
+                <outlet property="moonFour" destination="9io-aJ-PFU" id="RFa-0q-3lz"/>
+                <outlet property="moonOne" destination="Cqp-vF-3F3" id="3JU-UL-psZ"/>
+                <outlet property="moonThree" destination="sXC-TC-rr7" id="Ing-Xt-qR3"/>
+                <outlet property="moonTwo" destination="D6X-Fr-wPJ" id="kNv-Qq-C6t"/>
+            </connections>
+            <point key="canvasLocation" x="-15" y="198"/>
+        </tableViewCell>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="I9G-SZ-4tm">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="170.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
+    </objects>
+    <resources>
+        <image name="clock-icon.png" width="9" height="8"/>
+        <image name="eclike-barbutton-p.png" width="107" height="31"/>
+        <image name="eclike-barbutton.png" width="107" height="31"/>
+        <image name="ecmessage-barbutton-p.png" width="107" height="31"/>
+        <image name="ecmessage-barbutton.png" width="107" height="31"/>
+        <image name="ecomments-rating-icon.png" width="12" height="13"/>
+        <image name="ecomments-separator.png" width="1" height="1"/>
+        <image name="ecshare-barbutton-p.png" width="107" height="31"/>
+        <image name="ecshare-barbutton.png" width="107" height="31"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

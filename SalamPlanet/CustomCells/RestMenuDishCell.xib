@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="restMenuDishCell" rowHeight="141" id="2Do-Xr-GNE" customClass="RestMenuDishCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Do-Xr-GNE" id="7Kn-tD-Slm">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSa-mP-JTZ">
+                        <rect key="frame" x="95" y="29" width="213" height="99"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-3B-061">
+                        <rect key="frame" x="99" y="10" width="156" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BcQ-id-7lE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hm-bn-Stb">
+                        <rect key="frame" x="260" y="10" width="52" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Kll-dF-MI7"/>
+                            <constraint firstAttribute="width" constant="52" id="ykg-Ug-n5K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EaV-hi-34v">
+                        <rect key="frame" x="8" y="10" width="86" height="120"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="86" id="pte-FX-jY5"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="cSa-mP-JTZ" firstAttribute="leading" secondItem="EaV-hi-34v" secondAttribute="trailing" constant="1" id="8l4-63-i0T"/>
+                    <constraint firstItem="9Hm-bn-Stb" firstAttribute="top" secondItem="7Kn-tD-Slm" secondAttribute="top" constant="10" id="9QB-3H-YMc"/>
+                    <constraint firstAttribute="bottom" secondItem="EaV-hi-34v" secondAttribute="bottom" constant="10" id="DGx-Hy-dH9"/>
+                    <constraint firstAttribute="bottom" secondItem="cSa-mP-JTZ" secondAttribute="bottom" constant="12.5" id="DHy-hJ-p5f"/>
+                    <constraint firstItem="Bqv-3B-061" firstAttribute="top" secondItem="7Kn-tD-Slm" secondAttribute="top" constant="10" id="I52-XD-HdX"/>
+                    <constraint firstAttribute="trailing" secondItem="9Hm-bn-Stb" secondAttribute="trailing" constant="8" id="Kck-5x-CF0"/>
+                    <constraint firstItem="9Hm-bn-Stb" firstAttribute="leading" secondItem="Bqv-3B-061" secondAttribute="trailing" constant="5" id="Koa-FV-w3f"/>
+                    <constraint firstItem="EaV-hi-34v" firstAttribute="top" secondItem="7Kn-tD-Slm" secondAttribute="top" constant="10" id="MQy-hW-kIn"/>
+                    <constraint firstAttribute="trailing" secondItem="cSa-mP-JTZ" secondAttribute="trailing" constant="12" id="Usd-Hx-35u"/>
+                    <constraint firstItem="cSa-mP-JTZ" firstAttribute="top" secondItem="7Kn-tD-Slm" secondAttribute="top" constant="29" id="mSM-M0-aMS"/>
+                    <constraint firstItem="Bqv-3B-061" firstAttribute="leading" secondItem="EaV-hi-34v" secondAttribute="trailing" constant="5" id="sPC-ua-OmI"/>
+                    <constraint firstItem="EaV-hi-34v" firstAttribute="leading" secondItem="7Kn-tD-Slm" secondAttribute="leading" constant="8" id="wqS-gy-DIN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="detailTV" destination="cSa-mP-JTZ" id="uwE-q2-sAU"/>
+                <outlet property="dishImageView" destination="EaV-hi-34v" id="vcy-z4-ogh"/>
+                <outlet property="priceLbl" destination="9Hm-bn-Stb" id="JlB-0S-0EJ"/>
+                <outlet property="titleLbl" destination="Bqv-3B-061" id="wjM-M0-PyX"/>
+            </connections>
+            <point key="canvasLocation" x="191" y="202.5"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

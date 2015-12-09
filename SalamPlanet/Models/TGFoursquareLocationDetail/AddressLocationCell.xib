@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addressLocationDetail" rowHeight="161" id="7f3-eV-LxS" customClass="AddressLocationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7f3-eV-LxS" id="Rof-Zl-Q6g">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7PU-iz-P4O">
+                        <rect key="frame" x="5" y="66" width="185" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expensive" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rk3-s9-fgm">
+                        <rect key="frame" x="40" y="136" width="127" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" id="gAv-Py-PFE">
+                        <rect key="frame" x="196" y="11" width="116" height="140.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Sc-SP-iM6" userLabel="Button-website" customClass="UIUnderlinedButton">
+                        <rect key="frame" x="40" y="86" width="117" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="www.google.com">
+                            <color key="titleColor" red="0.52941176469999995" green="0.36470588240000001" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="websiteBtnPressed:" destination="7f3-eV-LxS" eventType="touchUpInside" id="0OH-xn-0LQ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qCq-vs-N18" customClass="UIUnderlinedButton">
+                        <rect key="frame" x="40" y="111" width="140" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="Get directions">
+                            <color key="titleColor" red="0.52941176469999995" green="0.36470588240000001" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="getDirectionBtnAction:" destination="7f3-eV-LxS" eventType="touchUpInside" id="K3N-Kp-06i"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eweb-icon.png" id="8ke-F0-6Ev">
+                        <rect key="frame" x="20" y="94" width="13" height="13"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edollar-icon.png" id="s4o-yk-frO">
+                        <rect key="frame" x="20" y="140" width="13" height="13"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edirections-icon.png" id="dfs-vh-fed">
+                        <rect key="frame" x="20" y="119" width="13" height="13"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ephone-icon.png" id="42p-rY-9Qn">
+                        <rect key="frame" x="20" y="67" width="13" height="13"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elocation-icon.png" id="ddF-n4-BF5">
+                        <rect key="frame" x="21" y="13" width="11" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edetail-text-separator.png" id="5ZC-hv-wI7" userLabel="edetail-text-separator_one.png">
+                        <rect key="frame" x="20" y="61" width="166" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edetail-text-separator.png" id="ND3-Cv-vXN" userLabel="edetail-text-separator_two.png">
+                        <rect key="frame" x="20" y="88" width="166" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edetail-text-separator.png" id="K1W-63-aYL" userLabel="edetail-text-separator_three.png">
+                        <rect key="frame" x="20" y="113" width="166" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edetail-text-separator.png" id="YaQ-w5-fC4" userLabel="edetail-text-separator_four.png">
+                        <rect key="frame" x="20" y="136" width="166" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8ZK-6F-r2K" userLabel="Button-Phone">
+                        <rect key="frame" x="40" y="59" width="148" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="042376889237">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="phoneBtnPressed:" destination="7f3-eV-LxS" eventType="touchUpInside" id="Sm7-Pa-yZB"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Floor 7, Shaheen Complex, Shimla Pahari, Lahore, Pakistan" id="gFI-eg-Z9w">
+                        <rect key="frame" x="35" y="0.0" width="155" height="61"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <view contentMode="scaleToFill" id="XO4-Si-HbM" userLabel="divider">
+                        <rect key="frame" x="0.0" y="159" width="320" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.52941176469999995" green="0.36470588240000001" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addressTV" destination="gFI-eg-Z9w" id="5x1-la-e7z"/>
+                <outlet property="directionBtn" destination="qCq-vs-N18" id="Zih-nK-e4p"/>
+                <outlet property="mapContainerView" destination="gAv-Py-PFE" id="dUI-FL-ynS"/>
+                <outlet property="phoneBtn" destination="8ZK-6F-r2K" id="4B7-Pt-YAh"/>
+                <outlet property="priceLbl" destination="Rk3-s9-fgm" id="r0F-6H-xOh"/>
+                <outlet property="websiteBtn" destination="8Sc-SP-iM6" id="yYF-Yq-6qM"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="148"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edetail-text-separator.png" width="1" height="1"/>
+        <image name="edirections-icon.png" width="13" height="14"/>
+        <image name="edollar-icon.png" width="13" height="14"/>
+        <image name="elocation-icon.png" width="13" height="14"/>
+        <image name="ephone-icon.png" width="15" height="16"/>
+        <image name="eweb-icon.png" width="13" height="14"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

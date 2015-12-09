@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CodeVerificationViewController">
+            <connections>
+                <outlet property="backBtn" destination="kv2-mH-YBc" id="jep-xJ-ilz"/>
+                <outlet property="codeTF" destination="IeA-jb-npB" id="WBY-WD-T4K"/>
+                <outlet property="continueBtn" destination="8Yo-Z3-TAr" id="P30-cd-Tyn"/>
+                <outlet property="lblIfYouDoNotRecieve" destination="014-sR-zzs" id="5cY-7t-44a"/>
+                <outlet property="lblPleaseEnterCode" destination="rzi-r1-z8Q" id="H0H-Fb-3sK"/>
+                <outlet property="noCodeBtn" destination="2dI-uO-6OF" id="ha3-if-G2N"/>
+                <outlet property="toolBar" destination="11d-XB-Qmw" id="If6-jq-ppa"/>
+                <outlet property="toolBarDone" destination="Ykb-Xx-8g3" id="cs2-gd-13x"/>
+                <outlet property="verifyImg" destination="lOS-D3-iBb" id="Y4E-Ti-wfY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv2-mH-YBc" userLabel="Back-Button">
+                    <rect key="frame" x="10" y="10" width="60" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="KAH-mK-QHu"/>
+                    </constraints>
+                    <state key="normal" image="back-button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="back-button-press"/>
+                    <state key="highlighted" image="back-button-press"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="lxl-p6-hWi"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the verification code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzi-r1-z8Q">
+                    <rect key="frame" x="27" y="58" width="267" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="vu7-Dn-cuG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Access code" minimumFontSize="17" background="text-field" translatesAutoresizingMaskIntoConstraints="NO" id="IeA-jb-npB">
+                    <rect key="frame" x="22" y="93" width="276" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="ESh-6j-PEk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="JGB-uC-fCO"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yo-Z3-TAr">
+                    <rect key="frame" x="91" y="166" width="133" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="133" id="vgB-Mu-Hlt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="Continue" backgroundImage="blank-button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="Continue" backgroundImage="blank-button-p"/>
+                    <state key="highlighted" backgroundImage="blank-button-p"/>
+                    <connections>
+                        <action selector="continueAction:" destination="-1" eventType="touchUpInside" id="j3U-00-vj3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you do not receive your access code within 60 seconds. press" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="014-sR-zzs">
+                    <rect key="frame" x="22" y="218" width="276" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="Zpj-gN-dSx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dI-uO-6OF" customClass="UIUnderlinedButton">
+                    <rect key="frame" x="112" y="269" width="97" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6Tb-Hz-hGE"/>
+                        <constraint firstAttribute="width" constant="97" id="v9y-lj-RhX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Resend Code">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="noCodeAction:" destination="-1" eventType="touchUpInside" id="tqs-4u-I2a"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IeA-jb-npB" secondAttribute="trailing" constant="22" id="63q-1T-Y5C"/>
+                <constraint firstItem="rzi-r1-z8Q" firstAttribute="centerX" secondItem="IeA-jb-npB" secondAttribute="centerX" id="LOC-Oa-Wwi"/>
+                <constraint firstItem="2dI-uO-6OF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OrZ-zI-Qgn"/>
+                <constraint firstAttribute="centerX" secondItem="8Yo-Z3-TAr" secondAttribute="centerX" constant="2.5" id="P9A-fw-fOv"/>
+                <constraint firstItem="014-sR-zzs" firstAttribute="top" secondItem="8Yo-Z3-TAr" secondAttribute="bottom" constant="15" id="RSO-zC-5qF"/>
+                <constraint firstItem="kv2-mH-YBc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="XP4-DB-hkb"/>
+                <constraint firstItem="IeA-jb-npB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="YsO-OP-1cG"/>
+                <constraint firstItem="8Yo-Z3-TAr" firstAttribute="top" secondItem="IeA-jb-npB" secondAttribute="bottom" constant="35" id="Z4U-Om-gQ4"/>
+                <constraint firstItem="2dI-uO-6OF" firstAttribute="top" secondItem="014-sR-zzs" secondAttribute="bottom" constant="9" id="auc-fn-hzx"/>
+                <constraint firstItem="IeA-jb-npB" firstAttribute="leading" secondItem="014-sR-zzs" secondAttribute="leading" id="c2A-Yi-QQR"/>
+                <constraint firstItem="rzi-r1-z8Q" firstAttribute="top" secondItem="kv2-mH-YBc" secondAttribute="bottom" constant="12" id="dCB-UW-MKi"/>
+                <constraint firstItem="kv2-mH-YBc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="fAI-Sr-QLE"/>
+                <constraint firstItem="IeA-jb-npB" firstAttribute="trailing" secondItem="014-sR-zzs" secondAttribute="trailing" id="mUi-mb-2yo"/>
+                <constraint firstItem="rzi-r1-z8Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="27" id="nUE-Qn-FP0"/>
+                <constraint firstItem="IeA-jb-npB" firstAttribute="top" secondItem="rzi-r1-z8Q" secondAttribute="bottom" constant="14" id="w3Z-ul-XVf"/>
+            </constraints>
+        </view>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="11d-XB-Qmw">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <items>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="GPZ-Ma-ndk"/>
+                <barButtonItem title="Done" id="Ykb-Xx-8g3">
+                    <connections>
+                        <action selector="hideKeyboard:" destination="-1" id="NdO-AD-ANa"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="-1" id="4rQ-Rg-Mx7"/>
+            </connections>
+        </toolbar>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="lOS-D3-iBb">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
+    </objects>
+    <resources>
+        <image name="back-button" width="23" height="36"/>
+        <image name="back-button-press" width="23" height="36"/>
+        <image name="blank-button" width="129" height="37"/>
+        <image name="blank-button-p" width="129" height="37"/>
+        <image name="text-field" width="272" height="38"/>
+    </resources>
+</document>

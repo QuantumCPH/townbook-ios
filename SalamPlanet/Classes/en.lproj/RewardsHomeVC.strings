@@ -1,0 +1,45 @@
+
+/* Class = "IBUILabel"; text = "Transaction History"; ObjectID = "2qr-Mg-m5Z"; */
+"2qr-Mg-m5Z.text" = "Transaction History";
+
+/* Class = "IBUILabel"; text = "Membership Number"; ObjectID = "3P7-Nf-MIK"; */
+"3P7-Nf-MIK.text" = "Membership Number";
+
+/* Class = "IBUITextField"; text = "226"; ObjectID = "9cf-PI-Sgp"; */
+"9cf-PI-Sgp.text" = "226";
+
+/* Class = "IBUITextField"; text = "342123213123123"; ObjectID = "Igv-Nj-hF8"; */
+"Igv-Nj-hF8.text" = "342123213123123";
+
+/* Class = "IBUITextField"; text = "123123123123123"; ObjectID = "U8w-yp-D9l"; */
+"U8w-yp-D9l.text" = "123123123123123";
+
+/* Class = "IBUILabel"; text = "Membership Number"; ObjectID = "Ws9-Mg-nXt"; */
+"Ws9-Mg-nXt.text" = "Membership Number";
+
+/* Class = "IBUILabel"; text = "Person Name"; ObjectID = "XqB-4m-tSb"; */
+"XqB-4m-tSb.text" = "Person Name";
+
+/* Class = "IBUITextField"; text = "123123123123123"; ObjectID = "XwC-GH-kLZ"; */
+"XwC-GH-kLZ.text" = "123123123123123";
+
+/* Class = "IBUILabel"; text = "User Name"; ObjectID = "eFh-qg-Xlu"; */
+"eFh-qg-Xlu.text" = "User Name";
+
+/* Class = "IBUIButton"; normalTitle = "Go to DB"; ObjectID = "equ-9Z-hm9"; */
+"equ-9Z-hm9.normalTitle" = "Go to DB";
+
+/* Class = "IBUILabel"; text = "Card Number"; ObjectID = "guc-f2-gCg"; */
+"guc-f2-gCg.text" = "Card Number";
+
+/* Class = "IBUILabel"; text = "Featured Offers"; ObjectID = "lGc-gh-vKR"; */
+"lGc-gh-vKR.text" = "Featured Offers";
+
+/* Class = "IBUILabel"; text = "Points"; ObjectID = "loB-z5-rBo"; */
+"loB-z5-rBo.text" = "Points";
+
+/* Class = "IBUILabel"; text = "Card Number "; ObjectID = "r7w-wY-HYN"; */
+"r7w-wY-HYN.text" = "Card Number ";
+
+/* Class = "IBUITextField"; text = "342123213123123"; ObjectID = "uAr-A2-dHz"; */
+"uAr-A2-dHz.text" = "342123213123123";

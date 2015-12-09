@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1021" minimumToolsVersion="Xcode 4.3">
+    <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="activityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activityType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="briefText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detailText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="banners" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BannerImage" inverseName="unusedActivity" inverseEntity="BannerImage" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MACategory" inverseName="unusedActivities" inverseEntity="MACategory" syncable="YES"/>
+        <relationship name="entityObject" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entity" inverseName="entityActivities" inverseEntity="Entity" syncable="YES"/>
+        <relationship name="mall" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MallCenter" inverseName="activities" inverseEntity="MallCenter" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="favouriteActivities" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="BannerImage" representedClassName="BannerImage" syncable="YES">
+        <attribute name="bannerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bannerEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entity" inverseName="bannerImages" inverseEntity="Entity" syncable="YES"/>
+        <relationship name="unusedActivity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="banners" inverseEntity="Activity" syncable="YES"/>
+    </entity>
+    <entity name="BarcodeType" syncable="YES">
+        <attribute name="typeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Entity" representedClassName="Entity" syncable="YES">
+        <attribute name="aboutText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="briefText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="entityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="entityType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isEntityDetailLoaded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="logoURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mapActive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="siteMapURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="webURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bannerImages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BannerImage" inverseName="bannerEntity" inverseEntity="BannerImage" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MACategory" inverseName="unusedEntities" inverseEntity="MACategory" syncable="YES"/>
+        <relationship name="entityActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="entityObject" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="timings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Timing" inverseName="unusedEntity" inverseEntity="Timing" syncable="YES"/>
+    </entity>
+    <entity name="EntityTiming" representedClassName="EntityTiming" syncable="YES">
+        <attribute name="entityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="entityType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="timings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Timing" inverseName="timingEntity" inverseEntity="Timing" syncable="YES"/>
+    </entity>
+    <entity name="LoyaltyCard" representedClassName="LoyaltyCard" syncable="YES">
+        <attribute name="backImageString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="backImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="barcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="barcodeImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="barcodeType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiryDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="frontImageString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="frontImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="issueDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="providerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cardUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="loyaltyCards" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="MACategory" representedClassName="MACategory" syncable="YES">
+        <attribute name="categoryDesciption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="unusedActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="categories" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="unusedEntities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entity" inverseName="categories" inverseEntity="Entity" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="mainInterests" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="MallCenter" representedClassName="MallCenter" syncable="YES">
+        <attribute name="aboutText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="briefText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="corporateColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentDistance" optional="YES" transient="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="logoURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mallPlaceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="webURL" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="mall" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="mallTimings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Timing" inverseName="unusedMall" inverseEntity="Timing" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="selectedMalls" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="MAService" representedClassName="MAService" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="briefText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="floor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="siteMapURL" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MenuCategory" representedClassName="MenuCategory" syncable="YES">
+        <attribute name="menuCategoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="menuItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MenuItem" inverseName="itemCategory" inverseEntity="MenuItem" syncable="YES"/>
+        <relationship name="restaurant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="menuCategories" inverseEntity="Restaurant" syncable="YES"/>
+    </entity>
+    <entity name="MenuItem" representedClassName="MenuItem" syncable="YES">
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="menuItemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="itemCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MenuCategory" inverseName="menuItems" inverseEntity="MenuCategory" syncable="YES"/>
+    </entity>
+    <entity name="Offer" representedClassName="Offer" parentEntity="Activity" syncable="YES">
+        <relationship name="unusedUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="favouriteOffers" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Restaurant" representedClassName="Restaurant" parentEntity="Entity" syncable="YES">
+        <attribute name="floor" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="menuCategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MenuCategory" inverseName="restaurant" inverseEntity="MenuCategory" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="favouriteRestaurants" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Shop" representedClassName="Shop" parentEntity="Entity" syncable="YES">
+        <attribute name="floor" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="favouriteShops" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Timing" representedClassName="Timing" syncable="YES">
+        <attribute name="closingTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fromDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="openingTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="timingId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toDay" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="timingEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EntityTiming" inverseName="timings" inverseEntity="EntityTiming" syncable="YES"/>
+        <relationship name="unusedEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entity" inverseName="timings" inverseEntity="Entity" syncable="YES"/>
+        <relationship name="unusedMall" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MallCenter" inverseName="mallTimings" inverseEntity="MallCenter" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="authToken" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageDataString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageLocalPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isMale" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isNotificationAllowed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mobileNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="favouriteActivities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="user" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="favouriteOffers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Offer" inverseName="unusedUser" inverseEntity="Offer" syncable="YES"/>
+        <relationship name="favouriteRestaurants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="user" inverseEntity="Restaurant" syncable="YES"/>
+        <relationship name="favouriteShops" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Shop" inverseName="user" inverseEntity="Shop" syncable="YES"/>
+        <relationship name="loyaltyCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LoyaltyCard" inverseName="cardUser" inverseEntity="LoyaltyCard" syncable="YES"/>
+        <relationship name="mainInterests" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MACategory" inverseName="user" inverseEntity="MACategory" syncable="YES"/>
+        <relationship name="selectedMalls" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MallCenter" inverseName="user" inverseEntity="MallCenter" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="394" positionY="-18" width="128" height="283"/>
+        <element name="BannerImage" positionX="358" positionY="446" width="128" height="103"/>
+        <element name="BarcodeType" positionX="-423" positionY="767" width="128" height="88"/>
+        <element name="Entity" positionX="-38" positionY="207" width="128" height="328"/>
+        <element name="EntityTiming" positionX="-92" positionY="-58" width="128" height="103"/>
+        <element name="LoyaltyCard" positionX="-594" positionY="578" width="128" height="270"/>
+        <element name="MACategory" positionX="-290" positionY="135" width="128" height="133"/>
+        <element name="MallCenter" positionX="-225" positionY="-468" width="128" height="328"/>
+        <element name="MAService" positionX="-299" positionY="-81" width="128" height="165"/>
+        <element name="MenuCategory" positionX="225" positionY="684" width="128" height="103"/>
+        <element name="MenuItem" positionX="412" positionY="684" width="128" height="133"/>
+        <element name="Offer" positionX="250" positionY="338" width="128" height="58"/>
+        <element name="Restaurant" positionX="63" positionY="596" width="128" height="88"/>
+        <element name="Shop" positionX="-99" positionY="578" width="128" height="73"/>
+        <element name="Timing" positionX="180" positionY="-171" width="128" height="178"/>
+        <element name="User" positionX="-587" positionY="162" width="128" height="390"/>
+    </elements>
+</model>

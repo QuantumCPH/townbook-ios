@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>15210F0D-202D-4667-BA91-5CCE10886E31</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SalamPlanet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>23B0A9BCFEDF8360B8A661A6D453FD05A01168D1</key>
+		<string>https://github.com/zapna/endorse-iphone</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SalamCenterApp/SalamPlanet.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>23B0A9BCFEDF8360B8A661A6D453FD05A01168D1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zapna/endorse-iphone</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>23B0A9BCFEDF8360B8A661A6D453FD05A01168D1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>23B0A9BCFEDF8360B8A661A6D453FD05A01168D1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyRepo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

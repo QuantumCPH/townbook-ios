@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EShareView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share_background.png" id="nYj-9h-RHp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O8t-Ud-Wi8" userLabel="Button-FB">
+                    <rect key="frame" x="10" y="15" width="46" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="share-facebook-button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="share-facebook-button-p.png"/>
+                    <connections>
+                        <action selector="fbBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="U1X-rG-fuI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZUJ-hB-Sbn" userLabel="Button-CHAT">
+                    <rect key="frame" x="137" y="15" width="46" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="share-chat-button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="share-chat-button-p.png"/>
+                    <connections>
+                        <action selector="chatBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="7my-Yc-5fR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kgn-8z-H5G" userLabel="Button-SMS">
+                    <rect key="frame" x="200" y="18" width="46" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="share-sms-button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="share-sms-button-p.png"/>
+                    <connections>
+                        <action selector="smsBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="1zs-zU-I0U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="STJ-VO-1jy" userLabel="Button-TW">
+                    <rect key="frame" x="73" y="15" width="46" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="share-twitter-button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="share-twitter-button-p.png"/>
+                    <connections>
+                        <action selector="twBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="HR8-HY-5Eg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2OF-8e-1Sx" userLabel="Button-EMAIL">
+                    <rect key="frame" x="264" y="15" width="46" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="share-email-button.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="share-email-button-p.png"/>
+                    <connections>
+                        <action selector="emailBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="DSA-l0-a29"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="wb3-Cn-ywc" userLabel="divider">
+                    <rect key="frame" x="0.0" y="68" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.52941176469999995" green="0.36470588240000001" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chatBtn" destination="ZUJ-hB-Sbn" id="R0H-Hh-BwT"/>
+                <outlet property="emailBtn" destination="2OF-8e-1Sx" id="fH3-uA-zbC"/>
+                <outlet property="fbBtn" destination="O8t-Ud-Wi8" id="Xtl-DI-rju"/>
+                <outlet property="smsBtn" destination="Kgn-8z-H5G" id="wVg-L8-fAK"/>
+                <outlet property="twbtn" destination="STJ-VO-1jy" id="JjL-At-jeS"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="-24.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="share-chat-button-p.png" width="22" height="39"/>
+        <image name="share-chat-button.png" width="22" height="39"/>
+        <image name="share-email-button-p.png" width="25" height="39"/>
+        <image name="share-email-button.png" width="58" height="58"/>
+        <image name="share-facebook-button-p.png" width="45" height="39"/>
+        <image name="share-facebook-button.png" width="58" height="58"/>
+        <image name="share-sms-button-p.png" width="22" height="37"/>
+        <image name="share-sms-button.png" width="58" height="58"/>
+        <image name="share-twitter-button-p.png" width="34" height="38"/>
+        <image name="share-twitter-button.png" width="58" height="58"/>
+        <image name="share_background.png" width="320" height="69"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

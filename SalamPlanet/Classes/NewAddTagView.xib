@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mzV-Wc-7es" customClass="NewAddTagView">
+            <rect key="frame" x="0.0" y="0.0" width="292" height="246"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp_box.png" id="zCJ-9V-MbD">
+                    <rect key="frame" x="1" y="1" width="290" height="244"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Tag" minimumFontSize="17" id="lOf-ll-dEs">
+                    <rect key="frame" x="13" y="38" width="264" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="mzV-Wc-7es" id="M6e-VN-mee"/>
+                    </connections>
+                </textField>
+                <view contentMode="scaleToFill" id="x0E-Pp-4ps" customClass="GCTagList">
+                    <rect key="frame" x="13" y="73" width="264" height="169"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="mzV-Wc-7es" id="zAd-C1-uFR"/>
+                        <outlet property="delegate" destination="mzV-Wc-7es" id="XrE-HL-CWd"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YtY-O0-TNg">
+                    <rect key="frame" x="238" y="1" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.56078431370000004" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doneAction:" destination="mzV-Wc-7es" eventType="touchUpInside" id="ovj-2L-kxf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fES-Xp-yTa">
+                    <rect key="frame" x="8" y="1" width="67" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.56078431370000004" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelAction:" destination="mzV-Wc-7es" eventType="touchUpInside" id="BrT-yt-yU7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="gcTagView" destination="x0E-Pp-4ps" id="BsD-qG-6vR"/>
+                <outlet property="inputTF" destination="lOf-ll-dEs" id="8fU-MM-vQC"/>
+                <outlet property="toolBar" destination="z6F-Os-jGK" id="kg3-a1-zL1"/>
+            </connections>
+            <point key="canvasLocation" x="110" y="-181"/>
+        </view>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="z6F-Os-jGK" userLabel="Toolbar-TextField">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <items>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="5hf-NE-qQt"/>
+                <barButtonItem title="Add Tag" id="tGa-WT-sZv">
+                    <color key="tintColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.56078431370000004" alpha="1" colorSpace="deviceRGB"/>
+                    <connections>
+                        <action selector="addTagAction:" destination="mzV-Wc-7es" id="tGH-fN-GAU"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+        </toolbar>
+    </objects>
+    <resources>
+        <image name="temp_box.png" width="295" height="347"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

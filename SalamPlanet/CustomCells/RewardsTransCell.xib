@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rewardsTransCell" rowHeight="100" id="60y-Hg-eJq" customClass="RewardsTransCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="60y-Hg-eJq" id="kxC-sG-sr4">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant_border.png" translatesAutoresizingMaskIntoConstraints="NO" id="i2C-Z2-wWE">
+                        <rect key="frame" x="10" y="8" width="292" height="84"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tq4-kl-sBQ">
+                        <rect key="frame" x="13" y="10" width="146" height="78"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="78" id="WLh-wf-nKw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="uhk-7i-Gis" userLabel="name">
+                        <rect key="frame" x="162" y="27" width="132" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="EMY-w7-stF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 pts" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="91J-Sn-tC6" userLabel="point">
+                        <rect key="frame" x="162" y="67" width="132" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="MGE-no-uMV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PC-Iy-4aQ" userLabel="time">
+                        <rect key="frame" x="162" y="54" width="132" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="tCy-df-kkC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                        <color key="textColor" red="0.34901960780000002" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoi-jz-srP" userLabel="shop">
+                        <rect key="frame" x="162" y="41" width="132" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="kO5-pb-XmG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica-Oblique" family="Helvetica" pointSize="10"/>
+                        <color key="textColor" red="0.34901960780000002" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="91J-Sn-tC6" secondAttribute="trailing" constant="26" id="8CV-me-pnW"/>
+                    <constraint firstItem="Tq4-kl-sBQ" firstAttribute="width" secondItem="i2C-Z2-wWE" secondAttribute="width" multiplier="0.5" id="8Le-qN-lT8"/>
+                    <constraint firstItem="91J-Sn-tC6" firstAttribute="leading" secondItem="Tq4-kl-sBQ" secondAttribute="trailing" constant="3" id="8of-iM-sby"/>
+                    <constraint firstItem="i2C-Z2-wWE" firstAttribute="leading" secondItem="kxC-sG-sr4" secondAttribute="leading" constant="10" id="AiI-dj-eHM"/>
+                    <constraint firstItem="91J-Sn-tC6" firstAttribute="top" secondItem="xoi-jz-srP" secondAttribute="bottom" constant="10" id="KSr-2v-8qR"/>
+                    <constraint firstAttribute="trailing" secondItem="xoi-jz-srP" secondAttribute="trailing" constant="26" id="Ls8-39-vOA"/>
+                    <constraint firstAttribute="bottom" secondItem="i2C-Z2-wWE" secondAttribute="bottom" constant="7" id="Sed-GF-7z2"/>
+                    <constraint firstItem="xoi-jz-srP" firstAttribute="leading" secondItem="Tq4-kl-sBQ" secondAttribute="trailing" constant="3" id="XXf-pM-AlO"/>
+                    <constraint firstAttribute="trailing" secondItem="uhk-7i-Gis" secondAttribute="trailing" constant="26" id="aBE-RS-O2u"/>
+                    <constraint firstItem="Tq4-kl-sBQ" firstAttribute="top" secondItem="kxC-sG-sr4" secondAttribute="top" constant="10" id="d1A-j7-EY3"/>
+                    <constraint firstItem="i2C-Z2-wWE" firstAttribute="top" secondItem="kxC-sG-sr4" secondAttribute="top" constant="8" id="h5y-sl-7bw"/>
+                    <constraint firstItem="uhk-7i-Gis" firstAttribute="leading" secondItem="Tq4-kl-sBQ" secondAttribute="trailing" constant="3" id="jTG-jk-Vsl"/>
+                    <constraint firstItem="2PC-Iy-4aQ" firstAttribute="top" secondItem="uhk-7i-Gis" secondAttribute="bottom" constant="11" id="k1s-gz-whR"/>
+                    <constraint firstItem="uhk-7i-Gis" firstAttribute="top" secondItem="kxC-sG-sr4" secondAttribute="top" constant="27" id="lvx-rX-csi"/>
+                    <constraint firstItem="xoi-jz-srP" firstAttribute="top" secondItem="kxC-sG-sr4" secondAttribute="top" constant="41" id="ma8-fb-Vug"/>
+                    <constraint firstItem="2PC-Iy-4aQ" firstAttribute="leading" secondItem="Tq4-kl-sBQ" secondAttribute="trailing" constant="3" id="soX-SI-foP"/>
+                    <constraint firstAttribute="trailing" secondItem="i2C-Z2-wWE" secondAttribute="trailing" constant="18" id="tNn-wN-a4a"/>
+                    <constraint firstItem="Tq4-kl-sBQ" firstAttribute="leading" secondItem="kxC-sG-sr4" secondAttribute="leading" constant="13" id="td9-sv-0Jg"/>
+                    <constraint firstAttribute="trailing" secondItem="2PC-Iy-4aQ" secondAttribute="trailing" constant="26" id="xOH-di-MlM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lblTransName" destination="uhk-7i-Gis" id="Xh0-Ia-U5O"/>
+                <outlet property="lblTransPoints" destination="91J-Sn-tC6" id="sPW-9e-pWW"/>
+                <outlet property="lblTransShop" destination="xoi-jz-srP" id="20q-a4-WVJ"/>
+                <outlet property="lblTransTime" destination="2PC-Iy-4aQ" id="hfD-FA-oUX"/>
+                <outlet property="transImgV" destination="Tq4-kl-sBQ" id="reJ-M1-Epz"/>
+            </connections>
+            <point key="canvasLocation" x="276" y="200"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="restaurant_border.png" width="305" height="84"/>
+    </resources>
+</document>
