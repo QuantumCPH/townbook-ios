@@ -9,6 +9,7 @@
 #import "EventsHomeVC.h"
 #import "EventHomeCell.h"
 #import "EventItem.h"
+#import "EventDetailVC.h"
 
 @interface EventsHomeVC ()
 {
@@ -68,6 +69,9 @@
     [self.btnCreate setTitle:NSLocalizedString(@"Create Event", nil) forState:UIControlStateNormal];
     [self.btnCreate setTitle:NSLocalizedString(@"Create Event", nil) forState:UIControlStateHighlighted];
     [self.btnCreate setTitle:NSLocalizedString(@"Create Event", nil) forState:UIControlStateSelected];
+    [self.segmentBar setTitle:NSLocalizedString(@"All", nil) forSegmentAtIndex:0];
+    [self.segmentBar setTitle:NSLocalizedString(@"Mine", nil) forSegmentAtIndex:1];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -105,7 +109,9 @@
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    EventItem * event=[mainArray objectAtIndex:indexPath.row];
+    EventDetailVC * detailVC=[[EventDetailVC alloc]initWithEvent:event];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 
