@@ -1,10 +1,11 @@
-/* 
-  Localizable.strings
-  iLikeIt
 
-  Created by Globit on 19/02/2015.
-  Copyright (c) 2015 Raywenderlich. All rights reserved.
-*/
+/*
+ Localizable.strings
+ iLikeIt
+ 
+ Created by Globit on 19/02/2015.
+ Copyright (c) 2015 Raywenderlich. All rights reserved.
+ */
 "KEY" = "CONTENT";
 
 "Welcome to" = "Welcome to";//The Mall App
@@ -37,43 +38,19 @@
 "Please add email." = "Please add email.";
 "Please enter a valid email." = "Please enter a valid email.";
 "Please enter your address." = "Please enter your address.";
-"No malls are nearby" = "No malls are nearby";
+"No Towns are nearby" = "No Towns are nearby";
 "Enter location" = "Enter location";
-"Card Number" = "Card Number";
-"Membership Number" = "Membership Number";
-"Featured Offers" = "Featured Offers";
-"Transaction History" = "Transaction History";
-"Points" = "Points";
-"Directions & Parking" = "Directions & Parking";
-"Where is my car" = "Where is my car";
-"My Car" = "My Car";
-"Add you note here" = "Add you note here";
-"Opening Hours & Information" = "Opening Hours & Information";
-"FAVORITE" = "FAVORITE";
+"All" = "All";
 "Offers" = "Offers";
 "News" = "News";
 "Offer" = "Offer";
+"No updates" = "No updates";
+
 "Shops" = "Shops";
 "Restaurants" = "Restaurants";
-"Loyalty Cards" = "Loyalty Cards";
-"Loyalty Card" = "Loyalty Card";
 "Create" = "Create";
 "Done" = "Done";
-"Card Name" = "Card Name";
-"Add card name" = "Add card name";
-"Add card number" = "Add card number";
-"Barcode Number" = "Barcode Number";
-"Optional" = "Optional";
-"Description" = "Description";
-"Edit" = "Edit";
-"FRONT" = "FRONT";
-"BACK" = "BACK";
-"Front" = "Front";
-"Back" = "Back";
-"Go to Shop" = "Go to Shop";
 "Go to" = "Go to";
-"Shoping Card Description" = "Shoping Card Description";
-"Barcode preview" = "Barcode preview";
 "RESTAURANTS" = "RESTAURANTS";
 "MENU" = "MENU";
 "Share Offer" = "Share Offer";
@@ -86,18 +63,10 @@
 "Your device doesn't support SMS!" = "Your device doesn't support SMS!";
 "SHOPS" = "SHOPS";
 "Category" = "Category";
-"Floor" = "Floor";
-"Featured Shops" = "Featured Shops";
-"The Shop Offers" = "The Shop Offers";
-"Latest offers" = "Latest offers";
 "Speciality" = "Speciality";
 "Cancel" = "Cancel";
-"Apple Maps" = "Apple Maps";
-"Google Maps" = "Google Maps";
 "Call" = "Call";
-"%li%% off" = "%li%% off";
-"No updates" = "No updates";
-"All" = "All";
+
 "MESSAGES" = "MESSAGES";
 "ALL" = "ALL";
 "Group" = "Group";

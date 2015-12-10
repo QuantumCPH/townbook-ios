@@ -244,17 +244,17 @@
 - (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
     UIImage *finishedImage = [UIImage imageNamed:@"bottom-bar"];
     UIImage *unfinishedImage = [UIImage imageNamed:@"bottom-bar"];
-    NSArray *tabBarItemImages = @[@"latest-bottom", @"event-bottom",@"event-bottom",@"messages-button",@"profile-button"];
+    NSArray *tabBarItemImages = @[@"latest", @"event",@"towninfo",@"chat",@"profile"];
     NSArray * titleArray=[NSArray arrayWithObjects:NSLocalizedString(@"Latest", nil),NSLocalizedString(@"Event", nil),NSLocalizedString(@"My Town", nil),NSLocalizedString(@"Chat", nil),NSLocalizedString(@"Profile", nil), nil];
     
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
         [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
-        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@-selected",
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@B",
                                                       [tabBarItemImages objectAtIndex:index]]];
         UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@",
                                                         [tabBarItemImages objectAtIndex:index]]];
-        [item setFinishedSelectedImage:unselectedimage withFinishedUnselectedImage:unselectedimage];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
         item.title=[titleArray objectAtIndex:index];
         item.titlePositionAdjustment=UIOffsetMake(0, 2);
         index++;
