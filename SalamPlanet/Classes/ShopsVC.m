@@ -86,8 +86,8 @@
 -(void)initializeCustomIndexView{
 
     CGRect frame = [UIScreen mainScreen].bounds;
-    frame.origin.y+=147;
-    frame.size.height-=147;
+    frame.origin.y+=107;
+    frame.size.height-=107;
   
     frame.size.height-=20;
     frame.origin.y+=20;
@@ -166,12 +166,18 @@
 {
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [[WebManager sharedInstance] getShopsList:^(NSArray *resultArray) {
-        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+        
          mainArray = [[NSMutableArray alloc] initWithArray:resultArray];
+        
+        
+        NSPredicate * customPredicate = [NSPredicate predicateWithFormat:@"self.categoryName != %@ && self.categoryName != %@",@"Institution",@"Company"];
+        NSArray * tempArray = [mainArray filteredArrayUsingPredicate:customPredicate];
+        mainArray = [[NSMutableArray alloc] initWithArray:tempArray];
+
+        [self filterMainArrayForOptionOne];
+        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         if (mainArray.count == 0)
             ShowMessage(kAppName, NSLocalizedString(@"No shops for this Town",nil));
-            
-        [self filterMainArrayForOptionOne];
         [self.tableView reloadData];
         
     } failure:^(NSString *errorString) {

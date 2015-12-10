@@ -251,4 +251,8 @@
 "Discount calculator" = "Discount calculator"; 
 "Favourite" = "Favourite"; 
 "Camera Permission Required.Please enable camera in settings for this app" = "Camera Permission Required.Please enable camera in settings for this app"; 
-"Website" = "Website"; 
+"Website" = "Website";
+"COMPANIES" = "COMPANIES";
+"No companies for this Town" = "No companies for this Town";
+"No institutions for this Town" = "No institutions for this Town";
+"INSTITUTIONS" = "INSTITUTIONS";

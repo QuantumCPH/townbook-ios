@@ -16,6 +16,7 @@
 @property (nonatomic, retain) NSString * aboutText;
 @property (nonatomic, retain) NSString * address;
 @property (nonatomic, retain) NSString * briefText;
+@property (nonatomic, retain) NSString * categoryName;
 @property (nonatomic, retain) NSString * email;
 @property (nonatomic, retain) NSString * phone;
 @property (nonatomic, retain) NSString * webURL;

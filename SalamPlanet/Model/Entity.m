@@ -18,6 +18,7 @@
 @dynamic aboutText;
 @dynamic address;
 @dynamic briefText;
+@dynamic categoryName;
 @dynamic email;
 @dynamic phone;
 @dynamic webURL;

@@ -257,3 +257,7 @@
 "Please add card barcode number" = "Please add card barcode number";
 "Please add card issue date" = "Please add card issue date";
 "Please add card expiry date" = "Please add card expiry date";
+"COMPANIES" = "COMPANIES";
+"No companies for this Town" = "No companies for this Town";
+"No institutions for this Town" = "No institutions for this Town";
+"INSTITUTIONS" = "INSTITUTIONS";

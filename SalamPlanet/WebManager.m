@@ -1262,6 +1262,10 @@
         {
             NSArray *categoriesArray = [self parseEntityCategories:catogories];
             [shop addCategories:[NSSet setWithArray:categoriesArray]];
+            if (categoriesArray.count>0) {
+                MACategory *category = categoriesArray.firstObject;
+                shop.categoryName = category.categoryText;
+            }
         }
     }
     
