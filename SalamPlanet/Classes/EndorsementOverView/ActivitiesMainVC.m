@@ -254,7 +254,7 @@
     if (indx == 0)
     {
         color = [appDelegate getTheGeneralColor];
-        [self.centerLogoImgV setImage:[UIImage imageNamed: @"Applogo"]];
+        [self.centerLogoImgV setImage:[UIImage imageNamed: @"logo-small"]];
     }
     else
     {

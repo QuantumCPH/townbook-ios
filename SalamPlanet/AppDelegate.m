@@ -203,12 +203,9 @@
     self.window.rootViewController=container;
 }
 - (void)setupTabViewControllers {
-//    ActivitiesMainVC *firstViewController = [[ActivitiesMainVC alloc] init];
-//    UINavigationController *firstNavigationController = [[UINavigationController alloc]
-//                                                   initWithRootViewController:firstViewController];
-    LatestEventsVC *latestEventsVC = [[LatestEventsVC alloc] init];
+    ActivitiesMainVC *firstViewController = [[ActivitiesMainVC alloc] init];
     UINavigationController *firstNavigationController = [[UINavigationController alloc]
-                                                         initWithRootViewController:latestEventsVC];
+                                                   initWithRootViewController:firstViewController];
     
     ChatHomeViewController *secondViewController = [[ChatHomeViewController alloc] init];
     UINavigationController *secondNavigationController = [[UINavigationController alloc]
