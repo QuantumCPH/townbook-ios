@@ -492,7 +492,7 @@
         title = [(Activity *)self.activityObject title];
         messageBody = [(Activity *)self.activityObject briefText];
     }
-    NSString * message = [NSString stringWithFormat:@"Mall App:%@: %@",title,messageBody];
+    NSString * message = [NSString stringWithFormat:@"Town Book App:%@: %@",title,messageBody];
     return message;
 }
 //-(void)showSGShareView{
@@ -592,7 +592,7 @@
     }
     
 
-    //= @"The Mall App Mobile Invitation";
+    //= @"The Town Book App Mobile Invitation";
     // Email Content
 
     // To address
@@ -601,7 +601,7 @@
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     if ([MFMailComposeViewController canSendMail]) {
         mc.mailComposeDelegate = self;
-        [mc setSubject:[NSString stringWithFormat:@"Mall App:%@",emailTitle]];
+        [mc setSubject:[NSString stringWithFormat:@"Town Book App:%@",emailTitle]];
         [mc setMessageBody:messageBody isHTML:NO];
         
         // Present mail view controller on screen

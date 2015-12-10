@@ -10,5 +10,5 @@
 
 @interface ProfileImageCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *profileImgView;
-
+@property (weak, nonatomic) IBOutlet UIImageView *overlayImgView;
 @end

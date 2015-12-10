@@ -773,6 +773,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="overlayImgView" destination="REt-Oh-jan" id="GSl-mw-C3d"/>
                                             <outlet property="profileImgView" destination="7DK-JK-RUv" id="Y9F-Kg-2OF"/>
                                         </connections>
                                     </tableViewCell>

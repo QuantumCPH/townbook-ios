@@ -854,7 +854,7 @@
             email = self.mall.email;
         
         [mc setToRecipients:[NSArray arrayWithObject:email]];
-        [mc setSubject:[NSString stringWithFormat:@"Mall App"]];
+        [mc setSubject:[NSString stringWithFormat:@"Town Book App"]];
         // Present mail view controller on screen
         [self presentViewController:mc animated:YES completion:NULL];
     }
@@ -1215,7 +1215,7 @@
         title = self.shop.name;
         messageBody = self.shop.briefText;
     }
-    NSString * message = [NSString stringWithFormat:@"Mall App: %@: %@",title,messageBody];
+    NSString * message = [NSString stringWithFormat:@"Town Book App: %@: %@",title,messageBody];
     return message;
 }
 
@@ -1313,7 +1313,7 @@
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     if ([MFMailComposeViewController canSendMail]) {
         mc.mailComposeDelegate = self;
-        [mc setSubject:[NSString stringWithFormat:@"Mall App: %@",emailTitle]];
+        [mc setSubject:[NSString stringWithFormat:@"Town Book App: %@",emailTitle]];
         [mc setMessageBody:messageBody isHTML:NO];
         
         // Present mail view controller on screen

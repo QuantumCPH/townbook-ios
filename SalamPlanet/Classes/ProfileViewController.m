@@ -42,6 +42,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLbl;
 @property (weak, nonatomic) IBOutlet UIImageView *bgImgView;
+
+
 @property (nonatomic) BOOL isImageEdited;
 
 @end
@@ -130,7 +132,7 @@
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
     {
         SLComposeViewController *fbPostSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        [fbPostSheet setInitialText:NSLocalizedString(@"Hey Check this new Mall App.",nil)];
+        [fbPostSheet setInitialText:NSLocalizedString(@"Hey Check this new Town Book App.",nil)];
         [self presentViewController:fbPostSheet animated:YES completion:nil];
     } else
     {
@@ -141,7 +143,7 @@
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
         SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:NSLocalizedString(@"Hey Check this new Mall App.",nil)];
+        [tweetSheet setInitialText:NSLocalizedString(@"Hey Check this new Town Book App.",nil)];
         [self presentViewController:tweetSheet animated:YES completion:nil];
         
     }
@@ -154,7 +156,7 @@
     MFMessageComposeViewController *messageVC = [[MFMessageComposeViewController alloc] init];
     if ([MFMessageComposeViewController canSendText]) {
         
-        NSString *smsString = NSLocalizedString(@"Mall App Invitation",nil);
+        NSString *smsString = NSLocalizedString(@"Town Book App Invitation",nil);
         messageVC.body = smsString;
         
         messageVC.messageComposeDelegate = self;
@@ -166,9 +168,9 @@
 }
 - (IBAction)emailTapped:(id)sender {
     // Email Subject
-    NSString *emailTitle = NSLocalizedString(@"Mall App Invitation",nil);
+    NSString *emailTitle = NSLocalizedString(@"Town Book App Invitation",nil);
     // Email Content
-    NSString *messageBody = NSLocalizedString(@"Hey Check this new Mall App.",nil);
+    NSString *messageBody = NSLocalizedString(@"Hey Check this new Town Book App.",nil);
     // To address
     //    NSArray *toRecipents = [NSArray arrayWithObject:@"support@appcoda.com"];
     
@@ -241,8 +243,11 @@
     {
         ProfileImageCell *imageCell = [tableView dequeueReusableCellWithIdentifier:@"ProfileImageCell"];
         [imageCell.profileImgView setupImageViewer];
+        if([UIScreen mainScreen].bounds.size.height == 568.0)
+            imageCell.overlayImgView.image = [UIImage imageNamed:@"Photo_overlay_320"];
         if (_isImageEdited) {
             imageCell.profileImgView.image = self.profileImage;
+          
         }
         else if (user.image.length >0) {
             [imageCell.profileImgView setImageWithURL:[NSURL URLWithString:user.image] placeholderImage:[UIImage imageNamed:@"new_avatar.png"]];

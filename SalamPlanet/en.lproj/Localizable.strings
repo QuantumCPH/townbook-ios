@@ -14,7 +14,7 @@
 
 //side Menu titles
 "Home" = "Home";
-"Town Information" = "Town Information";
+"Town Information" = "Town Information"; 
 "Shops" = "Shops";
 "Restaurants" = "Restaurants";
 "Company List" = "Company List";
