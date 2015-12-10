@@ -28,7 +28,6 @@
 #import "MBProgressHUD.h"
 #import "RegStepOneVC.h"
 #import "OfferDetailVC.h"
-#import "LatestEventsVC.h"
 
 @import FBSDKCoreKit;
 
@@ -207,18 +206,20 @@
     UINavigationController *firstNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
-    ChatHomeViewController *secondViewController = [[ChatHomeViewController alloc] init];
+    UIViewController *eventsVC = [[UIViewController alloc] init];
     UINavigationController *secondNavigationController = [[UINavigationController alloc]
-                                                    initWithRootViewController:secondViewController];
+                                                         initWithRootViewController:eventsVC];
     
-    LCMainVC *thirdViewController = [[LCMainVC alloc] init];
+    UIViewController *thirdViewController = [[UIViewController alloc] init];
     UINavigationController *thirdNavigationController = [[UINavigationController alloc]
                                                           initWithRootViewController:thirdViewController];
     
 //    RewardsHomeVC *fourthViewController = [[RewardsHomeVC alloc] init];
 //    UINavigationController *fourthNavigationController = [[UINavigationController alloc]
 //                                                         initWithRootViewController:fourthViewController];
-    
+    ChatHomeViewController *fourthViewController = [[ChatHomeViewController alloc] init];
+    UINavigationController *fourthNavigationController = [[UINavigationController alloc]
+                                                          initWithRootViewController:fourthViewController];
     ProfileViewController *fifthViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ProfileVC"];
     UINavigationController *fifthNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:fifthViewController];
@@ -226,12 +227,12 @@
     [firstNavigationController.navigationBar setHidden:YES];
     [secondNavigationController.navigationBar setHidden:YES];
     [thirdNavigationController.navigationBar setHidden:YES];
-    //[fourthNavigationController.navigationBar setHidden:YES];
+    [fourthNavigationController.navigationBar setHidden:YES];
     [fifthNavigationController.navigationBar setHidden:YES];
     
     
     RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
-    [tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,thirdNavigationController,fifthNavigationController]];
+    [tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,thirdNavigationController,fourthNavigationController,fifthNavigationController]];
     
     centerTabVC = tabBarController;
     [self customizeTabBarForController:tabBarController];
@@ -241,8 +242,8 @@
 - (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
     UIImage *finishedImage = [UIImage imageNamed:@"bottom-bar"];
     UIImage *unfinishedImage = [UIImage imageNamed:@"bottom-bar"];
-    NSArray *tabBarItemImages = @[@"latest-bottom", @"messages-button",@"loyalty-card-button",@"profile-button"];
-    NSArray * titleArray=[NSArray arrayWithObjects:NSLocalizedString(@"Latest", nil),NSLocalizedString(@"Messages", nil),NSLocalizedString(@"Cards", nil),NSLocalizedString(@"Profile", nil), nil];
+    NSArray *tabBarItemImages = @[@"latest-bottom", @"event-bottom",@"event-bottom",@"messages-button",@"profile-button"];
+    NSArray * titleArray=[NSArray arrayWithObjects:NSLocalizedString(@"Latest", nil),NSLocalizedString(@"Event", nil),NSLocalizedString(@"My Town", nil),NSLocalizedString(@"Chat", nil),NSLocalizedString(@"Profile", nil), nil];
     
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
