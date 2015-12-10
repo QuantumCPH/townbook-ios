@@ -22,8 +22,8 @@
 #import "UIImageView+WebCache.h"
 #import "NewShopDetailVC.h"
 #import "DataManager.h"
-#import "CompaniesVC.h"
-#import "InstitutionsVC.h"
+//#import "CompaniesVC.h"
+//#import "InstitutionsVC.h"
 
 @interface EndrMenuViewController ()
 {
@@ -174,13 +174,13 @@
     }
     else if(indexPath.row == 4)
     {
-        CompaniesVC *companiesVC = [[CompaniesVC alloc] init];
-        [appDelegate pushToOverPageVC:companiesVC];
+//        CompaniesVC *companiesVC = [[CompaniesVC alloc] init];
+//        [appDelegate pushToOverPageVC:companiesVC];
     }
     else
     {
-        InstitutionsVC *institutionsVC = [[InstitutionsVC alloc] init];
-        [appDelegate pushToOverPageVC:institutionsVC];
+//        InstitutionsVC *institutionsVC = [[InstitutionsVC alloc] init];
+//        [appDelegate pushToOverPageVC:institutionsVC];
     }
 }
 #pragma mark - Custom methods

@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPlaces" translatesAutoresizingMaskIntoConstraints="NO" id="6o6-8L-EpQ">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPlaces" translatesAutoresizingMaskIntoConstraints="NO" id="6o6-8L-EpQ" userLabel="img">
                         <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="6o6-8L-EpQ" secondAttribute="height" multiplier="1:1" id="rdV-iV-JA2"/>
@@ -25,6 +25,9 @@
                                 <exclude reference="rdV-iV-JA2"/>
                             </mask>
                         </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myTown_overlay.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qr9-X8-eqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f9-f1-fbM">
                         <rect key="frame" x="8" y="48" width="122" height="42"/>
@@ -52,19 +55,23 @@
                 <constraint firstItem="6o6-8L-EpQ" firstAttribute="leading" secondItem="XpW-Te-Gi9" secondAttribute="leading" id="UN7-U1-lY1"/>
                 <constraint firstAttribute="trailing" secondItem="6o6-8L-EpQ" secondAttribute="trailing" id="Vp2-Xs-1bK"/>
                 <constraint firstItem="3f9-f1-fbM" firstAttribute="leading" secondItem="XpW-Te-Gi9" secondAttribute="leading" constant="8" id="Zxb-sp-rn5"/>
+                <constraint firstItem="Qr9-X8-eqZ" firstAttribute="top" secondItem="XpW-Te-Gi9" secondAttribute="top" id="bub-m6-piN"/>
                 <constraint firstAttribute="trailing" secondItem="3f9-f1-fbM" secondAttribute="trailing" constant="8" id="dSg-Rz-NcC"/>
                 <constraint firstItem="3f9-f1-fbM" firstAttribute="centerY" secondItem="XpW-Te-Gi9" secondAttribute="centerY" id="gL2-NL-925"/>
                 <constraint firstAttribute="trailing" secondItem="3f9-f1-fbM" secondAttribute="trailing" constant="8" id="hg4-tI-kTd"/>
                 <constraint firstAttribute="bottom" secondItem="6o6-8L-EpQ" secondAttribute="bottom" id="l2B-Xs-QpI"/>
+                <constraint firstAttribute="trailing" secondItem="Qr9-X8-eqZ" secondAttribute="trailing" id="mq8-Rm-JkI"/>
                 <constraint firstItem="3f9-f1-fbM" firstAttribute="leading" secondItem="XpW-Te-Gi9" secondAttribute="leading" constant="8" id="nh0-fs-y17"/>
+                <constraint firstAttribute="bottom" secondItem="Qr9-X8-eqZ" secondAttribute="bottom" id="nrs-rQ-e6o"/>
+                <constraint firstItem="Qr9-X8-eqZ" firstAttribute="leading" secondItem="XpW-Te-Gi9" secondAttribute="leading" id="oJ1-p0-L5j"/>
             </constraints>
             <size key="customSize" width="138" height="138"/>
             <variation key="default">
                 <mask key="constraints">
-                    <exclude reference="nh0-fs-y17"/>
+                    <exclude reference="HxK-9a-cVy"/>
                     <exclude reference="OSL-6U-a9p"/>
                     <exclude reference="hg4-tI-kTd"/>
-                    <exclude reference="HxK-9a-cVy"/>
+                    <exclude reference="nh0-fs-y17"/>
                 </mask>
             </variation>
             <connections>
@@ -75,5 +82,6 @@
     </objects>
     <resources>
         <image name="iconPlaces" width="1" height="1"/>
+        <image name="myTown_overlay.png" width="191" height="191"/>
     </resources>
 </document>

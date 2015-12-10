@@ -28,6 +28,8 @@
 #import "MBProgressHUD.h"
 #import "RegStepOneVC.h"
 #import "OfferDetailVC.h"
+#import "MyTownHomeVC.h"
+#import "EventsHomeVC.h"
 
 @import FBSDKCoreKit;
 
@@ -206,11 +208,11 @@
     UINavigationController *firstNavigationController = [[UINavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
-    UIViewController *eventsVC = [[UIViewController alloc] init];
+    EventsHomeVC *eventsVC = [[EventsHomeVC alloc] init];
     UINavigationController *secondNavigationController = [[UINavigationController alloc]
                                                          initWithRootViewController:eventsVC];
     
-    UIViewController *thirdViewController = [[UIViewController alloc] init];
+    MyTownHomeVC *thirdViewController = [[MyTownHomeVC alloc] init];
     UINavigationController *thirdNavigationController = [[UINavigationController alloc]
                                                           initWithRootViewController:thirdViewController];
     

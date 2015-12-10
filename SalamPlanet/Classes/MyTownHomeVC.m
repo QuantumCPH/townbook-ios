@@ -24,31 +24,31 @@
         mainArray=[[NSMutableArray alloc]init];
         MyTownItem *tourist=[[MyTownItem alloc]init];
         tourist.title=@"Turist";
-        tourist.imgName=@"";
+        tourist.imgName=@"Turist";
         tourist.url=@"http://bornholm.info/da";
         [mainArray addObject:tourist];
         
         MyTownItem *municiple=[[MyTownItem alloc]init];
         municiple.title=@"Kommunen";
-        municiple.imgName=@"";
+        municiple.imgName=@"Kommunen";
         municiple.url=@"http://www.brk.dk/Sider/Forside.aspx";
         [mainArray addObject:municiple];
         
         MyTownItem *brighGreenIsland=[[MyTownItem alloc]init];
         brighGreenIsland.title=@"Bright Green Island";
-        brighGreenIsland.imgName=@"";
+        brighGreenIsland.imgName=@"Bright-Green-Island";
         brighGreenIsland.url=@"http://brightgreenisland.dk";
         [mainArray addObject:brighGreenIsland];
         
         MyTownItem *newComer=[[MyTownItem alloc]init];
         newComer.title=@"Tilflytter";
-        newComer.imgName=@"";
+        newComer.imgName=@"Tilflytter";
         newComer.url=@"http://flyttilbornholm.dk";
         [mainArray addObject:newComer];
         
         MyTownItem *bussiness=[[MyTownItem alloc]init];
         bussiness.title=@"Erhverv";
-        bussiness.imgName=@"";
+        bussiness.imgName=@"Erhverv";
         bussiness.url=@"http://bornholm.biz";
         [mainArray addObject:bussiness];
     }
@@ -58,6 +58,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.lblTitle.text=NSLocalizedString(@"My Town", nil);
+    
     [self.collectionView registerNib:[UINib nibWithNibName:@"MyTownCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"myTownCollectionCell"];
 }
 
@@ -85,6 +87,7 @@
     MyTownCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"myTownCollectionCell" forIndexPath:indexPath];
     MyTownItem * item=[mainArray objectAtIndex:indexPath.row];
     cell.lblTitle.text=item.title;
+    cell.imgView.image=[UIImage imageNamed:item.imgName];
     return cell;
 }
 

@@ -148,12 +148,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SalamPlanet/AppDelegate.m"
-            timestampString = "446988402.502991"
+            timestampString = "471434288.555596"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "330"
-            endingLineNumber = "330"
-            landmarkName = "-locationManager:didFailWithError:"
+            startingLineNumber = "332"
+            endingLineNumber = "332"
+            landmarkName = "-getTheColorAccordingToCenterName:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -180,12 +180,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SalamPlanet/AppDelegate.m"
-            timestampString = "446988402.502991"
+            timestampString = "471434288.555596"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "324"
-            endingLineNumber = "324"
-            landmarkName = "-locationManager:didFailWithError:"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
+            landmarkName = "-getTheColorAccordingToCenterName:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
