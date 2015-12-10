@@ -8,9 +8,42 @@
  */
 "KEY" = "CONTENT";
 
-"Welcome to" = "Welcome to";//The Mall App
+"Welcome to" = "Welcome to";// Town Book App
 "Register with Phone" = "Register with Phone";
 "Register with Facebook" = "Register with Facebook";
+
+//side Menu titles
+"Home" = "Home";
+"Town Information" = "Town Information";
+"Shops" = "Shops";
+"Restaurants" = "Restaurants";
+"Company List" = "Company List";
+"Institutions" = "Institutions";
+
+//Tabbar titles
+"Latest" = "Latest";
+"Event" = "Event";
+"My Town" = "My Town";
+"Chat" = "Chat";
+"Profile" = "Profile";
+
+"SHOPS" = "SHOPS";
+"RESTAURANTS" = "RESTAURANTS";
+"INSTITUTIONS" = "INSTITUTIONS";
+"COMPANIES" = "COMPANIES";
+
+"All" = "All";
+"Offers" = "Offers";
+"News" = "News";
+"Offer" = "Offer";
+"No updates" = "No updates";
+
+"Tourist" = "Tourist";
+"Business" = "Business";
+"Municipality" = "Municipality";
+"Newcomers" = "Newcomers";
+"Bright Green Island" = "Bright Green Island";
+
 "Please enable Location Services from settings" = "Please enable Location Services from settings";
 "Please accept receiving push notifications/SMS" = "Please accept receiving push notifications/SMS";
 "Select country" = "Select country";
@@ -38,20 +71,12 @@
 "Please add email." = "Please add email.";
 "Please enter a valid email." = "Please enter a valid email.";
 "Please enter your address." = "Please enter your address.";
-"No Towns are nearby" = "No Towns are nearby";
+"No towns are nearby" = "No towns are nearby";
 "Enter location" = "Enter location";
-"All" = "All";
-"Offers" = "Offers";
-"News" = "News";
-"Offer" = "Offer";
-"No updates" = "No updates";
 
-"Shops" = "Shops";
-"Restaurants" = "Restaurants";
 "Create" = "Create";
 "Done" = "Done";
 "Go to" = "Go to";
-"RESTAURANTS" = "RESTAURANTS";
 "MENU" = "MENU";
 "Share Offer" = "Share Offer";
 "Facebook" = "Facebook";
@@ -61,7 +86,6 @@
 "You can't post right now, make sure your device has an internet connection and you have at least one facebook account setup" = "You can't post right now, make sure your device has an internet connection and you have at least one facebook account setup";
 "You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup" = "You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup";
 "Your device doesn't support SMS!" = "Your device doesn't support SMS!";
-"SHOPS" = "SHOPS";
 "Category" = "Category";
 "Speciality" = "Speciality";
 "Cancel" = "Cancel";
@@ -82,20 +106,13 @@
 "Offline" = "Offline";
 "Online" = "Online";
 "CONTACTS" = "CONTACTS";
-"Hey, check the new wonderful app. Please join Salam mobile app" = "Hey, check the new wonderful app. Please join Salam mobile app";
 "Failed to send SMS!" = "Failed to send SMS!";
 "Invite" = "Invite";
 "Select your favourite Center" = "Select your favourite Center";
 "Nearby" = "Nearby";
-"Please select at least one center" = "Please select at least one center";
-"Select your interest" = "Select your interest";
-"Please select at least one interest" = "Please select at least one interest";
+"Please select at least one town" = "Please select at least one town";
+
 "Your preferences have been saved successfully" = "Your preferences have been saved successfully";
-"Calculator" = "Calculator";
-"STARTING PRICE" = "STARTING PRICE";
-"DISCOUNT" = "DISCOUNT";
-"YOUR DISCOUNT" = "YOUR DISCOUNT";
-"NEW PRICE" = "NEW PRICE";
 "Your Name" = "Your Name";
 "Camera" = "Camera";
 "Cancel" = "Cancel";
@@ -112,7 +129,7 @@
 "Gender" = "Gender";
 "Location" = "Location";
 "Education" = "Education";
-"Tell friends about Mall App!" = "Tell friends about Mall App!";
+"Tell friends about Town Book App!" = "Tell friends about Town Book App!";
 "Address" = "Address";
 "Tel" = "Tel";
 "Select barcode type" = "Select barcode type";
@@ -138,12 +155,6 @@
 "Select all" = "Select all";
 "Phone Number" = "Phone Number";
 "Country" = "Country";
-
-"Messages" = "Messages";
-"Cards" = "Cards";
-"Rewards" = "Rewards";
-"Profile" = "Profile";
-"Park here" = "Park here";
 "Delete" = "Delete";
 "Continue" = "Continue";
 "Share" = "Share";
@@ -155,23 +166,9 @@
 "Please add facebook account in settings." = "Please add facebook account in settings.";
 "Sorry, failed to fetch profile info due to network problem." = "Sorry, failed to fetch profile info due to network problem.";
 "No phone number is present" = "No phone number is present";
-"You are Invited by %@ to use The Mall App" = "You are Invited by %@ to use The Mall App";
-"Barcode has been added successfully" = "Barcode has been added successfully";
-"Card has been deleted successfully" = "Card has been deleted successfully";
-"Please select barcode type" = "Please select barcode type";
-"Please add Card name" = "Please add Card name";
-"Please add card back picture" = "Please add card back picture";
-"Please add card front picture" = "Please add card front picture";
-"Please enter card description" = "Please enter card description";
-"Please enter card number first" = "Please enter card number first";
-"Do you want to delete this card?" = "Do you want to delete this card?";
+"You are Invited by %@ to use The Town Book App" = "You are Invited by %@ to use The Town Book App";
 "You can't send email" = "You can't send email";
 "Call facility is not available!!!" = "Call facility is not available!!!";
-
-
-"Home" = "Home";
-"Restaurants" = "Restaurants";
-"Services" = "Services";
 
 "Recieve push notifications/SMS" = "Recieve push notifications/SMS";
 "Contact" = "Contact";
@@ -182,8 +179,8 @@
 "Danish" = "Danish";
 "Phone default" = "Phone default";
 "Please restart the application for applying the change you made." = "Please restart the application for applying the change you made.";
-"No shops for this mall" = "No shops for this mall";
-"No restaurants for this mall" = "No restaurants for this mall";
+"No shops for this Town Book" = "No shops for this Town Book";
+"No restaurants for this Town Book" = "No restaurants for this Town Book";
 
 "This offer added to your favourities" = "This offer added to your favourities";
 "This news added to your favourities" = "This news added to your favourities";
@@ -201,10 +198,9 @@
 "Privacy Policy" = "Privacy Policy";
 "Update" = "Update";
 "Notifications Setting" = "Notifications Setting";
-"Mall App Invitation" = "Mall App Invitation";
-"Hey Check this new Mall App." = "Hey Check this new Mall App.";
+"Town Book App Invitation" = "Town Book App Invitation";
+"Hey Check this new Town Book App." = "Hey Check this new Town Book App.";
 
-"No related shops for this shop" = "No related shops for this shop";
 
 "Not Available" = "Not Available";
 "Go to homepage" = "Go to homepage";
@@ -213,20 +209,13 @@
 "No details available for this shop" = "No details available for this shop";
 "No featured shops for this shop" = "No featured shops for this shop";
 "No details available for this Restaurant" = "No details available for this Restaurant";
-"No menu items available for this Restaurant" = "No menu items available for this Restaurant";
-"No services available for this Mall" = "No services available for this Mall";
-"No timings available for this Mall" = "No timings available for this Mall";
+
 "Please select a center from Home page first." = "Please select a center from Home page first.";
 
-"Mall Information" = "Mall Information";
-"Discount calculator" = "Discount calculator";
-"Favourite" = "Favourite";
+
+
 "Camera Permission Required.Please enable camera in settings for this app" = "Camera Permission Required.Please enable camera in settings for this app";
 "Website" = "Website";
-"Please add card barcode number" = "Please add card barcode number";
-"Please add card issue date" = "Please add card issue date";
-"Please add card expiry date" = "Please add card expiry date";
-"COMPANIES" = "COMPANIES";
+
 "No companies for this Town" = "No companies for this Town";
 "No institutions for this Town" = "No institutions for this Town";
-"INSTITUTIONS" = "INSTITUTIONS";

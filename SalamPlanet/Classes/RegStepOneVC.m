@@ -70,7 +70,7 @@
     [self.btnNext setSelected:NO];
 }
 -(void)dolocalizationText{
-    self.lblPageTitle.text=NSLocalizedString(@"Select your favourite Center", nil);
+    self.lblPageTitle.text=NSLocalizedString(@"Select your favourite town", nil);
     [self.segmentBar setTitle:NSLocalizedString(@"All", nil) forSegmentAtIndex:0];
     [self.segmentBar setTitle:NSLocalizedString(@"Nearby", nil) forSegmentAtIndex:1];
     if (!_isFromEdit)
@@ -108,7 +108,7 @@
         [self.tableView reloadData];
         if (mainArrayNearby.count == 0)
         {
-            ShowMessage(kAppName, NSLocalizedString(@"No malls are nearby",nil));
+            ShowMessage(kAppName, NSLocalizedString(@"No towns are nearby",nil));
         }
     }
 }
@@ -255,7 +255,7 @@
 - (IBAction)btnNextPressed:(id)sender {
 
     if (selectedMalls.count == 0) {
-        ShowMessage(kAppName,NSLocalizedString(@"Please select at least one center", nil));
+        ShowMessage(kAppName,NSLocalizedString(@"Please select at least one town", nil));
         return;
     }
     [self.btnNext setSelected:YES];

@@ -255,6 +255,7 @@
         UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@",
                                                         [tabBarItemImages objectAtIndex:index]]];
         [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        item.selectedTitleAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:9],NSForegroundColorAttributeName:[UIColor colorWithRed:102.0/255.0 green:51.0/255.0 blue:153.0/255.0 alpha:1]};
         item.title=[titleArray objectAtIndex:index];
         item.titlePositionAdjustment=UIOffsetMake(0, 2);
         index++;
