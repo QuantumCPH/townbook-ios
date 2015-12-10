@@ -53,7 +53,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[mainArray objectAtIndex:indexPath.row]isEqualToString:@"TopCell"]) {
-        return 253;
+        return 313;
     }
     else if ([[mainArray objectAtIndex:indexPath.row]isEqualToString:@"ActionCell"]) {
         return 40;
