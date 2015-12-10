@@ -77,12 +77,12 @@
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat height = (self.view.frame.size.width - 30) /2;
+    CGFloat height = (self.view.frame.size.width - 20) /2;
     return CGSizeMake(height, height);
 }
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
-    return UIEdgeInsetsMake(5, 5, 5, 5);//(top, left, bottom, right);
-}
+//- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+//    return UIEdgeInsetsMake(5, 5, 5, 5);//(top, left, bottom, right);
+//}
 - (MyTownCollectionCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     MyTownCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"myTownCollectionCell" forIndexPath:indexPath];
     MyTownItem * item=[mainArray objectAtIndex:indexPath.row];

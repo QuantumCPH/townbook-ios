@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactsHomeVC">
@@ -21,24 +21,15 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yk8-hk-vjI" userLabel="BG">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yk8-hk-vjI" userLabel="BG">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="j0E-pi-ULh">
-                    <rect key="frame" x="0.0" y="147" width="320" height="421"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="9Ee-d2-u2m"/>
-                        <outlet property="delegate" destination="-1" id="JXI-I4-jaB"/>
-                    </connections>
-                </tableView>
-                <searchBar clearsContextBeforeDrawing="NO" contentMode="redraw" searchBarStyle="minimal" showsCancelButton="YES" id="lzI-U3-HBP">
+                <searchBar clearsContextBeforeDrawing="NO" contentMode="redraw" searchBarStyle="minimal" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzI-U3-HBP">
                     <rect key="frame" x="0.0" y="102" width="320" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="0.46999999999999997" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="yUo-3l-AaE"/>
+                    </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <textInputTraits key="textInputTraits"/>
@@ -46,20 +37,17 @@
                         <outlet property="delegate" destination="-1" id="RfT-RL-unc"/>
                     </connections>
                 </searchBar>
-                <view contentMode="scaleToFill" id="tqY-9N-OPh">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqY-9N-OPh">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c7P-5v-f1u">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7P-5v-f1u">
                             <rect key="frame" x="80" y="29" width="161" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1ZS-bn-Mm7" userLabel="back">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZS-bn-Mm7" userLabel="back">
                             <rect key="frame" x="0.0" y="18" width="68" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <state key="normal" image="back-button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,10 +59,22 @@
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="c7P-5v-f1u" firstAttribute="leading" secondItem="1ZS-bn-Mm7" secondAttribute="trailing" constant="12" id="CBG-ef-Qcc"/>
+                        <constraint firstAttribute="trailing" secondItem="c7P-5v-f1u" secondAttribute="trailing" constant="79" id="ERt-n1-n3B"/>
+                        <constraint firstItem="c7P-5v-f1u" firstAttribute="centerY" secondItem="1ZS-bn-Mm7" secondAttribute="centerY" id="OIF-3P-Ntv"/>
+                        <constraint firstAttribute="height" constant="64" id="ao3-Is-Zqw"/>
+                        <constraint firstItem="c7P-5v-f1u" firstAttribute="top" secondItem="tqY-9N-OPh" secondAttribute="top" constant="29" id="fsz-Lx-cJT"/>
+                        <constraint firstItem="c7P-5v-f1u" firstAttribute="centerX" secondItem="tqY-9N-OPh" secondAttribute="centerX" id="mCr-Bx-a7P"/>
+                        <constraint firstItem="1ZS-bn-Mm7" firstAttribute="leading" secondItem="tqY-9N-OPh" secondAttribute="leading" id="zXQ-GP-Zqv"/>
+                        <constraint firstItem="1ZS-bn-Mm7" firstAttribute="top" secondItem="tqY-9N-OPh" secondAttribute="top" constant="18" id="zlT-Gc-c2R"/>
+                    </constraints>
                 </view>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="lR8-Rl-vZQ">
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lR8-Rl-vZQ">
                     <rect key="frame" x="60" y="69" width="200" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Vny-8B-fRK"/>
+                    </constraints>
                     <segments>
                         <segment title="" image="moonSS.png"/>
                         <segment title="All"/>
@@ -84,8 +84,35 @@
                         <action selector="segmentedControlChanged:" destination="-1" eventType="valueChanged" id="JFH-oA-EI8"/>
                     </connections>
                 </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="j0E-pi-ULh">
+                    <rect key="frame" x="0.0" y="147" width="320" height="421"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9Ee-d2-u2m"/>
+                        <outlet property="delegate" destination="-1" id="JXI-I4-jaB"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yk8-hk-vjI" secondAttribute="trailing" id="1wq-GM-8Xc"/>
+                <constraint firstAttribute="trailing" secondItem="lzI-U3-HBP" secondAttribute="trailing" id="5AS-yH-CZX"/>
+                <constraint firstAttribute="bottom" secondItem="yk8-hk-vjI" secondAttribute="bottom" id="5dq-mu-rfR"/>
+                <constraint firstItem="lR8-Rl-vZQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8b9-t3-onb"/>
+                <constraint firstItem="lzI-U3-HBP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8px-Nr-BBb"/>
+                <constraint firstItem="tqY-9N-OPh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GqB-Rd-Cf6"/>
+                <constraint firstAttribute="trailing" secondItem="tqY-9N-OPh" secondAttribute="trailing" id="Im8-Hd-MtV"/>
+                <constraint firstItem="j0E-pi-ULh" firstAttribute="bottom" secondItem="yk8-hk-vjI" secondAttribute="bottom" id="LGF-8r-oJg"/>
+                <constraint firstItem="j0E-pi-ULh" firstAttribute="trailing" secondItem="lzI-U3-HBP" secondAttribute="trailing" id="N45-to-HLv"/>
+                <constraint firstItem="j0E-pi-ULh" firstAttribute="top" secondItem="lzI-U3-HBP" secondAttribute="bottom" constant="1" id="QdE-E0-Nob"/>
+                <constraint firstItem="lzI-U3-HBP" firstAttribute="top" secondItem="lR8-Rl-vZQ" secondAttribute="bottom" constant="5" id="a6K-n1-JrN"/>
+                <constraint firstItem="lR8-Rl-vZQ" firstAttribute="top" secondItem="tqY-9N-OPh" secondAttribute="bottom" constant="5" id="lNM-fD-6c9"/>
+                <constraint firstItem="yk8-hk-vjI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qDo-nu-n8s"/>
+                <constraint firstItem="yk8-hk-vjI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rkQ-mX-qyG"/>
+                <constraint firstItem="j0E-pi-ULh" firstAttribute="leading" secondItem="lzI-U3-HBP" secondAttribute="leading" id="yTH-V5-B4G"/>
+                <constraint firstItem="tqY-9N-OPh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ynd-td-9DD"/>
+            </constraints>
             <point key="canvasLocation" x="230" y="200"/>
         </view>
         <searchBar contentMode="redraw" searchBarStyle="minimal" id="uhx-nO-bKf">
@@ -103,9 +130,4 @@
         <image name="back-button-press" width="23" height="36"/>
         <image name="moonSS.png" width="19" height="20"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

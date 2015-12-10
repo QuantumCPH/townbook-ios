@@ -29,7 +29,7 @@
 - (void)displayRegistrationChoiceScreen
 {
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [appDelegate registerRemoteNotification];
+    //[appDelegate registerRemoteNotification];//for app presentation
     [appDelegate initializeLocationManager];
     RegisterationChoiceVC * regChoiceVC =[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"RegistrationChoice"];
     [self.navigationController pushViewController:regChoiceVC animated:NO];

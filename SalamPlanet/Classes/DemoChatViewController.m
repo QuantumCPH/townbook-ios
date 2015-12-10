@@ -78,16 +78,16 @@
 
     
     self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
-    
-    chatOptionView=[[ChatOptionsView alloc]init];
-    if(!IS_IPHONE_5){
-        chatOptionView.frame=CGRectMake(0,480.0, chatOptionView.frame.size.width, chatOptionView.frame.size.height);
-    }
-    else{
-        chatOptionView.frame=CGRectMake(0, self.view.frame.size.height, chatOptionView.frame.size.width, chatOptionView.frame.size.height);
-    }
-    [self.view addSubview:chatOptionView];
-    chatOptionView.delegate=self;
+    //for app presentation
+//    chatOptionView=[[ChatOptionsView alloc]init];
+//    if(!IS_IPHONE_5){
+//        chatOptionView.frame=CGRectMake(0,480.0, chatOptionView.frame.size.width, chatOptionView.frame.size.height);
+//    }
+//    else{
+//        chatOptionView.frame=CGRectMake(0, self.view.frame.size.height, chatOptionView.frame.size.width, chatOptionView.frame.size.height);
+//    }
+//    [self.view addSubview:chatOptionView];
+//    chatOptionView.delegate=self;
     
     //Add Timer for Delivery Status Demo
     [NSTimer scheduledTimerWithTimeInterval:3.0 target:self

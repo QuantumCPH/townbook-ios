@@ -68,7 +68,7 @@
     appDelegate=(AppDelegate*)[UIApplication sharedApplication].delegate;
 //    [self addSegmentBarToViewNew];
     isSlided=NO;
-    //[self getActivitiesList];
+    [self getActivitiesList];
     [self loadMainArrayOfCollectionView];
     [self.pager reloadData];
     self.pager.isForActivitiesTab = YES;
@@ -208,7 +208,7 @@
         ecolVC.mainArray =[[NSMutableArray alloc] initWithArray:resultArray];;
         ecolVC.pageNumber = 1;
         ecolVC.totalRecords = totalRecords;
-        //[ecolVC.tableView reloadData];
+        [ecolVC.tableView reloadData];
         if (currentCenterPageIndex == 0)
             [self.pager reloadData];
 //        for (int i = 0; i<mainArrayOfCollectionViews.count; i++)
@@ -341,7 +341,7 @@
     {
         [[DataManager sharedInstance] setCurrentMall:pagesMainArray[toIndex]];
         [[WebManager sharedInstance] logVisitOfEntity:pagesMainArray[toIndex]];
-         //[self getActivitiesList];
+         [self getActivitiesList];
     }
 //    ActivitiesCollecttionVC *activityCollectionVC = (ActivitiesCollecttionVC *)[self viewPager:viewPager controllerForPageAtIndex:toIndex];
 //    
