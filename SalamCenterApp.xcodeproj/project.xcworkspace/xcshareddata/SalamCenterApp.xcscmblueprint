@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "39F8C070339B0288A87451E8BCA4B5CB8FABB33E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "39F8C070339B0288A87451E8BCA4B5CB8FABB33E" : 0,
+    "75AF4F693D0315B1E91EF9F8FBFC5CAE1E6F9204" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A7CC48C2-E196-4A24-AB56-1D1045A7525B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "39F8C070339B0288A87451E8BCA4B5CB8FABB33E" : "TownBook\/",
+    "75AF4F693D0315B1E91EF9F8FBFC5CAE1E6F9204" : "Centerapp"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SalamCenterApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SalamCenterApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zapna\/townbook-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "39F8C070339B0288A87451E8BCA4B5CB8FABB33E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zapna\/Centerapp_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "75AF4F693D0315B1E91EF9F8FBFC5CAE1E6F9204"
+    }
+  ]
+}

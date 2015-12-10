@@ -152,49 +152,46 @@
         [appDelegate popHomeOverViewPage];
     }
     else if (noCenterSelected) {
-        ShowMessage(kAppName,NSLocalizedString(@"Please select a center from Home page first.",nil));
+        ShowMessage(kAppName,NSLocalizedString(@"Please select a Town from Home page first.",nil));
         return;
     }
-    else if(indexPath.row == 1)
-    {
-        ShopsVC *shopVC=[[ShopsVC alloc]init];
-        [appDelegate pushToOverPageVC:shopVC];
-    }
-    else if(indexPath.row == 2){
-        RestaurantVC * restaurantVC=[[RestaurantVC alloc]init];
-        [appDelegate pushToOverPageVC:restaurantVC];
-    }
-    else if(indexPath.row == 3)
-    {
-        ServiceVC * serviceVC=[[ServiceVC alloc]init];
-        [appDelegate pushToOverPageVC:serviceVC];
-    }
-    else if(indexPath.row == 4){
+    else if(indexPath.row == 1){
         //OpeningHoursMainVC * openingHoursMainVC=[[OpeningHoursMainVC alloc]init];
         NewShopDetailVC *shopDetailVC=[[NewShopDetailVC alloc]initWithOfferCreatedLocally:nil ANDCenterName:nil];
         shopDetailVC.mall = [[DataManager sharedInstance] currentMall];
         [appDelegate pushToOverPageVC:shopDetailVC];
     }
-    else if(indexPath.row == 5){
-        CalculateDiscountVC * calculateDiscountVC=[[CalculateDiscountVC alloc]init];
-        [appDelegate pushToOverPageVC:calculateDiscountVC];
+    else if(indexPath.row == 2)
+    {
+        ShopsVC *shopVC=[[ShopsVC alloc]init];
+        [appDelegate pushToOverPageVC:shopVC];
     }
-    else if(indexPath.row == 6){
-        BookmarkVC * bookmarkVC=[[BookmarkVC alloc]init];
-        [appDelegate pushToOverPageVC:bookmarkVC];
+    else if(indexPath.row == 3){
+        RestaurantVC * restaurantVC=[[RestaurantVC alloc]init];
+        [appDelegate pushToOverPageVC:restaurantVC];
+    }
+    else if(indexPath.row == 4)
+    {
+        ShopsVC *shopVC=[[ShopsVC alloc]init];
+        [appDelegate pushToOverPageVC:shopVC];
+    }
+    else
+    {
+        ShopsVC *shopVC=[[ShopsVC alloc]init];
+        [appDelegate pushToOverPageVC:shopVC];
     }
 }
 #pragma mark - Custom methods
 -(void)loadMainArrayToDefault{
     [mainArray removeAllObjects];
     [mainArray addObject:NSLocalizedString(@"Home", nil)];
+    [mainArray addObject:NSLocalizedString(@"Town Information", nil)];
     [mainArray addObject:NSLocalizedString(@"Shops", nil)];
     [mainArray addObject:NSLocalizedString(@"Restaurants", nil)];
-    [mainArray addObject:NSLocalizedString(@"Services", nil)];
-    [mainArray addObject:NSLocalizedString(@"Mall Information", nil)];
-    [mainArray addObject:NSLocalizedString(@"Discount calculator", nil)];
-    [mainArray addObject:NSLocalizedString(@"Favourite", nil)];
-    menuIconArray=[NSArray arrayWithObjects:@"sideMenu_home",@"sideMenu_shops",@"sideMenu_restaurant",@"sideMenu_services",@"sideMenu_clock",@"sideMenu_offer",@"sideMenu_favourite", nil];
+    [mainArray addObject:NSLocalizedString(@"Company List", nil)];
+    [mainArray addObject:NSLocalizedString(@"Institutions", nil)];
+    
+    menuIconArray=[NSArray arrayWithObjects:@"sideMenu_home",@"towninfoL",@"sideMenu_shops",@"sideMenu_restaurant",@"copanylistL", @"institutuinsL",nil];
    //imageName @"sideMenu_directions",@"sideMenu_map"
 }
 -(void)changeTheCenterLogoWithImageName:(NSString *)imageName{

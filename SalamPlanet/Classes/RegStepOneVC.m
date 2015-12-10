@@ -168,8 +168,7 @@
 - (void)saveMallsAndShowNextScreen
 {
     [self saveSelectedMalls];
-    RegStepTwoVC * regStep2VC = [[RegStepTwoVC alloc]init];
-    [self.navigationController pushViewController:regStep2VC animated:YES];
+    [appDelegate changeRootViewToStartApp];
 }
 #pragma mark: UITableView Delegates and Datasource Methods=
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -275,6 +274,8 @@
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         if (!_isFromEdit)
         {
+            SaveStringWithKey(@"YES", kisLoggedIn);
+            ShowMessage(kAppName,NSLocalizedString(@"Your preferences have been saved successfully", nil));
             [self saveMallsAndShowNextScreen];
         }
         else

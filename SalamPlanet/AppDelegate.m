@@ -28,6 +28,7 @@
 #import "MBProgressHUD.h"
 #import "RegStepOneVC.h"
 #import "OfferDetailVC.h"
+#import "LatestEventsVC.h"
 
 @import FBSDKCoreKit;
 
@@ -202,9 +203,12 @@
     self.window.rootViewController=container;
 }
 - (void)setupTabViewControllers {
-    ActivitiesMainVC *firstViewController = [[ActivitiesMainVC alloc] init];
+//    ActivitiesMainVC *firstViewController = [[ActivitiesMainVC alloc] init];
+//    UINavigationController *firstNavigationController = [[UINavigationController alloc]
+//                                                   initWithRootViewController:firstViewController];
+    LatestEventsVC *latestEventsVC = [[LatestEventsVC alloc] init];
     UINavigationController *firstNavigationController = [[UINavigationController alloc]
-                                                   initWithRootViewController:firstViewController];
+                                                         initWithRootViewController:latestEventsVC];
     
     ChatHomeViewController *secondViewController = [[ChatHomeViewController alloc] init];
     UINavigationController *secondNavigationController = [[UINavigationController alloc]
@@ -240,8 +244,8 @@
 - (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
     UIImage *finishedImage = [UIImage imageNamed:@"bottom-bar"];
     UIImage *unfinishedImage = [UIImage imageNamed:@"bottom-bar"];
-    NSArray *tabBarItemImages = @[@"endorsement-button", @"messages-button",@"loyalty-card-button",@"profile-button"];
-    NSArray * titleArray=[NSArray arrayWithObjects:NSLocalizedString(@"Offers", nil),NSLocalizedString(@"Messages", nil),NSLocalizedString(@"Cards", nil),NSLocalizedString(@"Profile", nil), nil];
+    NSArray *tabBarItemImages = @[@"latest-bottom", @"messages-button",@"loyalty-card-button",@"profile-button"];
+    NSArray * titleArray=[NSArray arrayWithObjects:NSLocalizedString(@"Latest", nil),NSLocalizedString(@"Messages", nil),NSLocalizedString(@"Cards", nil),NSLocalizedString(@"Profile", nil), nil];
     
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
@@ -250,7 +254,7 @@
                                                       [tabBarItemImages objectAtIndex:index]]];
         UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@",
                                                         [tabBarItemImages objectAtIndex:index]]];
-        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        [item setFinishedSelectedImage:unselectedimage withFinishedUnselectedImage:unselectedimage];
         item.title=[titleArray objectAtIndex:index];
         item.titlePositionAdjustment=UIOffsetMake(0, 2);
         index++;

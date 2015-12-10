@@ -5,8 +5,8 @@
 //  Created by Saad Khan on 18/09/2014.
 //  Copyright (c) 2014 Globit. All rights reserved.
 //
-#define APIBaseURL @"http://52.28.59.218:5001/api/"
-
+//#define APIBaseURL @"http://52.28.59.218:5001/api/"
+#define APIBaseURL @"http://52.28.59.218:8017/api/"
 #define kSelectedCountryCode    @"selectedCountryCode"
 #define kSelectedCountryName    @"selectedCountryName"
 #define kSelectedCountryShortName    @"selectedCountryShortName"
@@ -20,7 +20,7 @@
 #define kUserSelectedMallsEditedNotification    @"UserSelectedMallsEditedNotification"
 #define kAcitivitesReloadedNotification         @"AcitivitesReloadedNotification"
 
-#define kAppName        @"The Mall App"
+#define kAppName        @"Town Book App"
 #define kUserPhone      @"userPhone"
 #define kAppLangauge    @"appLanguage"
 

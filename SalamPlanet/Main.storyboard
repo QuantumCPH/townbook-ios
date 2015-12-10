@@ -73,14 +73,14 @@
                                     <action selector="regFacebookTapped:" destination="Jjp-zN-CuN" eventType="touchUpInside" id="t6e-cg-ElH"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Applogo" translatesAutoresizingMaskIntoConstraints="NO" id="c0V-yR-Y1Z">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="c0V-yR-Y1Z">
                                 <rect key="frame" x="99" y="128" width="123" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="123" id="1U7-rr-dLu"/>
                                     <constraint firstAttribute="height" constant="77" id="Kxk-Tb-7Tu"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to The Mall App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXo-VV-7wO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Town Book App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXo-VV-7wO">
                                 <rect key="frame" x="0.0" y="250" width="320" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21.5" id="Uaz-OY-p0q"/>
@@ -1140,7 +1140,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Applogo" width="116" height="69"/>
         <image name="BGGrey.png" width="320" height="568"/>
         <image name="back-button" width="23" height="36"/>
         <image name="back-button-press" width="23" height="36"/>
@@ -1150,6 +1149,7 @@
         <image name="edit-button-pressed.png" width="37" height="36"/>
         <image name="fb" width="32" height="26"/>
         <image name="fb-btn" width="270" height="43"/>
+        <image name="logo-small" width="123" height="77"/>
         <image name="mail" width="32" height="29"/>
         <image name="new_avatar.png" width="320" height="320"/>
         <image name="parallax_avatar.png" width="59" height="59"/>

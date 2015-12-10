@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>Town Book</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -25,16 +25,16 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb788289757930171</string>
+				<string>fb155494688140026</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>115</string>
+	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>788289757930171</string>
+	<string>155494688140026</string>
 	<key>FacebookDisplayName</key>
-	<string>The Mall</string>
+	<string>Town App</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

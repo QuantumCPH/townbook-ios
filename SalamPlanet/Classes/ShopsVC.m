@@ -169,7 +169,7 @@
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
          mainArray = [[NSMutableArray alloc] initWithArray:resultArray];
         if (mainArray.count == 0)
-            ShowMessage(kAppName, NSLocalizedString(@"No shops for this mall",nil));
+            ShowMessage(kAppName, NSLocalizedString(@"No shops for this Town",nil));
             
         [self filterMainArrayForOptionOne];
         [self.tableView reloadData];
