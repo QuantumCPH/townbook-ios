@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myTownCollectionCell" id="XpW-Te-Gi9" customClass="MyTownCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPlaces" translatesAutoresizingMaskIntoConstraints="NO" id="6o6-8L-EpQ">
+                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="6o6-8L-EpQ" secondAttribute="height" multiplier="1:1" id="rdV-iV-JA2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rdV-iV-JA2"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f9-f1-fbM">
+                        <rect key="frame" x="8" y="48" width="122" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="euW-rm-Z7y"/>
+                            <constraint firstAttribute="height" constant="42" id="f1S-cg-3mh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="f1S-cg-3mh"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3f9-f1-fbM" firstAttribute="centerY" secondItem="XpW-Te-Gi9" secondAttribute="centerY" id="HxK-9a-cVy"/>
+                <constraint firstAttribute="bottom" secondItem="3f9-f1-fbM" secondAttribute="bottom" constant="8" id="OSL-6U-a9p"/>
+                <constraint firstItem="6o6-8L-EpQ" firstAttribute="top" secondItem="XpW-Te-Gi9" secondAttribute="top" id="OmI-6T-yAi"/>
+                <constraint firstItem="6o6-8L-EpQ" firstAttribute="leading" secondItem="XpW-Te-Gi9" secondAttribute="leading" id="UN7-U1-lY1"/>
+                <constraint firstAttribute="trailing" secondItem="6o6-8L-EpQ" secondAttribute="trailing" id="Vp2-Xs-1bK"/>
+                <constraint firstItem="3f9-f1-fbM" firstAttribute="leading" secondItem="XpW-Te-Gi9" secondAttribute="leading" constant="8" id="Zxb-sp-rn5"/>
+                <constraint firstAttribute="trailing" secondItem="3f9-f1-fbM" secondAttribute="trailing" constant="8" id="dSg-Rz-NcC"/>
+                <constraint firstItem="3f9-f1-fbM" firstAttribute="centerY" secondItem="XpW-Te-Gi9" secondAttribute="centerY" id="gL2-NL-925"/>
+                <constraint firstAttribute="trailing" secondItem="3f9-f1-fbM" secondAttribute="trailing" constant="8" id="hg4-tI-kTd"/>
+                <constraint firstAttribute="bottom" secondItem="6o6-8L-EpQ" secondAttribute="bottom" id="l2B-Xs-QpI"/>
+                <constraint firstItem="3f9-f1-fbM" firstAttribute="leading" secondItem="XpW-Te-Gi9" secondAttribute="leading" constant="8" id="nh0-fs-y17"/>
+            </constraints>
+            <size key="customSize" width="138" height="138"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="nh0-fs-y17"/>
+                    <exclude reference="OSL-6U-a9p"/>
+                    <exclude reference="hg4-tI-kTd"/>
+                    <exclude reference="HxK-9a-cVy"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imgView" destination="6o6-8L-EpQ" id="bv7-kI-7m4"/>
+                <outlet property="lblTitle" destination="3f9-f1-fbM" id="eTa-zH-4mu"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconPlaces" width="1" height="1"/>
+    </resources>
+</document>
