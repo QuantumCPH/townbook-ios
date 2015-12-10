@@ -219,7 +219,7 @@
             success(mallCenter,nil);
         }
         else
-            success(nil,NSLocalizedString(@"No details available for this Mall",nil));
+            success(nil,NSLocalizedString(@"No details available for this town",nil));
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSString *errorString = [error localizedDescription];

@@ -70,9 +70,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ag4-lQ-fL6">
-                            <rect key="frame" x="41" y="29" width="226" height="21"/>
+                            <rect key="frame" x="41" y="29" width="238" height="21"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="226" id="DBv-Gz-Sld"/>
+                                <constraint firstAttribute="width" constant="238" id="DBv-Gz-Sld"/>
                                 <constraint firstAttribute="height" constant="21" id="Yw8-s7-Cze"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -138,7 +138,7 @@
                         <constraint firstAttribute="trailing" secondItem="aC0-2v-4We" secondAttribute="trailing" constant="1" id="WL1-WP-gMF"/>
                         <constraint firstItem="0ev-rt-Z1a" firstAttribute="leading" secondItem="coI-f5-0qL" secondAttribute="leading" constant="41" id="Wzk-aS-5Jb"/>
                         <constraint firstItem="aC0-2v-4We" firstAttribute="top" secondItem="coI-f5-0qL" secondAttribute="top" constant="18" id="azJ-Ar-2iJ"/>
-                        <constraint firstItem="ag4-lQ-fL6" firstAttribute="centerX" secondItem="coI-f5-0qL" secondAttribute="centerX" constant="-6" id="pV9-3L-jgO"/>
+                        <constraint firstItem="ag4-lQ-fL6" firstAttribute="centerX" secondItem="coI-f5-0qL" secondAttribute="centerX" id="pV9-3L-jgO"/>
                         <constraint firstItem="0ev-rt-Z1a" firstAttribute="top" secondItem="coI-f5-0qL" secondAttribute="top" constant="18" id="rD9-Jj-Vgs"/>
                     </constraints>
                 </view>
