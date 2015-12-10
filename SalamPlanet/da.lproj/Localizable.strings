@@ -31,6 +31,7 @@
 "RESTAURANTS" = "RESTAURANTS";
 "INSTITUTIONS" = "INSTITUTIONS";
 "COMPANIES" = "COMPANIES";
+"Create Event" = "Create Event";
 
 "All" = "All";
 "Offers" = "Offers";
@@ -43,6 +44,8 @@
 "Municipality" = "Municipality";
 "Newcomers" = "Tilflytter";
 "Bright Green Island" = "Bright Green Island";
+
+"Mine" = "Mine";
 
 "Please enable Location Services from settings" = "Please enable Location Services from settings";
 "Please accept receiving push notifications/SMS" = "Please accept receiving push notifications/SMS";

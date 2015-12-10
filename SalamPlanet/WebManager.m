@@ -190,6 +190,7 @@
     NSString *urlString = [NSString stringWithFormat:@"%@MallService/GetMalls?countryCode=%@&languageId=%@",APIBaseURL,user.country,_languageID];
     [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         //NSLog(@"%@",responseObject);
+        [self saveAllInterests];
         NSArray *malls = [self parseMallListResponse:responseObject];
         success(malls);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -311,6 +312,22 @@
          failure(error);
      }];
 }
+- (void)saveAllInterests
+{
+    AFHTTPRequestOperationManager *manager = [self getReguestManager];
+    NSString *urlString = [NSString stringWithFormat:@"%@UserInterestService/SaveAllInterests",APIBaseURL];
+    
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    [params setValue:[[[DataManager sharedInstance] currentUser] userId] forKey:kUserID];
+    
+    [manager POST:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject)
+     {
+         NSLog(@"Save All Interests:%@",responseObject);
+     }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+         NSLog(@"Save All Interests:%@",[error localizedDescription]);
+     }];
+}
+
 - (void)getSelectedInterests:(void (^)(NSArray* resultArray))success
                      failure:(void (^)(NSError* error))failure
 {

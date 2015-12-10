@@ -1203,7 +1203,7 @@
 		3CF918531BFB32E700C261BE /* ActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCell.h; sourceTree = "<group>"; };
 		3CF918541BFB32E700C261BE /* ActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCell.m; sourceTree = "<group>"; };
 		3CF918551BFB32E700C261BE /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
-		55CED4F819CAB500007DE812 /* The Mall App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Mall App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CED4F819CAB500007DE812 /* Town Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Town Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CED4FB19CAB500007DE812 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55CED4FD19CAB500007DE812 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		55CED4FF19CAB500007DE812 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -3056,7 +3056,7 @@
 		55CED4F919CAB500007DE812 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55CED4F819CAB500007DE812 /* The Mall App.app */,
+				55CED4F819CAB500007DE812 /* Town Book.app */,
 				55CED51319CAB501007DE812 /* SalamCenterAppTests.xctest */,
 			);
 			name = Products;
@@ -5301,7 +5301,7 @@
 			);
 			name = SalamCenterApp;
 			productName = SalamPlanet;
-			productReference = 55CED4F819CAB500007DE812 /* The Mall App.app */;
+			productReference = 55CED4F819CAB500007DE812 /* Town Book.app */;
 			productType = "com.apple.product-type.application";
 		};
 		55CED51219CAB501007DE812 /* SalamCenterAppTests */ = {
@@ -6504,7 +6504,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quantum.townbook;
-				PRODUCT_NAME = "The Mall App";
+				PRODUCT_NAME = "Town Book";
 				PROVISIONING_PROFILE = "f863c17f-17da-4405-8606-046f93b51652";
 				WRAPPER_EXTENSION = app;
 			};
@@ -6533,7 +6533,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quantum.townbook;
-				PRODUCT_NAME = "The Mall App";
+				PRODUCT_NAME = "Town Book";
 				PROVISIONING_PROFILE = "ee519364-5a0e-4e48-971e-8f8f4f50c07c";
 				WRAPPER_EXTENSION = app;
 			};

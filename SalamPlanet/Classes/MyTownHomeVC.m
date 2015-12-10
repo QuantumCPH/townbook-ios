@@ -23,13 +23,13 @@
     if (self) {
         mainArray=[[NSMutableArray alloc]init];
         MyTownItem *tourist=[[MyTownItem alloc]init];
-        tourist.title=@"Turist";
+        tourist.title = NSLocalizedString(@"Tourist",nil);
         tourist.imgName=@"Turist";
         tourist.url=@"http://bornholm.info/da";
         [mainArray addObject:tourist];
         
         MyTownItem *municiple=[[MyTownItem alloc]init];
-        municiple.title=@"Kommunen";
+        municiple.title=NSLocalizedString(@"Municipality", nil);
         municiple.imgName=@"Kommunen";
         municiple.url=@"http://www.brk.dk/Sider/Forside.aspx";
         [mainArray addObject:municiple];
@@ -41,13 +41,13 @@
         [mainArray addObject:brighGreenIsland];
         
         MyTownItem *newComer=[[MyTownItem alloc]init];
-        newComer.title=@"Tilflytter";
+        newComer.title = NSLocalizedString(@"Newcomers", nil);
         newComer.imgName=@"Tilflytter";
         newComer.url=@"http://flyttilbornholm.dk";
         [mainArray addObject:newComer];
         
         MyTownItem *bussiness=[[MyTownItem alloc]init];
-        bussiness.title=@"Erhverv";
+        bussiness.title = NSLocalizedString(@"Business", nil);
         bussiness.imgName=@"Erhverv";
         bussiness.url=@"http://bornholm.biz";
         [mainArray addObject:bussiness];
