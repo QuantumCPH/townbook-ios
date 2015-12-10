@@ -1032,6 +1032,14 @@
 		79FF6E811C1986DE002F6653 /* Tilflytter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FF6E7C1C1986DE002F6653 /* Tilflytter@2x.png */; };
 		79FF6E821C1986DE002F6653 /* Turist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FF6E7D1C1986DE002F6653 /* Turist@2x.png */; };
 		79FF6E841C19872B002F6653 /* myTown_overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FF6E831C19872B002F6653 /* myTown_overlay@2x.png */; };
+		79FF6E881C199421002F6653 /* EventDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FF6E861C199421002F6653 /* EventDetailVC.m */; };
+		79FF6E891C199421002F6653 /* EventDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FF6E871C199421002F6653 /* EventDetailVC.xib */; };
+		79FF6E901C199C56002F6653 /* event-bookmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FF6E8A1C199C56002F6653 /* event-bookmark@2x.png */; };
+		79FF6E911C199C56002F6653 /* event-chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FF6E8B1C199C56002F6653 /* event-chat@2x.png */; };
+		79FF6E921C199C56002F6653 /* event-comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FF6E8C1C199C56002F6653 /* event-comment@2x.png */; };
+		79FF6E931C199C56002F6653 /* event-fav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FF6E8D1C199C56002F6653 /* event-fav@2x.png */; };
+		79FF6E941C199C56002F6653 /* event-request@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FF6E8E1C199C56002F6653 /* event-request@2x.png */; };
+		79FF6E951C199C56002F6653 /* event-share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FF6E8F1C199C56002F6653 /* event-share@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2385,6 +2393,15 @@
 		79FF6E7C1C1986DE002F6653 /* Tilflytter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tilflytter@2x.png"; sourceTree = "<group>"; };
 		79FF6E7D1C1986DE002F6653 /* Turist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Turist@2x.png"; sourceTree = "<group>"; };
 		79FF6E831C19872B002F6653 /* myTown_overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myTown_overlay@2x.png"; sourceTree = "<group>"; };
+		79FF6E851C199421002F6653 /* EventDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailVC.h; sourceTree = "<group>"; };
+		79FF6E861C199421002F6653 /* EventDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailVC.m; sourceTree = "<group>"; };
+		79FF6E871C199421002F6653 /* EventDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailVC.xib; sourceTree = "<group>"; };
+		79FF6E8A1C199C56002F6653 /* event-bookmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "event-bookmark@2x.png"; sourceTree = "<group>"; };
+		79FF6E8B1C199C56002F6653 /* event-chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "event-chat@2x.png"; sourceTree = "<group>"; };
+		79FF6E8C1C199C56002F6653 /* event-comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "event-comment@2x.png"; sourceTree = "<group>"; };
+		79FF6E8D1C199C56002F6653 /* event-fav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "event-fav@2x.png"; sourceTree = "<group>"; };
+		79FF6E8E1C199C56002F6653 /* event-request@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "event-request@2x.png"; sourceTree = "<group>"; };
+		79FF6E8F1C199C56002F6653 /* event-share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "event-share@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3540,6 +3557,12 @@
 		55D4086719CC09CD00D8E885 /* Slices */ = {
 			isa = PBXGroup;
 			children = (
+				79FF6E8A1C199C56002F6653 /* event-bookmark@2x.png */,
+				79FF6E8B1C199C56002F6653 /* event-chat@2x.png */,
+				79FF6E8C1C199C56002F6653 /* event-comment@2x.png */,
+				79FF6E8D1C199C56002F6653 /* event-fav@2x.png */,
+				79FF6E8E1C199C56002F6653 /* event-request@2x.png */,
+				79FF6E8F1C199C56002F6653 /* event-share@2x.png */,
 				79FF6E831C19872B002F6653 /* myTown_overlay@2x.png */,
 				79FF6E791C1986DE002F6653 /* Bright-Green-Island@2x.png */,
 				79FF6E7A1C1986DE002F6653 /* Erhverv@2x.png */,
@@ -5234,6 +5257,9 @@
 				79FF6E561C197720002F6653 /* EventsHomeVC.h */,
 				79FF6E571C197720002F6653 /* EventsHomeVC.m */,
 				79FF6E581C197720002F6653 /* EventsHomeVC.xib */,
+				79FF6E851C199421002F6653 /* EventDetailVC.h */,
+				79FF6E861C199421002F6653 /* EventDetailVC.m */,
+				79FF6E871C199421002F6653 /* EventDetailVC.xib */,
 			);
 			name = Events;
 			sourceTree = "<group>";
@@ -5449,6 +5475,7 @@
 				792A130819D2EF2F00A5C283 /* online-icon.png in Resources */,
 				7922B74519FE269800A8BD76 /* EOverViewFeaturedVC.xib in Resources */,
 				79ADC6B61A9340C900889AD7 /* RewardsTransactionHistoryVC.xib in Resources */,
+				79FF6E931C199C56002F6653 /* event-fav@2x.png in Resources */,
 				7937FFB31A6CEE25006A5BAA /* BarcodeTypesVC.xib in Resources */,
 				793E844D19F0F0A0000A6349 /* blue_close@2x.png in Resources */,
 				793106191A10CC1D00BED484 /* call-button@2x.png in Resources */,
@@ -5463,6 +5490,7 @@
 				7937FFAE1A6CEDFF006A5BAA /* BTQRCode@2x.png in Resources */,
 				791D80DE1A654B3F00B951E9 /* opening-hours_page@2x.png in Resources */,
 				7974EA081A63D04500422E6D /* LCCreateVC.xib in Resources */,
+				79FF6E911C199C56002F6653 /* event-chat@2x.png in Resources */,
 				79F0763319D91B7C006CD2D9 /* EndrCommentsViewController.xib in Resources */,
 				794623021A12235E008A4012 /* ecsend-button@2x.png in Resources */,
 				79D564C91A3094D000FAA42C /* logo_ACentret@2x.png in Resources */,
@@ -5566,6 +5594,7 @@
 				7909ABB11A5E8C720062D20F /* chat_bar_camera_button@2x.png in Resources */,
 				79E2E6AA19DBC00A008F18CC /* ChatMessageCell.xib in Resources */,
 				7909ABB91A5E8C720062D20F /* chat_bar_offers_button@2x.png in Resources */,
+				79FF6E891C199421002F6653 /* EventDetailVC.xib in Resources */,
 				793A9B1E19EFFED1009C7E2D /* selected_star@2x.png in Resources */,
 				792A12CA19D2EF2F00A5C283 /* call-accept-button.png in Resources */,
 				79773F661A135B08006F9473 /* share-email-button-p@2x.png in Resources */,
@@ -5776,6 +5805,7 @@
 				792A12C619D2EF2F00A5C283 /* add-button.png in Resources */,
 				790AA0B81A4D837700D6308C /* aboutus-button_p@2x.png in Resources */,
 				7909ABBB1A5E8C720062D20F /* chat_bar_shop_button@2x.png in Resources */,
+				79FF6E951C199C56002F6653 /* event-share@2x.png in Resources */,
 				792A121119D2D1A800A5C283 /* call-icon@2x.png in Resources */,
 				793895B81A55156600C8EC8D /* rest-logo6@2x.png in Resources */,
 				790CE5A919D430A5004BC2F5 /* CategoryCell.xib in Resources */,
@@ -5849,6 +5879,7 @@
 				790FA2521A2C761900F7327D /* ShopDetailVC.xib in Resources */,
 				7937FFAD1A6CEDFF006A5BAA /* BTPDF417@2x.png in Resources */,
 				79E2E6C519DBFBF8008F18CC /* person2.png in Resources */,
+				79FF6E941C199C56002F6653 /* event-request@2x.png in Resources */,
 				792A120C19D2D1A800A5C283 /* name-background@2x.png in Resources */,
 				79540D711A11D53C00311322 /* ebookmark-icon-p@2x.png in Resources */,
 				7931060A1A10CC1D00BED484 /* messagebox-bottom.png in Resources */,
@@ -5858,6 +5889,7 @@
 				79AA847F1A91D8ED00A1401F /* reward-button@2x.png in Resources */,
 				79FE0A051A4AA5DA00845D64 /* Designosaur-Regular.otf in Resources */,
 				7922047B1A68F109009C4270 /* lc5.png in Resources */,
+				79FF6E901C199C56002F6653 /* event-bookmark@2x.png in Resources */,
 				792A124219D2E48800A5C283 /* books@2x.png in Resources */,
 				793676A51A1B25E00092C68B /* attach-button-pressed@2x.png in Resources */,
 				792A120419D2D1A800A5C283 /* segment-bg@2x.png in Resources */,
@@ -6009,6 +6041,7 @@
 				79D905481A9F003D00097230 /* esettings-icon-p@2x.png in Resources */,
 				7988FBE51A95F67800902380 /* MallAppDB.sqlite in Resources */,
 				79773F771A1387BF006F9473 /* tempChatBackground@2x.jpg in Resources */,
+				79FF6E921C199C56002F6653 /* event-comment@2x.png in Resources */,
 				79FF6E6D1C197CD5002F6653 /* EventHomeCell.xib in Resources */,
 				7923C7881C195A01000ABEB6 /* MyTownHomeVC.xib in Resources */,
 				793106031A10CC1D00BED484 /* call-msg-background@2x.png in Resources */,
@@ -6208,6 +6241,7 @@
 				3C00C0081BE8C23D004353AE /* ProfileShareCell.m in Sources */,
 				3C6D232A1BA3060900379FA8 /* WebManager.m in Sources */,
 				55CED5C119CB0CCA007DE812 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				79FF6E881C199421002F6653 /* EventDetailVC.m in Sources */,
 				79FE09F81A4A8D6200845D64 /* SGAlertMenu.m in Sources */,
 				791435E81A528B4B009C5B4C /* ServiceVC.m in Sources */,
 				790D3B6619F7884D009C49A3 /* HMSegmentedControl.m in Sources */,

@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="btnCreate" destination="2Nq-le-zaU" id="4zo-El-aZo"/>
                 <outlet property="lblTitle" destination="d6L-WJ-ZXw" id="uHU-2a-mL1"/>
+                <outlet property="segmentBar" destination="NYC-Zk-8Tk" id="ggL-gS-000"/>
                 <outlet property="tableView" destination="oDI-58-T7M" id="DwI-mI-K7g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -55,22 +56,37 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oDI-58-T7M">
-                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <rect key="frame" x="0.0" y="100" width="320" height="468"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="2dE-Cg-L4o"/>
                         <outlet property="delegate" destination="-1" id="R4v-QZ-5CI"/>
                     </connections>
                 </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NYC-Zk-8Tk">
+                    <rect key="frame" x="60" y="69" width="200" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Qhd-S3-UAX"/>
+                        <constraint firstAttribute="width" constant="200" id="dns-EP-W8S"/>
+                    </constraints>
+                    <segments>
+                        <segment title="ALL"/>
+                        <segment title="Mine"/>
+                    </segments>
+                    <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="xoe-B8-EVI" secondAttribute="trailing" id="4HT-lv-u0D"/>
                 <constraint firstItem="xoe-B8-EVI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7sW-eR-GeK"/>
+                <constraint firstItem="NYC-Zk-8Tk" firstAttribute="top" secondItem="xoe-B8-EVI" secondAttribute="bottom" constant="5" id="M8X-0v-k2S"/>
                 <constraint firstAttribute="bottom" secondItem="oDI-58-T7M" secondAttribute="bottom" id="Mep-FQ-uco"/>
+                <constraint firstAttribute="trailing" secondItem="NYC-Zk-8Tk" secondAttribute="trailing" constant="60" id="Uom-jP-565"/>
                 <constraint firstAttribute="trailing" secondItem="oDI-58-T7M" secondAttribute="trailing" id="pLZ-Zd-pHZ"/>
                 <constraint firstItem="oDI-58-T7M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pul-Ik-b0Z"/>
-                <constraint firstItem="oDI-58-T7M" firstAttribute="top" secondItem="xoe-B8-EVI" secondAttribute="bottom" id="t3L-lC-hQB"/>
+                <constraint firstItem="NYC-Zk-8Tk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="qxE-4k-qr9"/>
+                <constraint firstItem="oDI-58-T7M" firstAttribute="top" secondItem="xoe-B8-EVI" secondAttribute="bottom" constant="36" id="t3L-lC-hQB"/>
                 <constraint firstItem="xoe-B8-EVI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xKc-JK-da4"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
