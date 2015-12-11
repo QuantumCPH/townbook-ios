@@ -153,7 +153,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1233"
             endingLineNumber = "1233"
-            landmarkName = "-parseShopsListResponse:"
+            landmarkName = "-parseEntityActivitiesListResponse:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -169,7 +169,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1210"
             endingLineNumber = "1210"
-            landmarkName = "-parseEntityActivitiesListResponse:"
+            landmarkName = "-parseOfferResponse:isFromEnity:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -185,7 +185,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "677"
             endingLineNumber = "677"
-            landmarkName = "-sendDeviceTokenForPushNotification"
+            landmarkName = "-getMallTimingList:failure:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -201,7 +201,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "676"
             endingLineNumber = "676"
-            landmarkName = "-sendDeviceTokenForPushNotification"
+            landmarkName = "-getMallTimingList:failure:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -345,7 +345,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "762"
             endingLineNumber = "762"
-            landmarkName = "-saveLoyaltyCardOnServer:success:failure:"
+            landmarkName = "-signOutUser:failure:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -361,7 +361,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "416"
             endingLineNumber = "416"
-            landmarkName = "-getShopsList:failure:"
+            landmarkName = "-loadDetailsOfActivity:success:failure:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -377,7 +377,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "415"
             endingLineNumber = "415"
-            landmarkName = "-getShopsList:failure:"
+            landmarkName = "-loadDetailsOfActivity:success:failure:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -400,7 +400,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SalamPlanet/WebManager.m"
@@ -425,7 +425,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "858"
             endingLineNumber = "858"
-            landmarkName = "-parseUserProfileResponse:"
+            landmarkName = "-logVisitOfEntity:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -473,7 +473,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1244"
             endingLineNumber = "1244"
-            landmarkName = "-parseShopResponse:withDetails:"
+            landmarkName = "-parseEntityActivitiesListResponse:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -489,7 +489,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1472"
             endingLineNumber = "1472"
-            landmarkName = "-parseRestaurantListResponse:"
+            landmarkName = "-parseEntityCategories:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -521,7 +521,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "611"
             endingLineNumber = "611"
-            landmarkName = "-getServicesList:failure:"
+            landmarkName = "-getMenuListOfRestaurant:success:failure:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -665,6 +665,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "120"
             endingLineNumber = "120"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SalamPlanet/Classes/ChatSettingsVC.m"
+            timestampString = "471506995.004569"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>

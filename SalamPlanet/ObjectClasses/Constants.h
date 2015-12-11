@@ -20,7 +20,7 @@
 #define kUserSelectedMallsEditedNotification    @"UserSelectedMallsEditedNotification"
 #define kAcitivitesReloadedNotification         @"AcitivitesReloadedNotification"
 
-#define kAppName        @"Town Book App"
+#define kAppName        @"Townbook"
 #define kUserPhone      @"userPhone"
 #define kAppLangauge    @"appLanguage"
 

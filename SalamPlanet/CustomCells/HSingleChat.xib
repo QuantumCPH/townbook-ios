@@ -20,7 +20,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="TRl-Sk-2Nb" userLabel="frame">
                         <rect key="frame" x="19" y="5" width="50" height="50"/>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Lorem ipsum dolor sit er elit lamet." translatesAutoresizingMaskIntoConstraints="NO" id="dSj-Kz-X7Q">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Hej, jeg vil gerne tilmelde mig til fodbold" translatesAutoresizingMaskIntoConstraints="NO" id="dSj-Kz-X7Q">
                         <rect key="frame" x="72" y="24" width="194" height="23"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>

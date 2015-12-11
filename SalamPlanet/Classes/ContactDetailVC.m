@@ -130,7 +130,7 @@
     MFMessageComposeViewController *messageVC = [[MFMessageComposeViewController alloc] init];
     if ([MFMessageComposeViewController canSendText]) {
         
-        NSString *smsString =[NSString stringWithFormat:NSLocalizedString(@"You are Invited by %@ to use The Town Book App", nil),GetStringWithKey(kTempUserName)];
+        NSString *smsString =[NSString stringWithFormat:NSLocalizedString(@"You are Invited by %@ to use The Townbook", nil),GetStringWithKey(kTempUserName)];
         messageVC.body = smsString;
         messageVC.recipients=[NSArray arrayWithObject:[_contactObj phone]];
         messageVC.messageComposeDelegate = self;

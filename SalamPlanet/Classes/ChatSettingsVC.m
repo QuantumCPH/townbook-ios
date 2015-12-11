@@ -125,6 +125,10 @@
         }
         cell.selectionStyle=UITableViewCellSelectionStyleNone;
         [UtilsFunctions makeUIImageViewRound:cell.partImgV ANDRadius:cell.partImgV.frame.size.width/2];
+        if (indexPath.row == 5) {
+            cell.partName.text = @"Thomas Jensen";
+            cell.partNumber.text = @"923008867899";
+        }
         return cell;
     }
 }

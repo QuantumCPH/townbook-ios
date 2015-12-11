@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Town Book</string>
+	<string>Townbook</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -34,7 +34,7 @@
 	<key>FacebookAppID</key>
 	<string>155494688140026</string>
 	<key>FacebookDisplayName</key>
-	<string>Town App</string>
+	<string>Townbook</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
