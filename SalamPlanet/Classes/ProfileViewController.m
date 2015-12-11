@@ -55,7 +55,7 @@
     
     appDelegate=(AppDelegate*)[UIApplication sharedApplication].delegate;
     
-    infoArray = @[NSLocalizedString(@"Edit Profile",nil),NSLocalizedString(@"Centers", nil),NSLocalizedString(@"Interests", nil),NSLocalizedString(@"Help",nil),NSLocalizedString(@"Privacy Policy",nil),NSLocalizedString(@"About Us", nil),NSLocalizedString(@"Log out", nil)];
+    infoArray = @[NSLocalizedString(@"Edit Profile",nil),NSLocalizedString(@"Towns", nil),NSLocalizedString(@"Interests", nil),NSLocalizedString(@"Help",nil),NSLocalizedString(@"Privacy Policy",nil),NSLocalizedString(@"About Us", nil),NSLocalizedString(@"Log out", nil)];
     user = [[DataManager sharedInstance] currentUser];
     
 }

@@ -190,7 +190,7 @@
     [mainArray addObject:NSLocalizedString(@"Town Information", nil)];
     [mainArray addObject:NSLocalizedString(@"Shops", nil)];
     [mainArray addObject:NSLocalizedString(@"Restaurants", nil)];
-    [mainArray addObject:NSLocalizedString(@"Company List", nil)];
+    [mainArray addObject:NSLocalizedString(@"Businesses", nil)];
     [mainArray addObject:NSLocalizedString(@"Institutions", nil)];
     
     menuIconArray=[NSArray arrayWithObjects:@"sideMenu_home",@"towninfoL",@"sideMenu_shops",@"sideMenu_restaurant",@"copanylistL", @"institutuinsL",nil];

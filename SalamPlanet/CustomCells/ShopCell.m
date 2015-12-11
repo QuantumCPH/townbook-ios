@@ -43,7 +43,7 @@
 {
     [self.shopLogoImgV setImageWithURL:[NSURL URLWithString:_shop.logoURL] placeholderImage:[UIImage imageNamed:@"place-holder"]];
     self.lblShopName.text = _shop.name;
-    self.lblShopFloor.text = _shop.floor;
+    //self.lblShopFloor.text = _shop.floor;
     self.lblShopTitle.text = _shop.briefText;
     User * user = [[DataManager sharedInstance] currentUser];
     if ([user.favouriteShops containsObject:self.shop])
@@ -61,7 +61,7 @@
     self.isForRestuarant = YES;
     [self.shopLogoImgV setImageWithURL:[NSURL URLWithString:_restaurant.logoURL] placeholderImage:[UIImage imageNamed:@"place-holder"]];
     self.lblShopName.text = _restaurant.name;
-    self.lblShopFloor.text = _restaurant.floor;
+    //self.lblShopFloor.text = _restaurant.floor;
     self.lblShopTitle.text = _restaurant.briefText;
     User * user = [[DataManager sharedInstance] currentUser];
     if ([user.favouriteRestaurants containsObject:self.restaurant])

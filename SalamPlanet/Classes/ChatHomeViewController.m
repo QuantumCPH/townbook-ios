@@ -26,9 +26,9 @@
     self = [super initWithNibName:@"ChatHomeViewController" bundle:nil];
     if (self) {
         mainArray=[[NSMutableArray alloc]init];
-        [mainArray addObject:@"John Doe"];
-        [mainArray addObject:@"John Doe"];
-        [mainArray addObject:@"John Doe"];
+        [mainArray addObject:@"Thomas Jensen"];
+        [mainArray addObject:@"Thomas Jensen"];
+        [mainArray addObject:@"Thomas Jensen"];
         appDelegate=(AppDelegate*)[UIApplication sharedApplication].delegate;
         searchedArray=[[NSMutableArray alloc]init];
         isSearched=NO;

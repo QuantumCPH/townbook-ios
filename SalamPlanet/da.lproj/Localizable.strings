@@ -17,7 +17,7 @@
 "Town Information" = "Town Information"; 
 "Shops" = "Shops"; 
 "Restaurants" = "Restaurants"; 
-"Company List" = "Company List"; 
+"Businesses" = "Virksomheder";
 "Institutions" = "Institutions"; 
 
 //Tabbar titles
@@ -30,7 +30,7 @@
 "SHOPS" = "SHOPS"; 
 "RESTAURANTS" = "RESTAURANTS"; 
 "INSTITUTIONS" = "INSTITUTIONS"; 
-"COMPANIES" = "COMPANIES"; 
+"BUSINESSES" = "Virksomheder";
 "Create Event" = "Create Event"; 
 "Event Detail" = "Event Detail"; 
 
@@ -223,3 +223,5 @@
 
 "No companies for this Town" = "No companies for this Town"; 
 "No institutions for this Town" = "No institutions for this Town"; 
+
+"Towns" = "Towns";

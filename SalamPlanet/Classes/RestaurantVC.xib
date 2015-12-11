@@ -11,7 +11,6 @@
                 <outlet property="bgImgV" destination="igB-l3-ewU" id="fxf-g7-2Oo"/>
                 <outlet property="lblPageTitle" destination="FbH-tb-nbZ" id="cYK-hs-4qP"/>
                 <outlet property="searchBar" destination="Jx7-UP-jts" id="eHe-jl-ZNK"/>
-                <outlet property="segmentBar" destination="4nV-Bm-CV6" id="r72-36-2O5"/>
                 <outlet property="tableView" destination="u6A-Ey-bMp" id="w2j-j5-PV1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,33 +23,6 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="igB-l3-ewU" userLabel="BG">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nv1-Zq-WuR" userLabel="TAbView">
-                    <rect key="frame" x="0.0" y="64" width="320" height="39"/>
-                    <subviews>
-                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4nV-Bm-CV6">
-                            <rect key="frame" x="4" y="5" width="312" height="29"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="312" id="YZu-D4-i2h"/>
-                            </constraints>
-                            <segments>
-                                <segment title="A/Å"/>
-                                <segment title="Category"/>
-                                <segment title="Floor"/>
-                            </segments>
-                            <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="segmentBarValueChanged:" destination="-1" eventType="valueChanged" id="pzN-Mq-lh7"/>
-                            </connections>
-                        </segmentedControl>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="4nV-Bm-CV6" firstAttribute="top" secondItem="Nv1-Zq-WuR" secondAttribute="top" constant="5" id="Dgi-fA-ouu"/>
-                        <constraint firstAttribute="centerX" secondItem="4nV-Bm-CV6" secondAttribute="centerX" id="PFx-0l-Wrv"/>
-                        <constraint firstAttribute="height" constant="39" id="mWj-8V-3kz"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="202-To-pHt" userLabel="TopView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                     <subviews>
@@ -90,7 +62,7 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="u6A-Ey-bMp">
-                    <rect key="frame" x="0.0" y="147" width="320" height="421"/>
+                    <rect key="frame" x="0.0" y="108" width="320" height="460"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Pj9-Tt-wQd"/>
@@ -98,7 +70,7 @@
                     </connections>
                 </tableView>
                 <searchBar clearsContextBeforeDrawing="NO" contentMode="redraw" searchBarStyle="minimal" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jx7-UP-jts">
-                    <rect key="frame" x="0.0" y="103" width="320" height="44"/>
+                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="0.47000000000000003" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="Mpu-KB-Rf7"/>
@@ -115,17 +87,14 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="u6A-Ey-bMp" secondAttribute="trailing" id="0Jg-gk-ix4"/>
                 <constraint firstAttribute="bottom" secondItem="u6A-Ey-bMp" secondAttribute="bottom" id="3JQ-uE-AlC"/>
-                <constraint firstItem="Nv1-Zq-WuR" firstAttribute="top" secondItem="202-To-pHt" secondAttribute="bottom" id="3zA-Wt-kkX"/>
                 <constraint firstItem="Jx7-UP-jts" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6fD-ni-0Rs"/>
-                <constraint firstItem="Jx7-UP-jts" firstAttribute="top" secondItem="Nv1-Zq-WuR" secondAttribute="bottom" id="76z-NS-lrb"/>
-                <constraint firstAttribute="trailing" secondItem="Nv1-Zq-WuR" secondAttribute="trailing" id="AOV-tH-dAS"/>
+                <constraint firstItem="Jx7-UP-jts" firstAttribute="top" secondItem="202-To-pHt" secondAttribute="bottom" id="CpI-9Y-K5c"/>
                 <constraint firstItem="igB-l3-ewU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HYT-HA-vFk"/>
                 <constraint firstItem="igB-l3-ewU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="K79-tR-FaY"/>
                 <constraint firstItem="202-To-pHt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bvE-oJ-SfW"/>
                 <constraint firstItem="u6A-Ey-bMp" firstAttribute="top" secondItem="Jx7-UP-jts" secondAttribute="bottom" id="cjO-rt-ZIh"/>
                 <constraint firstItem="u6A-Ey-bMp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eI6-Ox-A73"/>
                 <constraint firstItem="202-To-pHt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kGB-rQ-Ysi"/>
-                <constraint firstItem="Nv1-Zq-WuR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qd9-RA-jtd"/>
                 <constraint firstAttribute="bottom" secondItem="igB-l3-ewU" secondAttribute="bottom" id="rUc-fL-gdW"/>
                 <constraint firstAttribute="trailing" secondItem="Jx7-UP-jts" secondAttribute="trailing" id="xKY-1a-fee"/>
                 <constraint firstAttribute="trailing" secondItem="202-To-pHt" secondAttribute="trailing" id="xuT-EA-utC"/>

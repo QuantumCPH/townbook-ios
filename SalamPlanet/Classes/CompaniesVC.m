@@ -77,7 +77,7 @@
     [appDelegate hideBottomTabBar:YES];
 }
 -(void)dolocalizationText{
-    self.lblPageTitle.text=NSLocalizedString(@"COMPANIES", nil);
+    self.lblPageTitle.text=NSLocalizedString(@"BUSINESSES", nil);
 }
 
 #pragma mark-Custom Methods

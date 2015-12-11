@@ -69,9 +69,9 @@
         [mainArray addObject:msg1];
     }
     
-    ChatMessage * msg2=[[ChatMessage alloc]initWithText:@"I'm fine, thanks. Up for dinner tonight?"];
+    ChatMessage * msg2=[[ChatMessage alloc]initWithText:NSLocalizedString(@"Hi Thomas , I want to sign up for football coming Sunday , if places are still available ?",nil)];
     
-    ChatMessage * msg5=[[ChatMessage alloc]initWithText: @"Oh that sucks. A pitty, well then - have a nice day.."];
+    ChatMessage * msg5=[[ChatMessage alloc]initWithText: NSLocalizedString(@" Hey , that sounds good . You were just the past we lacked . Remember to bring indoor shoes . See you velmødt and fresh to 2 hours of football.",nil)];
 
     [mainArray addObject:msg2];
     [mainArray addObject:msg5];

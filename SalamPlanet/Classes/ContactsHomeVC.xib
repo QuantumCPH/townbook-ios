@@ -76,7 +76,7 @@
                         <constraint firstAttribute="width" constant="200" id="Vny-8B-fRK"/>
                     </constraints>
                     <segments>
-                        <segment title="" image="moonSS.png"/>
+                        <segment title="" image="towninfoCs"/>
                         <segment title="All"/>
                     </segments>
                     <color key="tintColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -128,6 +128,6 @@
     <resources>
         <image name="back-button" width="23" height="36"/>
         <image name="back-button-press" width="23" height="36"/>
-        <image name="moonSS.png" width="19" height="20"/>
+        <image name="towninfoCs" width="24" height="24"/>
     </resources>
 </document>

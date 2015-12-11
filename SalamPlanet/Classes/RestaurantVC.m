@@ -110,8 +110,8 @@
 //        frame.size.height=335;
 //    }
     CGRect frame = [UIScreen mainScreen].bounds;
-    frame.origin.y+=147;
-    frame.size.height-=147;
+    frame.origin.y+=107;
+    frame.size.height-=107;
     
     frame.size.height-=20;
     frame.origin.y+=20;
