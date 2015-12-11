@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "EventItem.h"
 #import <MapKit/MapKit.h>
+#import <Social/Social.h>
+#import <MessageUI/MessageUI.h>
 
-@interface EventDetailVC : UIViewController
+@interface EventDetailVC : UIViewController<MFMessageComposeViewControllerDelegate,MFMailComposeViewControllerDelegate,UINavigationControllerDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *btnBack;
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -30,7 +32,9 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imgEvent;
 @property (strong, nonatomic) IBOutlet UIImageView *imgUser;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) IBOutlet UILabel *lblDesc;
 
 - (IBAction)btnBackPressed:(id)sender;
 -(id)initWithEvent:(EventItem*)item;
+- (IBAction)btnSharePressed:(id)sender;
 @end
