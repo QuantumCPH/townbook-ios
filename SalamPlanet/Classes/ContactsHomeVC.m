@@ -268,7 +268,7 @@
         if ([contact phone]) {
             messageVC.recipients=[NSArray arrayWithObject:[contact phone]];
         }
-        NSString *smsString =NSLocalizedString(@"Hey, check the new wonderful app. Please join Town Book mobile app", nil);
+        NSString *smsString =NSLocalizedString(@"Hey, check the new wonderful app. Please join Townbook mobile app", nil);
         messageVC.body = smsString;
         
         messageVC.messageComposeDelegate = self;

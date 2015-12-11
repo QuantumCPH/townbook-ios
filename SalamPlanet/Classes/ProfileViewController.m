@@ -112,7 +112,7 @@
 }
 
 - (IBAction)segmentBarLanguageValueChanged:(UISegmentedControl*)sender {
-    ShowMessage(kAppName,NSLocalizedString(@"Please restart the application for applying the change you made.", nil));
+    ShowMessage(kAppName,NSLocalizedString(@"Please restart the application for applying the change", nil));
     UISegmentedControl * segmentController=(UISegmentedControl *)sender;
     if (segmentController.selectedSegmentIndex==0) {
         [NSBundle setLanguage:nil];
@@ -132,7 +132,7 @@
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook])
     {
         SLComposeViewController *fbPostSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        [fbPostSheet setInitialText:NSLocalizedString(@"Hey Check this new Town Book App.",nil)];
+        [fbPostSheet setInitialText:NSLocalizedString(@"Hey Check this new Townbook App.",nil)];
         [self presentViewController:fbPostSheet animated:YES completion:nil];
     } else
     {
@@ -143,7 +143,7 @@
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter])
     {
         SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:NSLocalizedString(@"Hey Check this new Town Book App.",nil)];
+        [tweetSheet setInitialText:NSLocalizedString(@"Hey Check this new Townbook App.",nil)];
         [self presentViewController:tweetSheet animated:YES completion:nil];
         
     }
@@ -156,7 +156,7 @@
     MFMessageComposeViewController *messageVC = [[MFMessageComposeViewController alloc] init];
     if ([MFMessageComposeViewController canSendText]) {
         
-        NSString *smsString = NSLocalizedString(@"Town Book App Invitation",nil);
+        NSString *smsString = NSLocalizedString(@"Townbook App Invitation",nil);
         messageVC.body = smsString;
         
         messageVC.messageComposeDelegate = self;
@@ -168,9 +168,9 @@
 }
 - (IBAction)emailTapped:(id)sender {
     // Email Subject
-    NSString *emailTitle = NSLocalizedString(@"Town Book App Invitation",nil);
+    NSString *emailTitle = NSLocalizedString(@"Townbook App Invitation",nil);
     // Email Content
-    NSString *messageBody = NSLocalizedString(@"Hey Check this new Town Book App.",nil);
+    NSString *messageBody = NSLocalizedString(@"Hey Check this new Townbook App.",nil);
     // To address
     //    NSArray *toRecipents = [NSArray arrayWithObject:@"support@appcoda.com"];
     

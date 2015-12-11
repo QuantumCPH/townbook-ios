@@ -47,7 +47,7 @@
     self.lblBackground.text=NSLocalizedString(@"Background", nil);
     self.lblAddBackgroundToChat.text=NSLocalizedString(@"Add background to chat", nil);
     self.lblConversationGallery.text=NSLocalizedString(@"Conversation Gallery", nil);
-    self.lblDefaultNotifications.text=NSLocalizedString(@"Default notofications", nil);
+    self.lblDefaultNotifications.text=NSLocalizedString(@"Default notifications", nil);
     self.lblNone.text=NSLocalizedString(@"None", nil);
     self.lblParticipants.text=[NSString stringWithFormat:NSLocalizedString(@"Participants (%@)", nil),@"2"];
     self.lblPlusContact.text=NSLocalizedString(@"+ Contacts", nil);

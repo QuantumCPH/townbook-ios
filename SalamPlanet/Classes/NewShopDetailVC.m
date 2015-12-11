@@ -322,11 +322,12 @@
     NSString *dayInterval = nil;
     if ([firstInterval.fromDay isEqualToString: firstInterval.toDay])
     {
-        dayInterval = firstInterval.fromDay;
+        
+        dayInterval = NSLocalizedString(firstInterval.fromDay,nil);
     }
     else
     {
-        dayInterval = [NSString stringWithFormat:@"%@-%@",firstInterval.fromDay,firstInterval.toDay];
+        dayInterval = [NSString stringWithFormat:@"%@-%@",NSLocalizedString(firstInterval.fromDay,nil),NSLocalizedString(firstInterval.toDay,nil)];
     }
     return dayInterval;
 }
@@ -854,7 +855,7 @@
             email = self.mall.email;
         
         [mc setToRecipients:[NSArray arrayWithObject:email]];
-        [mc setSubject:[NSString stringWithFormat:@"Town Book App"]];
+        [mc setSubject:[NSString stringWithFormat:@"Townbook App"]];
         // Present mail view controller on screen
         [self presentViewController:mc animated:YES completion:NULL];
     }
@@ -1215,7 +1216,7 @@
         title = self.shop.name;
         messageBody = self.shop.briefText;
     }
-    NSString * message = [NSString stringWithFormat:@"Town Book App: %@: %@",title,messageBody];
+    NSString * message = [NSString stringWithFormat:@"Townbook App: %@: %@",title,messageBody];
     return message;
 }
 
@@ -1313,7 +1314,7 @@
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     if ([MFMailComposeViewController canSendMail]) {
         mc.mailComposeDelegate = self;
-        [mc setSubject:[NSString stringWithFormat:@"Town Book App: %@",emailTitle]];
+        [mc setSubject:[NSString stringWithFormat:@"Townbook App: %@",emailTitle]];
         [mc setMessageBody:messageBody isHTML:NO];
         
         // Present mail view controller on screen

@@ -8,7 +8,7 @@
  */
 "KEY" = "CONTENT";
 
-"Welcome to" = "Welcome to";// Town Book App
+"Welcome to" = "Welcome to";// Townbook App
 "Register with Phone" = "Register with Phone";
 "Register with Facebook" = "Register with Facebook";
 
@@ -47,7 +47,9 @@
 "Bright Green Island" = "Bright Green Island";
 
 "Mine" = "Mine";
-
+"Male" = "Male";
+"Female" = "Female";
+"Select a town first" = "Select a town first";
 "Please enable Location Services from settings" = "Please enable Location Services from settings";
 "Please accept receiving push notifications/SMS" = "Please accept receiving push notifications/SMS";
 "Select country" = "Select country";
@@ -56,7 +58,7 @@
 "An access code will be sent to you by SMS" = "An access code will be sent to you by SMS";
 "Please select your country" = "Please select your country";
 "Please enter your phone number" = "Please enter your phone number";
-"Please enter the verification code" = "Please enter the verification code";
+"Please enter the access code" = "Please enter the access code";
 "If you do not receive your access code within 60 seconds. Let us..." = "If you do not receive your access code within 60 seconds. Let us...";
 "No code" = "No code";
 "Resend code" = "Resend code";
@@ -67,9 +69,12 @@
 "Phone Number Verification" = "Phone Number Verification";
 "Is this your correct number?\n %@ \nA SMS with your access code will be sent to this number." = "Is this your correct number?\n %@ \nA SMS with your access code will be sent to this number.";
 "Do You Want to logout" = "Do You Want to logout";
-"Verification code should be 4 digits" = "Verification code should be 4 digits";
-"Add photo" = "Add photo";
+"Access code should be 4 digits" = "Access code should be 4 digits";
+"Add Photo" = "Add photo";
 "Edit Photo" = "Edit Photo";
+
+"Edit" = "Edit";
+
 "Please add name." = "Please add name.";
 "Please add Profile Picture" = "Please add Profile Picture";
 "Please add email." = "Please add email.";
@@ -112,7 +117,7 @@
 "CONTACTS" = "CONTACTS";
 "Failed to send SMS!" = "Failed to send SMS!";
 "Invite" = "Invite";
-"Select your favourite Center" = "Select your favourite Center";
+"Select your favourite town" = "Select your favourite town";
 "Nearby" = "Nearby";
 "Please select at least one town" = "Please select at least one town";
 
@@ -133,7 +138,7 @@
 "Gender" = "Gender";
 "Location" = "Location";
 "Education" = "Education";
-"Tell friends about Town Book App!" = "Tell friends about Town Book App!";
+"Tell friends about Townbook App!" = "Tell friends about Townbook App!";
 "Address" = "Address";
 "Tel" = "Tel";
 "Select barcode type" = "Select barcode type";
@@ -152,7 +157,7 @@
 "Add background to chat" = "Add background to chat";
 "Participants (%@)" = "Participants (%@)";
 "Smart notifications" = "Smart notifications";
-"Default notofications" = "Default notofications";
+"Default notifications" = "Default notifications";
 "Conversation Gallery" = "Conversation Gallery";
 "None" = "None";
 "+ Contacts" = "+ Contacts";
@@ -170,7 +175,7 @@
 "Please add facebook account in settings." = "Please add facebook account in settings.";
 "Sorry, failed to fetch profile info due to network problem." = "Sorry, failed to fetch profile info due to network problem.";
 "No phone number is present" = "No phone number is present";
-"You are Invited by %@ to use The Town Book App" = "You are Invited by %@ to use The Town Book App";
+"You are Invited by %@ to use The Townbook App" = "You are Invited by %@ to use The Townbook App";
 "You can't send email" = "You can't send email";
 "Call facility is not available!!!" = "Call facility is not available!!!";
 
@@ -182,9 +187,9 @@
 "English" = "English";
 "Danish" = "Danish";
 "Phone default" = "Phone default";
-"Please restart the application for applying the change you made." = "Please restart the application for applying the change you made.";
-"No shops for this Town Book" = "No shops for this Town Book";
-"No restaurants for this Town Book" = "No restaurants for this Town Book";
+"Please restart the application for applying the change" = "Please restart the application for applying the change";
+"No shops for this Townbook" = "No shops for this Townbook";
+"No restaurants for this Townbook" = "No restaurants for this Townbook";
 
 "This offer added to your favourities" = "This offer added to your favourities";
 "This news added to your favourities" = "This news added to your favourities";
@@ -195,6 +200,8 @@
 "This shop removed from your favourities" = "This shop removed from your favourities";
 "This restaurant removed from your favourities" = "This restaurant removed from your favourities";
 
+"Hey, Check this new Townbook App." = "Hey, Check this new Townbook App.";
+
 "No menu available for this restaurant" = "No menu available for this restaurant";
 "Edit Profile" = "Edit Profile";
 "Notifications" = "Notifications";
@@ -202,8 +209,8 @@
 "Privacy Policy" = "Privacy Policy";
 "Update" = "Update";
 "Notifications Setting" = "Notifications Setting";
-"Town Book App Invitation" = "Town Book App Invitation";
-"Hey Check this new Town Book App." = "Hey Check this new Town Book App.";
+"Townbook App Invitation" = "Townbook App Invitation";
+"Hey Check this new Townbook App." = "Hey Check this new Townbook App.";
 
 
 "Not Available" = "Not Available";
@@ -214,13 +221,24 @@
 "No featured shops for this shop" = "No featured shops for this shop";
 "No details available for this Restaurant" = "No details available for this Restaurant";
 
-"Please select a center from Home page first." = "Please select a center from Home page first.";
+"Please select a Town first" = "Please select a Town first";
 
-
+"Select your interest" = "Select your interest";
 
 "Camera Permission Required.Please enable camera in settings for this app" = "Camera Permission Required.Please enable camera in settings for this app";
 "Website" = "Website";
 
-"No companies for this Town" = "No companies for this Town";
+"No businesses for this Town" = "No businesses for this Town";
 "No institutions for this Town" = "No institutions for this Town";
 "Towns" = "Towns";
+
+
+
+////////
+"Monday" = "Monday";
+"Tuesday"="Tuesday";
+"Wednesday"="Wednesday";
+"Thursday"="Thursday";
+"Friday"="Friday";
+"Saturday"="Saturday";
+"Sunday"="Sunday";

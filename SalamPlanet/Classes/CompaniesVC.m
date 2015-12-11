@@ -175,7 +175,7 @@
         [self filterMainArrayForOptionOne];
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         if (mainArray.count == 0)
-            ShowMessage(kAppName, NSLocalizedString(@"No companies for this Town",nil));
+            ShowMessage(kAppName, NSLocalizedString(@"No businesses for this Town",nil));
         [self.tableView reloadData];
         
     } failure:^(NSString *errorString) {

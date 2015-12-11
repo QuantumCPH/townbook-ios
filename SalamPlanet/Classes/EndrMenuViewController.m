@@ -63,6 +63,7 @@
     self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     
     [self.bgImgV setImage:[UIImage imageNamed:[appDelegate getBackgroundImageName]]];
+    self.lblNoCenter.text = NSLocalizedString(@"Select a town first",nil);
 }
 -(void)viewWillAppearOnScreen{
 //    if (appDelegate.audianceType==ALL) {
@@ -154,7 +155,7 @@
         [appDelegate popHomeOverViewPage];
     }
     else if (noCenterSelected) {
-        ShowMessage(kAppName,NSLocalizedString(@"Please select a Town from Home page first.",nil));
+        ShowMessage(kAppName,NSLocalizedString(@"Please select a Town first",nil));
         return;
     }
     else if(indexPath.row == 1){

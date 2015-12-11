@@ -102,7 +102,7 @@
             mall.currentDistance = distanceMeters;
         }
         [self applySortDiscriptorOnNearbyArray];
-        NSArray *filteredArray  = [mainArrayNearby filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"currentDistance<10000"]];
+        NSArray *filteredArray  = [mainArrayNearby filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"currentDistance<100000"]];
         mainArrayNearby = [[NSMutableArray alloc] initWithArray:filteredArray];
         [self applySortDiscriptorOnNearbyArray];
         [self.tableView reloadData];

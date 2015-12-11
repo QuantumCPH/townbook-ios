@@ -53,7 +53,7 @@
         [self.btnInviteChat setImage:[UIImage imageNamed:@"contact-invite"] forState:UIControlStateNormal];
         [self.btnInviteChat setImage:[UIImage imageNamed:@"contact-invite-p"] forState:UIControlStateHighlighted];
         [self.btnInviteChat setImage:[UIImage imageNamed:@"contact-invite-p"] forState:UIControlStateSelected];
-        self.lblBtnTitle.text=@"Invite";
+        //self.lblBtnTitle.text=@"Invite";
     }
     [self loadMainArray];
 }

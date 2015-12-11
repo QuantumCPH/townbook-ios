@@ -212,7 +212,7 @@
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
     if ([MFMailComposeViewController canSendMail]) {
         mc.mailComposeDelegate = self;
-        [mc setSubject:[NSString stringWithFormat:@"Town Book App: %@",emailTitle]];
+        [mc setSubject:[NSString stringWithFormat:@"Townbook App: %@",emailTitle]];
         [mc setMessageBody:messageBody isHTML:NO];
         
         // Present mail view controller on screen

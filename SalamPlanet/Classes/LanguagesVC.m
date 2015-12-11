@@ -50,7 +50,7 @@
 }
 - (void)changeLanguage
 {
-    ShowMessage(kAppName,NSLocalizedString(@"Please restart the application for applying the change you made.", nil));
+    ShowMessage(kAppName,NSLocalizedString(@"Please restart the application for applying the change.", nil));
     if (selectedIndex == 0 )
     {
         [NSBundle setLanguage:nil];

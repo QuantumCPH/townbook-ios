@@ -8,220 +8,249 @@
  */
 "KEY" = "CONTENT"; 
 
-"Welcome to" = "Welcome to"; // Town Book App
-"Register with Phone" = "Register with Phone"; 
-"Register with Facebook" = "Register with Facebook"; 
+"Welcome to" = "Velkommen til"; // Town Book App
+"Register with Phone" = "Registrér med telefon";
+"Register with Facebook" = "Registrér med Facebook";
 
 //side Menu titles
-"Home" = "Home"; 
-"Town Information" = "Town Information"; 
-"Shops" = "Shops"; 
-"Restaurants" = "Restaurants"; 
+
+"Home" = "Hjem";
+"Town Information" = "By Information";
+"Shops" = "Butikker";
+"Restaurants" = "Restauranter";
 "Businesses" = "Virksomheder";
-"Institutions" = "Institutions"; 
+"Institutions" = "Institutioner";
 
 //Tabbar titles
-"Latest" = "Latest"; 
-"Event" = "Event"; 
-"My Town" = "My Town"; 
-"Chat" = "Chat"; 
-"Profile" = "Profile"; 
+"Latest" = "Seneste";
+"Event" = "Begivenheder";
+"My Town" = "Min by";
+"Chat" = "Snak";
+"Profile" = "Profil";
 
-"SHOPS" = "SHOPS"; 
-"RESTAURANTS" = "RESTAURANTS"; 
-"INSTITUTIONS" = "INSTITUTIONS"; 
+
+"SHOPS" = "Butikker";
+"RESTAURANTS" = "Restauranter";
+"INSTITUTIONS" = "Institutioner";
 "BUSINESSES" = "Virksomheder";
-"Create Event" = "Create Event"; 
-"Event Detail" = "Event Detail"; 
+"Create Event" = "Opret begivenhed";
+"Event Detail" = "Begivenhedsdetaljer";
 
-"All" = "All"; 
-"Offers" = "Offers";  
-"News" = "News"; 
-"Offer" = "Offer"; 
-"No updates" = "No updates"; 
+"All" = "Alle";
+"Offers" = "Tilbud";
+"News" = "Nyheder";
+"Offer" = "Tilbud";
+"No updates" = "Ingen opdateringer";
 
 "Tourist" = "Turist"; 
 "Business" = "Erhverv"; 
-"Municipality" = "Municipality"; 
+"Municipality" = "Kommune";
 "Newcomers" = "Tilflytter"; 
 "Bright Green Island" = "Bright Green Island"; 
 
-"Mine" = "Mine"; 
+"Mine" = "Mine";
+"Male" = "Han";
+"Female" = "Kvinde";
+"Select a town first" = "Vælg en by først";
+"Please enable Location Services from settings" = "Venligst slå lokationstjenester til i indstillinger";
+"Please accept receiving push notifications/SMS" = "Venligst acceptér at modtage push-notifikationer/SMS";
+"Select country" = "Vælg land";
+"Select your country, enter your phone number and press continue" = "Vælg dit land, indtast dit telefonnummer, og tryk fortsæt";
+"Number without the country code" = "Nummer uden landekode";
+"An access code will be sent to you by SMS" = "En adgangskode vil blive sendt til dig via SMS";
+"Please select your country" = "Vælg venligst dit land";
+"Please enter your phone number" = "Indtast venligst dit telefonnummer";
+"Please enter the access code" = "Indtast venligst adgangskoden";
+"If you do not receive your access code within 60 seconds. Let us..." = "Hvis du ikke modtager din adgangskode inden for 60 sekunder. Lad os ...";
 
-"Please enable Location Services from settings" = "Please enable Location Services from settings"; 
-"Please accept receiving push notifications/SMS" = "Please accept receiving push notifications/SMS"; 
-"Select country" = "Select country"; 
-"Select your country, enter your phone number and press continue" = "Select your country, enter your phone number and press continue"; 
-"Number without the country code" = "Number without the country code"; 
-"An access code will be sent to you by SMS" = "An access code will be sent to you by SMS"; 
-"Please select your country" = "Please select your country"; 
-"Please enter your phone number" = "Please enter your phone number"; 
-"Please enter the verification code" = "Please enter the verification code"; 
-"If you do not receive your access code within 60 seconds. Let us..." = "If you do not receive your access code within 60 seconds. Let us..."; 
-"No code" = "No code"; 
-"Resend code" = "Resend code"; 
-"Incorrect Code" = "Incorrect Code"; 
-"Enter the 4-digit code you received via SMS in the 'Access Code' field and try again." = "Enter the 4-digit code you received via SMS in the 'Access Code' field and try again."; 
-"Try again" = "Try again"; 
-"Access code" = "Access code"; 
-"Phone Number Verification" = "Phone Number Verification"; 
-"Is this your correct number?\n %@ \nA SMS with your access code will be sent to this number." = "Is this your correct number?\n %@ \nA SMS with your access code will be sent to this number."; 
-"Do You Want to logout" = "Do You Want to logout"; 
-"Verification code should be 4 digits" = "Verification code should be 4 digits"; 
-"Add photo" = "Add photo"; 
-"Edit Photo" = "Edit Photo"; 
-"Please add name." = "Please add name."; 
-"Please add Profile Picture" = "Please add Profile Picture"; 
-"Please add email." = "Please add email."; 
-"Please enter a valid email." = "Please enter a valid email."; 
-"Please enter your address." = "Please enter your address."; 
-"No towns are nearby" = "No towns are nearby"; 
-"Enter location" = "Enter location"; 
+"No code" = "Ingen kode";
+"Resend code" = "Gensend kode";
+"Incorrect Code" = "Forkert kode";
+"Enter the 4-digit code you received via SMS in the 'Access Code' field and try again." = "Indtast den 4-cifrede kode du har modtaget via SMS i'Adgangskode' feltet, og prøv igen.";
 
-"Create" = "Create"; 
-"Done" = "Done"; 
-"Go to" = "Go to"; 
+"Try again" = "Prøv igen";
+"Access code" = "Adgangskode";
+
+"Add Photo" = "Tilføj billede";
+"Edit Photo" = "Rediger billede";
+"Edit" = "Rediger";
+
+"Phone Number Verification" = "Telefonnummer verifikation";
+"Is this your correct number?\n %@ \nA SMS with your access code will be sent to this number." = "Er det dit rigtige nummer? \n%@\n A SMS med din adgangskode vil blive sendt til dette nummer.";
+"Do You Want to logout" = "Ønsker du at logge ud";
+"Access code should be 4 digits" = "Adgangskode skal være 4 cifre";
+
+//d
+"Please add name." = "Tilføj venligst navn.";
+"Please add Profile Picture" = "Tilføj venligst profilbillede";
+"Please add email." = "Tilføj venligst email.";
+"Please enter a valid email." = "Indtast en gyldig email.";
+"Please enter your address." = "Indtast venligst din adresse.";
+"No towns are nearby" = "Indtast placering";
+"Enter location" = "Indtast placering";
+
+"Create" = "Opret";
+"Done" = "Færdig";
+"Go to" = "Gå til";
 "MENU" = "MENU"; 
-"Share Offer" = "Share Offer"; 
+"Share Offer" = "Del tilbud";
+
 "Facebook" = "Facebook"; 
 "Twitter"="Twitter"; 
 "SMS" = "SMS"; 
-"Email" = "Email"; 
-"You can't post right now, make sure your device has an internet connection and you have at least one facebook account setup" = "You can't post right now, make sure your device has an internet connection and you have at least one facebook account setup"; 
-"You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup" = "You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup"; 
-"Your device doesn't support SMS!" = "Your device doesn't support SMS!"; 
-"Category" = "Category"; 
-"Speciality" = "Speciality"; 
-"Cancel" = "Cancel"; 
-"Call" = "Call"; 
+"Email" = "Email";
 
-"MESSAGES" = "MESSAGES"; 
-"ALL" = "ALL"; 
-"Group" = "Group"; 
-"\"Sent\"" = "\"Sent\""; 
-"\"Delivered\"" = "\"Delivered\""; 
-"\"Seen\"" = "\"Seen\""; 
-"%@ shared a shop" = "%@ shared a shop"; 
-"%@ shared an offer" = "%@ shared an offer"; 
-"Error" = "Error"; 
-"Sorry! Camera is not available" = "Sorry! Camera is not available"; 
-"Sorry! Photo Library is not available" = "Sorry! Photo Library is not available"; 
-"Settings" = "Settings"; 
+"You can't post right now, make sure your device has an internet connection and you have at least one facebook account setup" = "Du kan ikke skrive lige nu, sørg for din enhed har en internetforbindelse, og at du har en Facebook-konto sat op";
+"You can't send a tweet right now, make sure your device has an internet connection and you have at least one Twitter account setup" = "Du kan ikke sende en tweet lige nu, sørg for din enhed har en internetforbindelse, og du har en Twitter-konto sat op";
+"Your device doesn't support SMS!" = "Din enhed understøtter ikke SMS";
+"Category" = "Kategori";
+"Speciality" = "Specialitet";
+"Cancel" = "Fortryd";
+"Call" = "Ring op";
+
+"MESSAGES" = "Meddelelser";
+"ALL" = "ALLE";
+"Group" = "Gruppe";
+"\"Sent\"" = "\"Har sendt\"";
+"\"Delivered\"" = "\"Leveret\"";
+"\"Seen\"" = "\"Set\"";
+
+"%@ shared a shop" = "%@ delte en butik";
+"%@ shared an offer" = "%@ delte et tilbud";
+"Error" = "Fejl";
+"Sorry! Camera is not available" = "Beklager, kameraet er ikke tilgængeligt";
+"Sorry! Photo Library is not available" = "Beklager, billedebibliotek er ikke tilgængelig";
+"Settings" = "Indstillinger";
 "Offline" = "Offline"; 
 "Online" = "Online"; 
-"CONTACTS" = "CONTACTS"; 
-"Failed to send SMS!" = "Failed to send SMS!"; 
-"Invite" = "Invite"; 
-"Select your favourite Center" = "Select your favourite Center"; 
-"Nearby" = "Nearby"; 
-"Please select at least one town" = "Please select at least one town"; 
+"CONTACTS" = "Kontakter";
+"Failed to send SMS!" = "Kunne ikke sende SMS";
+"Select your favourite town" = "Vælg din foretrukne by";
+"Nearby" = "I nærheden";
+"Please select at least one town" = "Vælg venligst mindst én by";
+"Your preferences have been saved successfully" = "Dine indstillinger er blevet gemt";
+"Your Name" = "Dit navn";
+"Camera" = "Kamera";
+"Cancel" = "Fortryd";
+"Gallery" = "Galleri";
+"Rate it!" = "Bedøm";
+"Location:" = "Beliggenhed:";
+"Not on" = "Ikke på";
+"Invite" = "Invitér";
 
-"Your preferences have been saved successfully" = "Your preferences have been saved successfully"; 
-"Your Name" = "Your Name"; 
-"Camera" = "Camera"; 
-"Cancel" = "Cancel"; 
-"Gallery" = "Gallery"; 
-"Rate it!" = "Rate it!"; 
-"Location:" = "Location:"; 
-"Not on" = "Not on"; 
-"Invite" = "Invite"; 
-"Detail" = "Detail"; 
-"Centers"= "Centers"; 
-"Interests" = "Interests"; 
-"Points" = "Points"; 
-"Birthday" = "Birthday"; 
-"Gender" = "Gender"; 
-"Location" = "Location"; 
-"Education" = "Education"; 
-"Tell friends about Town Book App!" = "Tell friends about Town Book App!"; 
-"Address" = "Address"; 
-"Tel" = "Tel"; 
-"Select barcode type" = "Select barcode type"; 
-"Barcode Type" = "Barcode Type"; 
-"Please drop the pin on map first" = "Please drop the pin on map first"; 
-"Car parking has been saved" = "Car parking has been saved"; 
-"Your current saved location will be deleted" = "Your current saved location will be deleted"; 
-"Yes" = "Yes"; 
-"NO" = "NO"; 
+"Detail" = "Detalje";
+"Towns"= "Byer";
+"Interests" = "Interesser";
+"Points" = "Points";
+"Birthday" = "Fødselsdag";
+"Gender" = "Køn";
+"Location" = "Beliggenhed";
+"Education" = "Uddannelse";
+"Tell friends about Townbook App!" = "Fortæl venner om Townbook App!";
+"Address" = "Adresse";
+"Tel" = "Tlf";
+"Select barcode type" = "Vælg stregkode type";
+"Barcode Type" = "Stregkodetype";
+"Please drop the pin on map first" = "Venligst drop pin på kortet først";
+
+"Car parking has been saved" = "Parkering er gemt";
+"Your current saved location will be deleted" = "Din nuværende gemte placering vil blive slettet";
+"Yes" = "Ja";
+"NO" = "Nej";
 "OK" = "OK"; 
-"Add other card" = "Add other card"; 
-"(If you can't find it here)" = "(If you can't find it here)"; 
-"Related Offers" = "Related Offers"; 
+"Add other card" = "Tilføj andet kort";
+"(If you can't find it here)" = "(Hvis du ikke kan finde det her)";
+"Related Offers" = "Relaterede tilbud";
 
-"Background" = "Background"; 
-"Add background to chat" = "Add background to chat"; 
-"Participants (%@)" = "Participants (%@)"; 
-"Smart notifications" = "Smart notifications"; 
-"Default notofications" = "Default notofications"; 
-"Conversation Gallery" = "Conversation Gallery"; 
-"None" = "None"; 
-"+ Contacts" = "+ Contacts"; 
-"Select all" = "Select all"; 
-"Phone Number" = "Phone Number"; 
-"Country" = "Country"; 
-"Delete" = "Delete"; 
-"Continue" = "Continue"; 
-"Share" = "Share"; 
-"%@ pts" = "%@ pts"; 
-"About Us" = "About Us"; 
-"Log out" = "Log out"; 
-"Next" = "Next"; 
-"Sync with Facebook" = "Sync with Facebook"; 
-"Please add facebook account in settings." = "Please add facebook account in settings."; 
-"Sorry, failed to fetch profile info due to network problem." = "Sorry, failed to fetch profile info due to network problem."; 
-"No phone number is present" = "No phone number is present"; 
-"You are Invited by %@ to use The Town Book App" = "You are Invited by %@ to use The Town Book App"; 
-"You can't send email" = "You can't send email"; 
-"Call facility is not available!!!" = "Call facility is not available!!!"; 
+"Background" = "Baggrund";
+"Add background to chat" = "Føj baggrunden til chat";
+"Participants (%@)" = "Deltagere (%@)";
+"Smart notifications" = "Smarte notifikationer";
+"Default notofications" = "Standard notifikationer";
+"Conversation Gallery" = "Samtalegalleri";
+"None" = "Ingen";
+"+ Contacts" = "+ Kontakter";
+"Select all" = "Vælg alle";
+"Phone Number" = "Telefonnummer";
 
-"Recieve push notifications/SMS" = "Recieve push notifications/SMS"; 
-"Contact" = "Contact"; 
-"Shop" = "Shop"; 
-"Offers" = "Offers"; 
-"Change Language" = "Change Language"; 
-"English" = "English"; 
-"Danish" = "Danish"; 
-"Phone default" = "Phone default"; 
-"Please restart the application for applying the change you made." = "Please restart the application for applying the change you made."; 
-"No shops for this Town Book" = "No shops for this Town Book"; 
-"No restaurants for this Town Book" = "No restaurants for this Town Book"; 
+"Country" = "Land";
+"Delete" = "Slet";
+"Continue" = "Fortsæt";
+"Share" = "Del";
+"%@ pts" = "%@ pts";
 
-"This offer added to your favourities" = "This offer added to your favourities"; 
-"This news added to your favourities" = "This news added to your favourities"; 
-"This shop added to your favourities" = "This shop added to your favourities"; 
-"This restaurant added to your favourities" = "This restaurant added to your favourities"; 
-"This offer removed from your favourities" = "This offer removed from your favourities"; 
-"This news removed from your favourities" = "This news removed from your favourities"; 
-"This shop removed from your favourities" = "This shop removed from your favourities"; 
-"This restaurant removed from your favourities" = "This restaurant removed from your favourities"; 
+"About Us" = "Om os";
+"Log out" = "Log ud";
+"Next" = "Næste";
+"Sync with Facebook" = "Synkronisér med Facebook";
+"Please add facebook account in settings." = "Tilføj venligst facebook-konto i indstillinger.";
+"Sorry, failed to fetch profile info due to network problem." = "Undskyld, kunne ikke hente profilinfo på grund af netværksproblem";
+"No phone number is present" = "Intet telefonnummer til stede";
+"You are Invited by %@ to use The Townbook App" = "Du er inviteret af %@ til at bruge The Townbook App";
+"You can't send email" = "Du kan ikke sende email";
+"Call facility is not available!!!" = "Opkaldsfacilitet er ikke tilgængelig";
 
-"No menu available for this restaurant" = "No menu available for this restaurant"; 
-"Edit Profile" = "Edit Profile"; 
-"Notifications" = "Notifications"; 
-"Help" = "Help"; 
-"Privacy Policy" = "Privacy Policy"; 
-"Update" = "Update"; 
-"Notifications Setting" = "Notifications Setting"; 
-"Town Book App Invitation" = "Town Book App Invitation"; 
-"Hey Check this new Town Book App." = "Hey Check this new Town Book App."; 
+"Recieve push notifications/SMS" = "Modtag push notifikationer/SMS";
+"Contact" = "Kontakt";
+"Shop" = "Butik";
+"Offers" = "Tilbud";
+"Change Language" = "Skift sprog";
+"English" = "Engelsk";
+"Danish" = "Dansk";
+"Phone default" = "Telefon standard";
+"Please restart the application for applying the change you made." = "Genstart applikationen for at anvende den ændringen";
+"No shops for this Townbook" = "Ingen butikker for denne Townbook";
+"No restaurants for this Townbook" = "Ingen restauranter for denne Townbook";
 
+"This offer added to your favourities" = "Tilbuddet er blevet tilføjet til dine favoritter";
+"This news added to your favourities" = "Nyhed er blevet tilføjet til dine favoritte";
+"This shop added to your favourities" = "Butikken er blevet tilføjet til dine favoritte";
+"This restaurant added to your favourities" = "Restauranten er blevet tilføjet til dine favoritte";
+"This offer removed from your favourities" = "Tilbud er blevet fjernet fra dine favoritter";
+"This news removed from your favourities" = "Nyheden er blevet fjernet fra dine favoritter";
+"This shop removed from your favourities" = "This shop removed from your favourities";
+"This restaurant removed from your favourities" = "Butikken er blevet fjernet fra dine favoritter";
 
-"Not Available" = "Not Available"; 
-"Go to homepage" = "Go to homepage"; 
-"starts" = "starts"; 
-"ends" = "ends"; 
-"No details available for this shop" = "No details available for this shop"; 
-"No featured shops for this shop" = "No featured shops for this shop"; 
-"No details available for this Restaurant" = "No details available for this Restaurant"; 
-
-"Please select a center from Home page first." = "Please select a center from Home page first."; 
+"No menu available for this restaurant" = "Ingen menu tilgængelig for denne restaurant";
+"Edit Profile" = "Rediger profil";
+"Notifications" = "Notifikationer";
+"Help" = "Hjælp";
+"Privacy Policy" = "Fortrolighedspolitik";
+"Update" = "Opdatér";
 
 
+"Notifications Setting" = "Notifikationsindstillinger";
+"Townbook App Invitation" = "Townbook Invitation";
+"Hey Check this new Townbook App." = "Hey, tjek denne nye Townbook App";
 
-"Camera Permission Required.Please enable camera in settings for this app" = "Camera Permission Required.Please enable camera in settings for this app"; 
-"Website" = "Website"; 
 
-"No companies for this Town" = "No companies for this Town"; 
-"No institutions for this Town" = "No institutions for this Town"; 
+"Not Available" = "Ikke tilgængelig";
+"Go to homepage" = "Gå til hjemmeside";
+"starts" = "starter";
+"ends" = "slutter";
+"No details available for this shop" = "Ingen detaljer tilgængelige for denne butik";
+"No featured shops for this shop" = "Nej udvalgte butikker for denne butik";
+"No details available for this Restaurant" = "Ingen detaljer tilgængelige for denne restaurant";
 
-"Towns" = "Towns";
+"Please select a Town first" = "Vælg venligst en by først";
+
+
+
+"Camera Permission Required.Please enable camera in settings for this app" = "Kameratilladelse påkrævet - Aktivér venligst kameraet i indstillingerne for denne app";
+"Website" = "Internet side";
+
+"No businesses for this Town" = "Ingen virksomheder for denne by";
+"No institutions for this Town" = "Ingen institutioner for denne by";
+
+"Select your interest" = "Vælg din interesse";
+
+"Towns" = "By";
+
+
+"Monday" = "Mandag";
+"Tuesday"="Tirsdag";
+"Wednesday"="Onsdag";
+"Thursday"="Torsdag";
+"Friday"="Fredag";
+"Saturday"="Lørdag";
+"Sunday"="Søndag";

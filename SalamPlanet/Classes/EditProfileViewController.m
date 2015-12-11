@@ -67,6 +67,10 @@
     else if (!self.user.name && self.isFacebookRegistration)
          [self loadFacebookUser];
     
+    [self.syncFBButton setTitle:NSLocalizedString(@"Sync with Facebook", nil) forState:UIControlStateNormal];
+    [self.syncFBButton setTitle:NSLocalizedString(@"Sync with Facebook", nil) forState:UIControlStateHighlighted];
+    [self.syncFBButton setTitle:NSLocalizedString(@"Sync with Facebook", nil) forState:UIControlStateSelected];
+    
     if (_isFromEdit) {
         _backBtn.hidden = NO;
         self.syncFBButton.hidden = YES;
@@ -79,8 +83,11 @@
     {
         _backBtn.hidden = YES;
         //[self configureCityTextField];
-         [self.photoButton setTitle:NSLocalizedString(@"Add Photo",nil) forState:UIControlStateNormal];
+        [self.photoButton setTitle:NSLocalizedString(@"Add Photo",nil) forState:UIControlStateNormal];
+        [self.photoButton setTitle:NSLocalizedString(@"Add Photo",nil) forState:UIControlStateHighlighted];
+        [self.photoButton setTitle:NSLocalizedString(@"Add Photo",nil) forState:UIControlStateSelected];
         [self.continueBtn setTitle:NSLocalizedString(@"Continue", nil) forState:UIControlStateNormal];
+        [self.continueBtn setTitle:NSLocalizedString(@"Continue", nil) forState:UIControlStateSelected];
         NSString *cityAddress = GetStringWithKey(kLocationServiceAddress);
         if (cityAddress)
             _cityTF.text = cityAddress;

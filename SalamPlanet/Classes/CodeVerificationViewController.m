@@ -46,7 +46,7 @@
 }
 -(void)dolocalizationText{
     self.lblIfYouDoNotRecieve.text=NSLocalizedString(@"If you do not receive your access code within 60 seconds. Let us...", nil);
-    self.lblPleaseEnterCode.text=NSLocalizedString(@"Please enter the verification code", nil);
+    self.lblPleaseEnterCode.text=NSLocalizedString(@"Please enter the access code", nil);
     [self.toolBarDone setTitle:NSLocalizedString(@"Done", nil)];
     
     [self.continueBtn setTitle:NSLocalizedString(@"Continue", nil) forState:UIControlStateNormal];
@@ -55,6 +55,7 @@
     [self.noCodeBtn setTitle:NSLocalizedString(@"Resend code", nil) forState:UIControlStateNormal];
     [self.noCodeBtn setTitle:NSLocalizedString(@"Resend code", nil) forState:UIControlStateHighlighted];
     [self.noCodeBtn setTitle:NSLocalizedString(@"Resend code", nil) forState:UIControlStateSelected];
+    self.codeTF.placeholder = NSLocalizedString(@"Access code", nil);
 }
 
 #pragma mark:Custom Methods
@@ -85,7 +86,7 @@
 #pragma mark:IBAction and Selector Methods
 - (IBAction)continueAction:(id)sender {
     if (self.codeTF.text.length < 4) {
-        ShowMessage(kAppName, NSLocalizedString(@"Verification code should be 4 digits",nil));
+        ShowMessage(kAppName, NSLocalizedString(@"Access code should be 4 digits",nil));
         return;
     }
     [self.continueBtn setSelected:YES];
