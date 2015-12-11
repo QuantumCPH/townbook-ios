@@ -76,7 +76,7 @@
 "Edit" = "Rediger";
 
 "Phone Number Verification" = "Telefonnummer verifikation";
-"Is this your correct number?\n %@ \nA SMS with your access code will be sent to this number." = "Er det dit rigtige nummer? \n%@\n A SMS med din adgangskode vil blive sendt til dette nummer.";
+"Is this your correct number?\n %@ \nA SMS with your access code will be sent to this number." = "Er det din rigtige nummer? \n%@\nA SMS med din adgangskode vil blive sendt til dette nummer.";
 "Do You Want to logout" = "Ønsker du at logge ud";
 "Access code should be 4 digits" = "Adgangskode skal være 4 cifre";
 
@@ -202,14 +202,14 @@
 "No shops for this Townbook" = "Ingen butikker for denne Townbook";
 "No restaurants for this Townbook" = "Ingen restauranter for denne Townbook";
 
-"This offer added to your favourities" = "Tilbuddet er blevet tilføjet til dine favoritter";
-"This news added to your favourities" = "Nyhed er blevet tilføjet til dine favoritte";
-"This shop added to your favourities" = "Butikken er blevet tilføjet til dine favoritte";
-"This restaurant added to your favourities" = "Restauranten er blevet tilføjet til dine favoritte";
-"This offer removed from your favourities" = "Tilbud er blevet fjernet fra dine favoritter";
-"This news removed from your favourities" = "Nyheden er blevet fjernet fra dine favoritter";
-"This shop removed from your favourities" = "This shop removed from your favourities";
-"This restaurant removed from your favourities" = "Butikken er blevet fjernet fra dine favoritter";
+"This offer added to your favorites" = "Tilbuddet er blevet tilføjet til dine favoritter";
+"This news added to your favorites" = "Nyhed er blevet tilføjet til dine favoritte";
+"This shop added to your favorites" = "Butikken er blevet tilføjet til dine favoritte";
+"This restaurant added to your favorites" = "Restauranten er blevet tilføjet til dine favoritte";
+"This offer removed from your favorites" = "Tilbud er blevet fjernet fra dine favoritter";
+"This news removed from your favorites" = "Nyheden er blevet fjernet fra dine favoritter";
+"This shop removed from your favorites" = "Butikken er blevet fjernet fra dine favoritter";
+"This restaurant removed from your favorites" = "Butikken er blevet fjernet fra dine favoritter";
 
 "No menu available for this restaurant" = "Ingen menu tilgængelig for denne restaurant";
 "Edit Profile" = "Rediger profil";

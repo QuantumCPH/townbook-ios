@@ -395,12 +395,12 @@
                 if (isOffer)
                 {
                     [user addFavouriteOffersObject:activityObject];
-                    ShowMessage(kAppName, NSLocalizedString(@"This offer added to your favourities", nil));
+                    ShowMessage(kAppName, NSLocalizedString(@"This offer added to your favorites", nil));
                 }
                 else
                 {
                     [user addFavouriteActivitiesObject:activityObject];
-                    ShowMessage(kAppName, NSLocalizedString(@"This news added to your favourities", nil));
+                    ShowMessage(kAppName, NSLocalizedString(@"This news added to your favorites", nil));
                 }
                 [[DataManager sharedInstance] saveContext];
             }
@@ -419,12 +419,12 @@
               if (isOffer)
               {
                   [user removeFavouriteOffersObject:activityObject];
-                  ShowMessage(kAppName, NSLocalizedString(@"This offer removed from your favourities", nil));
+                  ShowMessage(kAppName, NSLocalizedString(@"This offer removed from your favorites", nil));
               }
               else
               {
                   [user removeFavouriteActivitiesObject:activityObject];
-                  ShowMessage(kAppName, NSLocalizedString(@"This news removed from your favourities", nil));
+                  ShowMessage(kAppName, NSLocalizedString(@"This news removed from your favorites", nil));
               }
               [[DataManager sharedInstance] saveContext];
               

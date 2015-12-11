@@ -185,7 +185,8 @@
     }
     [self.continueBtn setSelected:YES];
     [self resignFields];
-    UIAlertView *ask = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Phone Number Verification", nil) message:[NSString stringWithFormat:NSLocalizedString(@"Is this your correct number?\n +%@ \nA SMS with your access code will be sent to this number.", nil),[self getCorrectFormattedPhoneNumber:self.phoneNumberTF.text]] delegate:self cancelButtonTitle:@"Edit" otherButtonTitles:@"YES", nil];
+    UIAlertView *ask = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Phone Number Verification", nil) message:[NSString stringWithFormat:NSLocalizedString(@"Is this your correct number?\n +%@ \nA SMS with your access code will be sent to this number.", nil),[self getCorrectFormattedPhoneNumber:self.phoneNumberTF.text]] delegate:self cancelButtonTitle:NSLocalizedString(@"Edit",nil) otherButtonTitles:NSLocalizedString(@"Yes",nil), nil];
+
     ask.tag = 400;
     [ask show];
 }

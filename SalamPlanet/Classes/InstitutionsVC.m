@@ -561,7 +561,7 @@
             {
                 [user addFavouriteShopsObject:shop];
                 [[DataManager sharedInstance] saveContext];
-                ShowMessage(kAppName, NSLocalizedString(@"This institution added to your favourities", nil));
+                ShowMessage(kAppName, NSLocalizedString(@"This institution added to your favorites", nil));
             }
         } failure:^(NSString *errorString) {
             [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
@@ -577,7 +577,7 @@
             {
                 [user removeFavouriteShopsObject:shop];
                 [[DataManager sharedInstance] saveContext];
-                ShowMessage(kAppName, NSLocalizedString(@"This shop removed from your favourities", nil));
+                ShowMessage(kAppName, NSLocalizedString(@"This shop removed from your favorites", nil));
             }
         } failure:^(NSString *errorString) {
             [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
