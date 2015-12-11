@@ -16,4 +16,7 @@
 @synthesize place;
 @synthesize dateEvent;
 @synthesize dateCreated;
+@synthesize briefText;
+@synthesize descText;
+@synthesize price;
 @end

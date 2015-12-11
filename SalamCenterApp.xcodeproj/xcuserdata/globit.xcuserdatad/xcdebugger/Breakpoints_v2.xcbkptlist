@@ -25,7 +25,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "567"
             endingLineNumber = "567"
-            landmarkName = "-offerHasBeenTappedWithOfferID:"
+            landmarkName = "-displayMallTimings"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -409,7 +409,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "580"
             endingLineNumber = "580"
-            landmarkName = "-scrollViewDidScroll:"
+            landmarkName = "-getFormattedPhoneNumber:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

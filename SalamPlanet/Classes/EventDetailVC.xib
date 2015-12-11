@@ -20,6 +20,7 @@
                 <outlet property="imgUser" destination="UGx-XQ-6Ib" id="VMB-KU-TFu"/>
                 <outlet property="lblDateCreated" destination="IHt-UT-Tzx" id="YRX-ji-I9V"/>
                 <outlet property="lblDateHappen" destination="sBj-ed-mMf" id="yD5-3k-zad"/>
+                <outlet property="lblDesc" destination="HT2-Pf-hFD" id="tor-MG-M54"/>
                 <outlet property="lblEventTitle" destination="NJq-gR-ryn" id="Fjs-eE-ItI"/>
                 <outlet property="lblPlace" destination="4nL-4N-9Ib" id="SEI-CF-sce"/>
                 <outlet property="lblTitle" destination="hbc-MU-cpd" id="iAn-Pe-zZR"/>
@@ -221,6 +222,9 @@
                             <constraint firstAttribute="width" constant="66" id="fWF-Rh-ElE"/>
                         </constraints>
                         <state key="normal" image="event-share.png"/>
+                        <connections>
+                            <action selector="btnSharePressed:" destination="-1" eventType="touchUpInside" id="sj7-md-Xbh"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -236,7 +240,7 @@
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
-            <point key="canvasLocation" x="-162" y="260"/>
+            <point key="canvasLocation" x="-153" y="237"/>
         </tableViewCell>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="196" id="qbb-Sl-m2X" userLabel="cellDetail">
             <rect key="frame" x="0.0" y="0.0" width="320" height="196"/>
@@ -255,62 +259,51 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YiC-WY-GWP">
-                        <rect key="frame" x="4" y="46" width="240" height="141.5"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="141.5" id="unM-fQ-e55"/>
-                        </constraints>
-                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMr-dw-Tfo">
                         <rect key="frame" x="270" y="102" width="44" height="44"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="44" id="GRJ-yY-hSE"/>
-                            <constraint firstAttribute="width" constant="44" id="RG4-m3-Xtx"/>
+                            <constraint firstAttribute="height" constant="44" id="0cb-sJ-ghR"/>
+                            <constraint firstAttribute="width" constant="44" id="TIt-cr-Mkk"/>
                         </constraints>
                         <state key="normal" image="event-bookmark.png"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ss-O7-Pmg">
                         <rect key="frame" x="270" y="150" width="44" height="44"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="44" id="KIB-N5-5oc"/>
-                            <constraint firstAttribute="height" constant="44" id="c3v-kN-0OQ"/>
+                            <constraint firstAttribute="height" constant="44" id="CQM-f9-xrT"/>
+                            <constraint firstAttribute="width" constant="44" id="hv5-lO-Gma"/>
                         </constraints>
                         <state key="normal" image="event-fav.png"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8G-A4-EVt">
                         <rect key="frame" x="270" y="50" width="44" height="44"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="44" id="Jkg-cx-eYW"/>
-                            <constraint firstAttribute="height" constant="44" id="Va8-kn-zZn"/>
+                            <constraint firstAttribute="width" constant="44" id="eyY-Fc-U2g"/>
+                            <constraint firstAttribute="height" constant="44" id="kQW-zZ-i1u"/>
                         </constraints>
                         <state key="normal" image="event-chat.png"/>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT2-Pf-hFD">
+                        <rect key="frame" x="8" y="49" width="250" height="138.5"/>
+                        <string key="text">hajkdhakjsdha sdhak jhdajdhajsdhkjadhajhd jahdkjad jad jhak jd akjdkjadadjklajsd lkajdklajd klajd lka dj ... jadsjas dkas d aldkjals kdjkad... ajskd als jdas.. ajslkdljkadj al.. jaksldja jdlasd</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="5Ss-O7-Pmg" firstAttribute="top" secondItem="DMr-dw-Tfo" secondAttribute="bottom" constant="4" id="1Ga-rT-7VO"/>
-                    <constraint firstAttribute="bottom" secondItem="5Ss-O7-Pmg" secondAttribute="bottom" constant="1.5" id="7I8-63-CFa"/>
-                    <constraint firstItem="DMr-dw-Tfo" firstAttribute="top" secondItem="q8G-A4-EVt" secondAttribute="bottom" constant="8" id="9cF-kA-Vie"/>
-                    <constraint firstItem="5Ss-O7-Pmg" firstAttribute="leading" secondItem="YiC-WY-GWP" secondAttribute="trailing" constant="26" id="EE3-wN-XRM"/>
-                    <constraint firstItem="YiC-WY-GWP" firstAttribute="top" secondItem="7Ym-Gn-UVR" secondAttribute="top" constant="46" id="HFM-90-0UL"/>
-                    <constraint firstItem="5Ss-O7-Pmg" firstAttribute="top" secondItem="DMr-dw-Tfo" secondAttribute="bottom" constant="4" id="IvS-bJ-XjM"/>
+                    <constraint firstItem="HT2-Pf-hFD" firstAttribute="top" secondItem="NJq-gR-ryn" secondAttribute="bottom" constant="2" id="08s-E1-a4z"/>
+                    <constraint firstItem="5Ss-O7-Pmg" firstAttribute="top" secondItem="DMr-dw-Tfo" secondAttribute="bottom" constant="4" id="0bY-U5-Jbb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DMr-dw-Tfo" secondAttribute="trailing" constant="-2" id="4uf-bx-3m9"/>
+                    <constraint firstItem="q8G-A4-EVt" firstAttribute="top" secondItem="NJq-gR-ryn" secondAttribute="bottom" constant="3" id="B33-KF-P49"/>
+                    <constraint firstItem="DMr-dw-Tfo" firstAttribute="top" secondItem="q8G-A4-EVt" secondAttribute="bottom" constant="8" id="EN6-vd-cXe"/>
                     <constraint firstAttribute="trailing" secondItem="NJq-gR-ryn" secondAttribute="trailing" constant="8" id="JVy-Fo-yDv"/>
-                    <constraint firstItem="q8G-A4-EVt" firstAttribute="leading" secondItem="YiC-WY-GWP" secondAttribute="trailing" constant="26" id="QK0-xj-ROe"/>
-                    <constraint firstAttribute="bottom" secondItem="YiC-WY-GWP" secondAttribute="bottom" constant="8" id="QUb-kF-QdV"/>
+                    <constraint firstAttribute="trailing" secondItem="q8G-A4-EVt" secondAttribute="trailing" constant="6" id="Ko8-KN-XOW"/>
                     <constraint firstItem="NJq-gR-ryn" firstAttribute="leading" secondItem="7Ym-Gn-UVR" secondAttribute="leading" constant="8" id="R2Q-G6-iFT"/>
-                    <constraint firstItem="YiC-WY-GWP" firstAttribute="leading" secondItem="7Ym-Gn-UVR" secondAttribute="leading" constant="4" id="Rsi-Eo-57i"/>
+                    <constraint firstItem="q8G-A4-EVt" firstAttribute="leading" secondItem="HT2-Pf-hFD" secondAttribute="trailing" constant="12" id="UDD-wA-are"/>
                     <constraint firstItem="NJq-gR-ryn" firstAttribute="top" secondItem="7Ym-Gn-UVR" secondAttribute="top" constant="3" id="a4d-nh-u5W"/>
-                    <constraint firstAttribute="trailing" secondItem="DMr-dw-Tfo" secondAttribute="trailing" constant="6" id="a9C-Wq-HyQ"/>
-                    <constraint firstItem="DMr-dw-Tfo" firstAttribute="top" secondItem="q8G-A4-EVt" secondAttribute="bottom" constant="8" id="aHn-ks-Iqf"/>
-                    <constraint firstAttribute="trailing" secondItem="q8G-A4-EVt" secondAttribute="trailing" constant="6" id="ebb-da-bbJ"/>
-                    <constraint firstItem="5Ss-O7-Pmg" firstAttribute="leading" secondItem="YiC-WY-GWP" secondAttribute="trailing" constant="26" id="gz4-S4-7Y1"/>
-                    <constraint firstAttribute="trailing" secondItem="5Ss-O7-Pmg" secondAttribute="trailing" constant="6" id="hkh-oa-7nX"/>
-                    <constraint firstItem="DMr-dw-Tfo" firstAttribute="leading" secondItem="YiC-WY-GWP" secondAttribute="trailing" constant="26" id="nQT-VJ-p1H"/>
-                    <constraint firstItem="q8G-A4-EVt" firstAttribute="top" secondItem="NJq-gR-ryn" secondAttribute="bottom" constant="3" id="sJe-cI-p9l"/>
+                    <constraint firstAttribute="trailing" secondItem="5Ss-O7-Pmg" secondAttribute="trailing" constant="6" id="oY2-n8-wPn"/>
+                    <constraint firstItem="HT2-Pf-hFD" firstAttribute="leading" secondItem="7Ym-Gn-UVR" secondAttribute="leading" constant="8" id="ps5-FV-Tgx"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="-153" y="388"/>
@@ -333,7 +326,7 @@
                     <constraint firstItem="ZL8-3N-OMG" firstAttribute="top" secondItem="eLO-3z-egj" secondAttribute="top" id="lQi-6P-dDS"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-155" y="514"/>
+            <point key="canvasLocation" x="-184" y="714"/>
         </tableViewCell>
     </objects>
     <resources>
@@ -346,7 +339,7 @@
         <image name="event-fav.png" width="30" height="30"/>
         <image name="event-request.png" width="20" height="20"/>
         <image name="event-share.png" width="20" height="20"/>
-        <image name="event1.png" width="122" height="132"/>
+        <image name="event1.png" width="360" height="270"/>
         <image name="new_avatar.png" width="320" height="320"/>
     </resources>
 </document>

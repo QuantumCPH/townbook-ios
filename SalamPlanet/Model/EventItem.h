@@ -17,4 +17,7 @@
 @property (nonatomic, strong) NSString * place;
 @property (nonatomic, strong) NSString * dateEvent;
 @property (nonatomic, strong) NSString * dateCreated;
+@property (nonatomic, strong) NSString * briefText;
+@property (nonatomic, strong) NSString * descText;
+@property (nonatomic, strong) NSString * price;
 @end
